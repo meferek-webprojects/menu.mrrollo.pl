@@ -1,0 +1,180 @@
+{
+  "categories": [
+    {
+      "id": "kanapki-bulka",
+      "name": "Kanapki w bułce / bajglu / sznytce / półbagietce",
+      "items": [
+        { "name": "Mozzarella z suszonym pomidorem", "bread": "Bułka z oliwkami" },
+        { "name": "Kurczak w sosie ziołowym", "bread": "Półbagietka pszenna" },
+        { "name": "Indyk z kwaszeniakiem", "bread": "Półbagietka pszenna" },
+        { "name": "Krakowska, żółty ser i jalapeno", "bread": "Półbagietka pszenna" },
+        { "name": "Kurczak Mississippi", "bread": "Półbagietka pszenna" },
+        { "name": "Kurczak, suszony pomidor i rukola", "bread": "Półbagietka wieloziarnista" },
+        { "name": "Kanapka z brie, gruszką, żurawiną i rukolą", "bread": "Bułka sznytka" },
+        { "name": "Szynka, ser, jajko i kwaszeniak", "bread": "Półbagietka pszenna" },
+        { "name": "Kurczak w sosie salsa mango", "bread": "Półbagietka pszenna" },
+        { "name": "Pasta z tuńczyka", "bread": "Bułka sznytka" },
+        { "name": "Pasta jajeczna ze szczypiorkiem", "bread": "Bułka sznytka" },
+        { "name": "Pikantna pasta z tuńczyka", "bread": "Bułka proteinowa z ziarnami" },
+        { "name": "Szynka, ser, ogórek i pomidor", "bread": "Bajgiel" },
+        { "name": "Kanapka Premium z filetem z kurczaka, pomidorem i ogórkiem", "bread": "Bułka Chia" },
+        { "name": "Pastrami wołowe z jalapeno", "bread": "Bułka kukurydziana" }
+      ]
+    },
+    {
+      "id": "kanapki-wloskie",
+      "name": "Kanapki w pieczywie w stylu włoskim",
+      "items": [
+        { "name": "Ciabatta z pieczarkami", "bread": "Ciabatta" },
+        { "name": "Wołowina Jalapeno", "bread": "Ciabatta" },
+        { "name": "Kanapka z kurczakiem i grillowanymi warzywami", "bread": "Ciabatta" },
+        { "name": "Kurczak z cukinią", "bread": "Schiacciata" },
+        { "name": "Chorizo z rukolą i parmezanem", "bread": "Schiacciata Nero" },
+        { "name": "Tortilla ze szpinakiem, suszonym pomidorem i mozzarellą", "tags": ["VEGE"] }
+      ]
+    },
+    {
+      "id": "kanapki-chleb",
+      "name": "Kanapki w chlebie",
+      "items": [
+        { "name": "Kanapka z brie, suszonym pomidorem i rukolą", "bread": "Chleb Graham" },
+        { "name": "Wieprzowina szarpana na ostro", "bread": "Półbagietka wieloziarnista" },
+        { "name": "Kurczak Mississippi", "bread": "Bułka proteinowa" }
+      ]
+    },
+    {
+      "id": "sushi",
+      "name": "Sushi",
+      "items": [
+        { "name": "Sushi Maki pieczone/surowe/mix", "description": "12 kawałków" },
+        { "name": "Sushi California Gold pieczone/surowe", "description": "14 kawałków" },
+        { "name": "Sushi Premium Mix", "description": "38 kawałków – zamów u handlowca", "note": "Zamów u handlowca" },
+        { "name": "Zestaw mix" },
+        { "name": "Zestaw pieczone maki" },
+        { "name": "Zestaw surowe maki" },
+        { "name": "Zestaw California Gold surowe" },
+        { "name": "Zestaw California Gold pieczone" }
+      ]
+    },
+    {
+      "id": "salatki",
+      "name": "Sałatki",
+      "items": [
+        { "name": "Sałatka z gruszką, serem pleśniowym i orzechami" },
+        { "name": "Sałatka z kurczakiem, brzoskwinią i żurawiną na makaronie razowym" },
+        { "name": "Sałatka z łososiem, warzywami, kukurydzą i fetą" },
+        { "name": "FIT Bowl z tofu, komosą ryżową, burakiem i szpinakiem", "tags": ["FIT", "WEGAN"] },
+        { "name": "Sałatka azjatycka z wieprzowiną" },
+        { "name": "Sałatka Premium z makaronem udon i filetem z kurczaka" },
+        { "name": "Sałatka z tuńczykiem i czerwoną kapustą", "tags": ["KETO"] },
+        { "name": "Sałatka GYROS z kurczakiem i boczkiem", "tags": ["KETO"] }
+      ]
+    },
+    {
+      "id": "dania-obiadowe",
+      "name": "Dania obiadowe",
+      "items": [
+        { "name": "Pierś kurczaka w panco z ryżem, warzywami i surówką" },
+        { "name": "Pierś kurczaka w panco z ryżem, warzywami i surówką XXL" },
+        { "name": "Kotlety warzywne w sosie z czerwonego curry z surówką z czerwonej kapusty", "tags": ["VEGE"] },
+        { "name": "Roladka z indyka faszerowana fetą i pieczarkami z puree i marchewką mini" },
+        { "name": "Polędwiczki z kurczaka w sosie mango z ryżem" },
+        { "name": "Stripsy w pomarańczach z pieczonymi ziemniaczkami i mini marchewką" },
+        { "name": "Boczniak po tajsku z ryżem", "tags": ["VEGE"] },
+        { "name": "Chinkali z mięsem wieprzowo-wołowym" },
+        { "name": "Pad Thai z kurczakiem po tajsku na makaronie ryżowym" }
+      ]
+    },
+    {
+      "id": "makarony",
+      "name": "Makarony",
+      "items": [
+        { "name": "Makaron razowy z pesto, kurczakiem, suszonymi pomidorami i pestkami" },
+        { "name": "Kurczak w sosie pieczarkowo-kaparowym na razowym penne" },
+        { "name": "Łosoś ryflowany na tagliatelle z pomidorami" },
+        { "name": "Polędwiczka wieprzowa na tagliatelle z sosem grzybowym" },
+        { "name": "Wołowina po syczuańsku z makaronem udon" }
+      ]
+    },
+    {
+      "id": "domowe-klasyki",
+      "name": "Domowe klasyki",
+      "items": [
+        { "name": "Wątróbka z cebulką, puree i sałatką szwedzką" },
+        { "name": "Wątróbka z cebulką, kopytkami i buraczkami XXL" },
+        { "name": "Wątróbka z jabłkiem, żurawiną, kopytkami i buraczkami XXL" },
+        { "name": "Pierś z kurczaka w sosie serowym z gnocchi i fasolką szparagową" },
+        { "name": "Placek po zbójnicku" }
+      ]
+    },
+    {
+      "id": "fit-keto",
+      "name": "Fit / Keto / Low IG",
+      "items": [
+        { "name": "Fit pierś z kurczaka z cukinią, czerwonym ryżem z surówką colesław", "tags": ["FIT"] },
+        { "name": "Bitka w sosie węgierskim z ryżem z kalafiora i sałatką z pomidorka", "tags": ["KETO"] },
+        { "name": "Burger wołowy XXL z boczkiem, cheddarem i brokułem", "tags": ["KETO"] },
+        { "name": "VEGE falafelki w sosie sweet chilli z pieczonymi ziemniaczkami i surówką z kapusty", "tags": ["VEGE", "LOW_IG"] }
+      ]
+    },
+    {
+      "id": "pierogi-placki",
+      "name": "Pierogi i placki",
+      "items": [
+        { "name": "Chinkali z mięsem wieprzowo-wołowym" },
+        { "name": "VEGE gołąbki z kaszą gryczaną i sosem pieczarkowym", "tags": ["VEGE"] },
+        { "name": "Placek po zbójnicku" }
+      ]
+    },
+    {
+      "id": "nalewniki",
+      "name": "Naleśniki",
+      "items": [
+        { "name": "Zielone naleśniki z serkiem i łososiem" },
+        { "name": "Naleśniki pomarańczowe" }
+      ]
+    },
+    {
+      "id": "zupy",
+      "name": "Zupy i kremy",
+      "items": [
+        { "name": "Krupnik" },
+        { "name": "Zupa gulaszowa" }
+      ]
+    },
+    {
+      "id": "desery",
+      "name": "Desery, musy, słodkości",
+      "items": [
+        { "name": "Pudding z zielonej tapioki", "tags": ["WEGAN"] },
+        { "name": "Mus mango", "tags": ["WEGAN"] },
+        { "name": "Kokosowa Princessa białkowa" },
+        { "name": "Deserek malinowy z galaretką" },
+        { "name": "Naleśniki pomarańczowe" },
+        { "name": "Deser Oreo" }
+      ]
+    },
+    {
+      "id": "soki-napoje",
+      "name": "Świeże soki, smoothie i napoje",
+      "items": [
+        { "name": "Słodkie orzeźwienie", "description": "Mały" },
+        { "name": "Słodkie orzeźwienie", "description": "Duży" },
+        { "name": "Zdrowa cera", "description": "Mały" },
+        { "name": "Zdrowa cera", "description": "Duży" },
+        { "name": "Smoothie Zielony detoks" },
+        { "name": "Bombilla 330ml Classic/Red" }
+      ]
+    },
+    {
+      "id": "dla-smyka",
+      "name": "Dla smyka",
+      "items": [
+        { "name": "Makaron z masłem i serem" },
+        { "name": "Nuggetsy z frytkami i ketchupem" },
+        { "name": "Naleśniki z dżemem" },
+        { "name": "Kanapka z serem i szynką", "bread": "Bułka pszenna" }
+      ]
+    }
+  ]
+}
