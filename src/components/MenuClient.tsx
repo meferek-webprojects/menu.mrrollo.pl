@@ -327,7 +327,7 @@ export default function MenuClient() {
   const [activeCatId,   setActiveCatId]   = useState(categories[0].id);
   const [search,        setSearch]        = useState("");
   const [lightboxItem,  setLightboxItem]  = useState<MenuItem | null>(null);
-  const [selectedDate,  setSelectedDate]  = useState<string | null>(null);
+  const [selectedDate,  setSelectedDate]  = useState<string | null>(() => toISODate(new Date()));
   const [weekPickerOpen,setWeekPickerOpen]= useState(false);
 
   const weekDays = useMemo(() => getWeekDays(), []);
