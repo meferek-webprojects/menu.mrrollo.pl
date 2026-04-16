@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import Image from "next/image";
 import menuData from "@/data/menu.json";
+import Link from "next/link";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -25,24 +26,24 @@ interface MenuCategory {
 // ── Blank image URLs (Polish filenames → percent-encoded) ─────────────────────
 
 const BLANK_URL: Record<string, string> = {
-  DESER:     "/blanks/DESER.png",
-  KANAPKA:   "/blanks/KANAPKA.png",
-  OBIAD:     "/blanks/OBIAD.png",
-  "SAŁATKA": "/blanks/SA%C5%81ATKA.png",
-  SOK:       "/blanks/SOK.png",
-  ZUPA:      "/blanks/ZUPA.png",
+  DESER: "/blanks/DESER.png",
+  KANAPKA: "/blanks/KANAPKA.png",
+  OBIAD: "/blanks/OBIAD.png",
+  SAŁATKA: "/blanks/SA%C5%81ATKA.png",
+  SOK: "/blanks/SOK.png",
+  ZUPA: "/blanks/ZUPA.png",
 };
 
 // ── Diet badge config (brandbook 2026, str. 13) ───────────────────────────────
 
 const DIET: Record<string, { label: string; bg: string; text: string }> = {
-  MIĘSNA:  { label: "Mięsna",  bg: "bg-diet-miesna", text: "text-brand-black" },
-  VEGE:    { label: "Vege",    bg: "bg-diet-vege",   text: "text-brand-black" },
-  "VEGE+": { label: "Vege+",   bg: "bg-diet-vegep",  text: "text-brand-black" },
-  WEGAN:   { label: "Wegan",   bg: "bg-diet-wegan",  text: "text-white" },
-  FIT:     { label: "Fit",     bg: "bg-diet-fit",    text: "text-brand-black" },
-  KETO:    { label: "Keto",    bg: "bg-diet-keto",   text: "text-brand-black" },
-  LOW_IG:  { label: "Low IG",  bg: "bg-diet-lowig",  text: "text-brand-black" },
+  MIĘSNA: { label: "Mięsna", bg: "bg-diet-miesna", text: "text-brand-black" },
+  VEGE: { label: "Vege", bg: "bg-diet-vege", text: "text-brand-black" },
+  "VEGE+": { label: "Vege+", bg: "bg-diet-vegep", text: "text-brand-black" },
+  WEGAN: { label: "Wegan", bg: "bg-diet-wegan", text: "text-white" },
+  FIT: { label: "Fit", bg: "bg-diet-fit", text: "text-brand-black" },
+  KETO: { label: "Keto", bg: "bg-diet-keto", text: "text-brand-black" },
+  LOW_IG: { label: "Low IG", bg: "bg-diet-lowig", text: "text-brand-black" },
 };
 
 function DietBadge({ tag }: { tag: string }) {
@@ -59,20 +60,16 @@ function DietBadge({ tag }: { tag: string }) {
 
 // ── Lightbox ──────────────────────────────────────────────────────────────────
 
-function Lightbox({
-  item,
-  onClose,
-}: {
-  item: MenuItem;
-  onClose: () => void;
-}) {
+function Lightbox({ item, onClose }: { item: MenuItem; onClose: () => void }) {
   const photoSrc = item.hasPhoto
     ? `/photos/${item.id}.png`
     : (BLANK_URL[item.blankType] ?? "/blanks/DESER.png");
 
   // Close on Escape
   useEffect(() => {
-    const handler = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, [onClose]);
@@ -80,7 +77,9 @@ function Lightbox({
   // Prevent body scroll
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, []);
 
   const priceText =
@@ -90,11 +89,11 @@ function Lightbox({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-sm"
+      className="fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-50 flex items-end sm:items-center justify-center w-full h-full bg-black/70 p-4 backdrop-blur-sm"
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-t-3xl sm:rounded-3xl w-full sm:max-w-sm overflow-hidden shadow-2xl"
+        className="bg-white rounded-3xl w-full sm:max-w-sm overflow-hidden shadow-2xl m-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Full image */}
@@ -122,7 +121,7 @@ function Lightbox({
         </div>
 
         {/* Info */}
-        <div className="px-5 py-4">
+        <div className="flex flex-col px-5 py-4">
           <p className="text-base font-semibold text-brand-black leading-snug">{item.name}</p>
           <div className="flex items-center gap-2 mt-2 flex-wrap">
             {item.diet && <DietBadge tag={item.diet} />}
@@ -134,6 +133,14 @@ function Lightbox({
               {priceText}
             </span>
           </div>
+          <Link
+            href="https://sklep.mrrollo.pl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center mt-12 bg-brand-green text-brand-black hover:bg-brand-green/80 text-sm font-bold py-2 px-4 rounded-full transition-colors"
+          >
+            Przejdź na stronę sklepu
+          </Link>
         </div>
       </div>
     </div>
@@ -179,13 +186,7 @@ function CategoryTab({
 
 // ── Item card ─────────────────────────────────────────────────────────────────
 
-function ItemCard({
-  item,
-  onOpen,
-}: {
-  item: MenuItem;
-  onOpen: (item: MenuItem) => void;
-}) {
+function ItemCard({ item, onOpen }: { item: MenuItem; onOpen: (item: MenuItem) => void }) {
   const [imgError, setImgError] = useState(false);
 
   const photoSrc =
@@ -236,8 +237,20 @@ function ItemCard({
       </div>
 
       {/* Chevron hint */}
-      <svg className="shrink-0 text-gray-300" width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <svg
+        className="shrink-0 text-gray-300"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+      >
+        <path
+          d="M6 4l4 4-4 4"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     </li>
   );
@@ -245,7 +258,10 @@ function ItemCard({
 
 // ── Global search results ─────────────────────────────────────────────────────
 
-interface SearchGroup { category: MenuCategory; items: MenuItem[] }
+interface SearchGroup {
+  category: MenuCategory;
+  items: MenuItem[];
+}
 
 function SearchResults({
   groups,
@@ -315,16 +331,32 @@ export default function MenuClient() {
 
   return (
     <div className="min-h-screen bg-brand-cream flex flex-col">
-
       {/* ── Sticky header ── */}
       <div className="sticky top-0 z-20 bg-brand-black shadow-lg">
         <div className="mx-auto px-4 pt-4 pb-3 flex items-center gap-3">
-          <Image src="/mrrollo.png" alt="Mr. Rollo" width={42} height={42} className="object-contain shrink-0" />
+          <Image
+            src="/mrrollo.png"
+            alt="Mr. Rollo"
+            width={42}
+            height={42}
+            className="object-contain shrink-0"
+          />
 
           <div className="relative flex-1">
-            <svg className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30 pointer-events-none" width="14" height="14" viewBox="0 0 16 16" fill="none">
+            <svg
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30 pointer-events-none"
+              width="14"
+              height="14"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
               <circle cx="7" cy="7" r="5" stroke="currentColor" strokeWidth="1.5" />
-              <path d="M11 11L14 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+              <path
+                d="M11 11L14 14"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
             </svg>
             <input
               type="search"
@@ -334,7 +366,11 @@ export default function MenuClient() {
               className="w-full bg-white/10 text-white placeholder-white/30 text-sm rounded-xl pl-9 pr-8 py-2 outline-none focus:bg-white/20 transition-colors"
             />
             {isSearching && (
-              <button onClick={() => setSearch("")} aria-label="Wyczyść" className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white/80 transition-colors">
+              <button
+                onClick={() => setSearch("")}
+                aria-label="Wyczyść"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white/80 transition-colors"
+              >
                 ✕
               </button>
             )}
@@ -363,7 +399,10 @@ export default function MenuClient() {
           <>
             <div className="flex items-center justify-between mb-4">
               <p className="text-sm text-brand-black/70">
-                Wyniki dla <span className="font-semibold text-brand-black">&ldquo;{search.trim()}&rdquo;</span>
+                Wyniki dla{" "}
+                <span className="font-semibold text-brand-black">
+                  &ldquo;{search.trim()}&rdquo;
+                </span>
               </p>
               <span className="text-xs text-gray-400">{totalHits} pozycji</span>
             </div>
