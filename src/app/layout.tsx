@@ -31,10 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pl"
-      className={`h-full ${jost.variable} ${openSans.variable} ${caveat.variable}`}
-    >
+    <html lang="pl" className={`h-full ${jost.variable} ${openSans.variable} ${caveat.variable}`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

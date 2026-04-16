@@ -24,13 +24,13 @@ interface MenuCategory {
 // ── Diet badge config ──────────────────────────────────────────────────────────
 
 const DIET: Record<string, { label: string; bg: string; text: string }> = {
-  MIĘSNA: { label: "Mięsna",  bg: "bg-diet-miesna", text: "text-brand-black" },
-  VEGE:   { label: "Vege",    bg: "bg-diet-vege",   text: "text-brand-black" },
-  "VEGE+":{ label: "Vege+",   bg: "bg-diet-vegep",  text: "text-brand-black" },
-  WEGAN:  { label: "Wegan",   bg: "bg-diet-wegan",  text: "text-white" },
-  FIT:    { label: "Fit",     bg: "bg-diet-fit",    text: "text-brand-black" },
-  KETO:   { label: "Keto",    bg: "bg-diet-keto",   text: "text-brand-black" },
-  LOW_IG: { label: "Low IG",  bg: "bg-diet-lowig",  text: "text-brand-black" },
+  MIĘSNA: { label: "Mięsna", bg: "bg-diet-miesna", text: "text-brand-black" },
+  VEGE: { label: "Vege", bg: "bg-diet-vege", text: "text-brand-black" },
+  "VEGE+": { label: "Vege+", bg: "bg-diet-vegep", text: "text-brand-black" },
+  WEGAN: { label: "Wegan", bg: "bg-diet-wegan", text: "text-white" },
+  FIT: { label: "Fit", bg: "bg-diet-fit", text: "text-brand-black" },
+  KETO: { label: "Keto", bg: "bg-diet-keto", text: "text-brand-black" },
+  LOW_IG: { label: "Low IG", bg: "bg-diet-lowig", text: "text-brand-black" },
 };
 
 function DietBadge({ tag }: { tag: string }) {
@@ -80,9 +80,7 @@ function CategoryTab({
       `}
     >
       {name}
-      <span
-        className={`ml-1.5 text-[11px] ${active ? "text-brand-black/60" : "text-white/40"}`}
-      >
+      <span className={`ml-1.5 text-[11px] ${active ? "text-brand-black/60" : "text-white/40"}`}>
         {count}
       </span>
     </button>
@@ -133,9 +131,7 @@ export default function MenuClient() {
   const filteredItems = useMemo(() => {
     const q = search.trim().toLowerCase();
     if (!q) return activeCategory.items;
-    return activeCategory.items.filter((item) =>
-      item.name.toLowerCase().includes(q)
-    );
+    return activeCategory.items.filter((item) => item.name.toLowerCase().includes(q));
   }, [activeCategory, search]);
 
   function selectCategory(id: string) {
@@ -145,36 +141,43 @@ export default function MenuClient() {
 
   return (
     <div className="min-h-screen bg-brand-cream flex flex-col">
-
       {/* ── Sticky header + category bar ── */}
       <div className="sticky top-0 z-20 bg-brand-black shadow-lg">
-
         {/* Header */}
-        <div className="max-w-2xl mx-auto px-4 pt-4 pb-3 flex items-center justify-between">
+        <div className="mx-auto px-4 pt-4 pb-3 flex items-center justify-between">
           <div>
-            <div className="text-brand-green font-bold text-2xl tracking-tight leading-none" style={{ fontFamily: "var(--font-jost)" }}>
-              Mr. Rollo
-            </div>
-            <div className="text-white/40 text-[11px] mt-0.5 tracking-widest uppercase font-light">
-              Naturalnie dla Ciebie
-            </div>
+            <Image
+              src="/mrrollo.png"
+              alt="Mr. Rollo"
+              width={48}
+              height={48}
+              className="object-contain"
+            />
           </div>
 
           {/* Search */}
           <div className="relative">
             <svg
               className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30 pointer-events-none"
-              width="14" height="14" viewBox="0 0 16 16" fill="none"
+              width="14"
+              height="14"
+              viewBox="0 0 16 16"
+              fill="none"
             >
               <circle cx="7" cy="7" r="5" stroke="currentColor" strokeWidth="1.5" />
-              <path d="M11 11L14 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+              <path
+                d="M11 11L14 14"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
             </svg>
             <input
               type="search"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Szukaj…"
-              className="bg-white/10 text-white placeholder-white/30 text-sm rounded-xl pl-9 pr-3 py-2 outline-none focus:bg-white/20 transition-colors w-36"
+              className="bg-white/10 text-white placeholder-white/30 text-sm rounded-xl pl-9 pr-3 py-2 outline-none focus:bg-white/20 transition-colors w-full"
             />
           </div>
         </div>
@@ -197,7 +200,6 @@ export default function MenuClient() {
 
       {/* ── Items list ── */}
       <main className="flex-1 max-w-2xl w-full mx-auto px-4 py-4 pb-12">
-
         {/* Category heading */}
         <div className="flex items-baseline justify-between mb-3">
           <h1 className="text-lg font-semibold text-brand-black">{activeCategory.name}</h1>
@@ -208,7 +210,9 @@ export default function MenuClient() {
 
         {/* Diet legend for this category */}
         {(() => {
-          const tagsInView = [...new Set(filteredItems.map((i) => i.diet).filter(Boolean) as string[])];
+          const tagsInView = [
+            ...new Set(filteredItems.map((i) => i.diet).filter(Boolean) as string[]),
+          ];
           if (tagsInView.length === 0) return null;
           return (
             <div className="flex flex-wrap gap-1.5 mb-4">
