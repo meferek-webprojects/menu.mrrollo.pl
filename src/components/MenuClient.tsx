@@ -94,7 +94,7 @@ function ItemCard({ item }: { item: MenuItem }) {
   const showImage = item.hasPhoto && !imgError;
 
   return (
-    <li className="flex items-center gap-3 bg-white rounded-2xl px-4 py-3 shadow-sm">
+    <li className="flex items-center gap-3 bg-white rounded-2xl px-4 py-3 shadow-sm min-h-24">
       {showImage && (
         <div className="relative shrink-0 w-16 h-16 rounded-xl overflow-hidden bg-gray-50">
           <Image
