@@ -8,11 +8,14 @@
   --color-brand-black: #231f20;
   --color-brand-cream: #f7f7f2;
 
-  --color-diet-vege: #bbd173;
-  --color-diet-wegan: #5d9b42;
-  --color-diet-fit: #efed6e;
-  --color-diet-keto: #87d0cc;
-  --color-diet-lowig: #f3abcd;
+  /* Diet badge colors — brandbook 2026 */
+  --color-diet-miesna: #dda79e;
+  --color-diet-vege:   #bbd173;
+  --color-diet-vegep:  #fad5c7;
+  --color-diet-wegan:  #5d9b42;
+  --color-diet-fit:    #efed6e;
+  --color-diet-keto:   #87d0cc;
+  --color-diet-lowig:  #f3abcd;
 
   --font-sans: var(--font-jost), var(--font-open-sans), system-ui, sans-serif;
 }
@@ -29,9 +32,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1917;
-    --foreground: #f0f0ea;
-  }
+/* Hide scrollbars while keeping scroll functionality */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
