@@ -8,439 +8,658 @@
           "id": "1098",
           "name": "Sałatka z kurczakiem i makaronem udon w sosie teriyaki",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1103",
           "name": "Sałatka Premium z makaronem udon i filetem z kurczaka",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1443",
           "name": "Sałatka jarzynowa",
           "diet": "VEGE",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1468",
           "name": "Vege sałatka z humusem, fasolą edamame, klopsami i komosą ryżową",
           "diet": "VEGE",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1484",
           "name": "Sałatka azjatycka z wieprzowiną",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1569",
           "name": "Sałatka z kuskusem, krewetkami i mango",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1585",
           "name": "Oriental Chicken Bowl z makaronem razowym",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1603",
           "name": "Sałatka Surimi Mała",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1604",
           "name": "Sałatka Ryżowa z Kurczakiem",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1607",
           "name": "Sałatka z surimi duża z fasolą",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1634",
           "name": "Tuńczyk na makaronie razowym z mozzarellą i oliwkami",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1642",
           "name": "Sałatka z polędwiczką, camembertem i żurawiną",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1642D",
           "name": "Sałatka z polędwiczką,  serem blue i żurawiną",
           "diet": "MIĘSNA",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1643",
           "name": "Misa VEGE z kaszą gryczaną, cieciorką i warzywami",
           "diet": "VEGE",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1652",
           "name": "KETO Sałatka Cezar",
           "diet": "KETO",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1685",
           "name": "Sałatka z łososiem na kaszy kuskus z mango i warzywami",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1686",
           "name": "Sałatka z tuńczykiem na kaszy bulgur z jajkiem i warzywami",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1700",
           "name": "Misa Healthy z kuskusem, warzywami i sosem ogrodowym",
           "diet": "VEGE",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1701",
           "name": "FIT Sałatka z kuskusem i orzechami",
           "diet": "FIT",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1702",
           "name": "Sałatka z kurczakiem, mango i prażoną cieciorką",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1703",
           "name": "Misa Buddy z kurczakiem",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1706",
           "name": "Sałatka z krewetkami i mango na makaronie razowym",
           "diet": "VEGE+",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1707",
           "name": "Sałatka z kurczakiem, burakiem  i grzankami",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1708",
           "name": "Sałatka z cieciorką i komosą ryżową",
           "diet": "WEGAN",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1711",
           "name": "KETO Sałatka z tuńczykiem i czerwoną kapustą",
           "diet": "KETO",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1712",
           "name": "Sałatka z kurczakiem na kaszy kuskus z brzoskwinią",
           "diet": "MIĘSNA",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1713",
           "name": "Sałatka orientalna z wątróbką i mango",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1718",
           "name": "Sałatka z kurczakiem i brzoskwinią na makaronie razowym",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1719",
           "name": "Sałatka z kurczakiem, kaszą kuskus, melonem i brzoskwinią",
           "diet": "MIĘSNA",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1721",
           "name": "FIT Sałatka z twarożkiem i warzywami",
           "diet": "FIT",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1722",
           "name": "Sałatka z tuńczykiem, mango i ryżem dwukolorowym",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1723",
           "name": "Azjatycka sałatka z pierożkami Gyoza",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1725",
           "name": "Sałatka z panierowanymi krewetkami i cukinią na makaronie ryżowym",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1726",
           "name": "Sałatka letnia z pomarańczą, burakiem i mango",
           "diet": "VEGE",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1727",
           "name": "Sałatka z Kurczakiem duża (PREMIUM)",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1728",
           "name": "Sałatka z kurczakiem na makaronie razowym",
           "diet": "MIĘSNA",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1729",
           "name": "Sałatka z pieczonymi batatami i komosą ryżową",
           "diet": "VEGE",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1730",
           "name": "Sałatka z wątróbką,brzoskwinią i granatem",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1730S",
           "name": "Sałatka z wątróbką, truskawkami i granatem",
           "diet": "MIĘSNA",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1734",
           "name": "Sałatka z kurczakiem, brzoskwinią i żurawiną na makaronie razowym",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1735",
           "name": "Sałatka z łososiem, warzywami, kukurydzą i fetą",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1735S",
           "name": "Sałatka z tuńczykiem, warzywami, kukurydzą i fetą",
           "diet": "VEGE+",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1736",
           "name": "KETO Sałatka z kurczakiem i serem grilowym",
           "diet": "KETO",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1741",
           "name": "Sałatka z tuńczykiem na makaronie razowym",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1742",
           "name": "Sałatka z tuńczykiem, rucolą, kaszą pęczak i soczewicą",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1743",
           "name": "Sałatka z tuńczykiem, kaszą pęczak, szpinakiem i soczewicą",
           "diet": "VEGE+",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1748",
           "name": "Sałatka z kurczakiem, rukolą i kiełkami",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1751",
           "name": "Sałatka z kuskusem, łososiem i mango",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1753",
           "name": "Sałatka z polędwiczką z kurczaka z burakiem i fetą",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1755",
           "name": "Sałatka z jajkiem, łososiem i fasolą szparagową",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1755S",
           "name": "Sałatka z jajkiem, łososiem i szparagami",
           "diet": "VEGE+",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1757",
           "name": "Sałatka z gruszką, serem pleśniowym i orzechami",
           "diet": "VEGE",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1758",
           "name": "Sałatka z truskawką, serem pleśniowym i orzechami",
           "diet": "VEGE",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1760",
           "name": "Sałatka azjatycka z wegańskim mielonym",
           "diet": "WEGAN",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1761",
           "name": "Sałatka tortellini z suszonymi pomidorami i serem blue",
           "diet": "VEGE",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1763",
           "name": "Sałatka z sezamowymi nuggetsami z fasolką i prażoną ciecierzycą",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1764",
           "name": "FIT Sałatka z kurczakiem, komosą ryżową i humusem",
           "diet": "FIT",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1771",
           "name": "FIT Sałatka z tuńczykiem, brokułem i jajkiem",
           "diet": "FIT",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1772",
           "name": "KETO Sałatka gyros z kurczakiem i boczkiem",
           "diet": "KETO",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1773",
           "name": "Sałatka z melonem i cukinią na makaronie razowym",
           "diet": "VEGE",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1774",
           "name": "Vege Bowl z klopsikami i grzybami shimej na kaszy gryczanej",
           "diet": "VEGE",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1775",
           "name": "Sałatka z buraczkami i kozim serem",
           "diet": "VEGE",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1776",
           "name": "Jesienna sałatka z dynią i tuńczykiem na makaronie razowym",
           "diet": "VEGE+",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1778",
           "name": "KETO Sałatka Nicejska z tuńczykiem i jajkiem",
           "diet": "KETO",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1798",
           "name": "Sałatka grecka",
           "diet": "VEGE",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1941",
           "name": "PREMIUM Sałatka z piersią kurczaka w Panco",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1942",
           "name": "Sałatka z łososiem, fasolką edamame, grzybami shimeji z makaronem razowym",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1943",
           "name": "Sałatka z tuńczykiem, kaszą bulgur i mango",
           "diet": "VEGE+",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1944",
           "name": "FIT  bowl z kurczakiem, batatem, humusem i warzywami chrupkimi",
           "diet": "FIT",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1945",
           "name": "FIT  bowl z tofu, komosą ryżową, burakiem i szpinakiem",
           "diet": "FIT",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "1954",
           "name": "Sałatka z tuńczykiem i mango na makaronie razowym",
           "diet": "VEGE+",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "2126",
           "name": "Sałatka meksykańska z wieprzowiną i czerwoną fasolą",
           "diet": "MIĘSNA",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         },
         {
           "id": "2200",
           "name": "KETO Sałatka z tuńczykiem i mozzarellą",
           "diet": "KETO",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SAŁATKA",
+          "price": null,
+          "new": false
         }
       ]
     },
@@ -452,79 +671,118 @@
           "id": "1270",
           "name": "Kokosowa Princessa owsianka białkowa",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1337",
           "name": "Owsianka z jabłkiem i cynamonem",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1367",
           "name": "WEGAN Owsianka z nasionami chia",
           "diet": "WEGAN",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1368",
           "name": "WEGAN Jaglanka z masłem orzechowym",
           "diet": "WEGAN",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1386",
           "name": "Jaglanka czekoladowa z owocami, orzechami i płatkami kokosa",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1387",
           "name": "Jaglanka truskawkowa z owocami, orzechami i płatkami kokosa",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1395",
           "name": "WEGAN Owsianka dyniowa",
           "diet": "WEGAN",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1415",
           "name": "WEGAN Owsianka z musem mango",
           "diet": "WEGAN",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1445",
           "name": "Jaglanka czekoladowa z bakaliami",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1828",
           "name": "Owsianka bez laktozy z nasionami chia",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1843",
           "name": "Owsianka dyniowa na mleku kokosowym z owocami",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1848",
           "name": "Owsianka dyniowa na mleku bez laktozy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2223",
           "name": "Jaglanka na maśle orzechowym z chili",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         }
       ]
     },
@@ -536,49 +794,73 @@
           "id": "1272",
           "name": "Mus śliwkowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1339",
           "name": "Mus brzoskwiniowo-bananowy",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1401",
           "name": "Mus mango",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1402",
           "name": "Mus malinowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1403",
           "name": "Mus truskawkowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1410",
           "name": "Mango Lassi z owocami",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2218",
           "name": "MUS czekolado-orzechowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2266",
           "name": "Mus z jabłkiem prażonym",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         }
       ]
     },
@@ -590,103 +872,154 @@
           "id": "1378",
           "name": "Tapioka czekoladowa",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1385",
           "name": "PREMIUM Pudding z tapioki z owocami",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1389",
           "name": "Pudding z tapioki z musem mango i marukają",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1413",
           "name": "Tapioka Karmelowa",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1414",
           "name": "Pudding z zielonej tapioki z serkiem pomarańczowym (tymczasowo biała tapioka)",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1430",
           "name": "Kokosowy pudding z nasionami chia",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2224",
           "name": "Tapioka pistacjowa (tymczasowo z białą tapioką)",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2225",
           "name": "Tapioka kokosowa",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2226",
           "name": "Tapioka truskawkowa",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2248",
           "name": "Tapioka pomarańczowa",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2290",
           "name": "WEGAN Pudding z zielonej tapioki z owocami (tymczasowo biała tapioka)",
           "diet": "WEGAN",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1365",
           "name": "WEGAN Kokosowy puding z nasionami chia na mleku sojowym",
           "diet": "WEGAN",
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1406",
           "name": "Deser chia z mango",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1411",
           "name": "Sernikowa chia",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1417",
           "name": "Mus z pomarańczowym chia",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2249",
           "name": "Zielone chia z brzoskwinią",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2251",
           "name": "Truskawkowa chia",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         }
       ]
     },
@@ -698,79 +1031,118 @@
           "id": "1363",
           "name": "Naleśniki truskawkowe",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1364",
           "name": "Naleśniki z cynamonem i jabłkami",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1369",
           "name": "Zielone nalesniki z owocami",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1371",
           "name": "Naleśniki kokosowe",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1388",
           "name": "Naleśniki pomarańczowe",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1405",
           "name": "KETO Naleśniki czekoladowe",
           "diet": "KETO",
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1412",
           "name": "Naleśniki z serkiem",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1416",
           "name": "Naleśniki czekoladowo-bananowe",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1438",
           "name": "Naleśniki czekoladowe z twarożkiem",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1496",
           "name": "Naleśniki szpinakowe z owocami",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1497",
           "name": "Nalesniki z mango i maracują",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1869",
           "name": "Naleśniki z kremem orzechowo-kakaowym",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1878",
           "name": "Naleśniki z serkiem i powidłami śliwkowymi",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         }
       ]
     },
@@ -782,223 +1154,334 @@
           "id": "1017",
           "name": "(NOWOŚĆ) Deser walentynkowy - truskawkowe red velvet",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1271",
           "name": "Deser czekoladowo śliwkowy z musem palone masło",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1340",
           "name": "Deser czekoladowo-miętowy",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1341",
           "name": "Deser a'la Snickers",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1342",
           "name": "Pomarańczowa chmurka",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1343",
           "name": "Deser kakaowo - wiśniowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1373",
           "name": "Sernik malinowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1374",
           "name": "Deser pomarańczowo-czekoladowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1376",
           "name": "Deser kawowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1377",
           "name": "Koktail egzotyczny",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1379",
           "name": "Tiramisu malinowo-jagodowe",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1383",
           "name": "Deser piernikowy",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1393",
           "name": "Deser kakaowo-bananowy",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1394",
           "name": "Deser marchewkowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1400",
           "name": "Deser Gajowego",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1408",
           "name": "Sernik na zimno",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1409",
           "name": "Deser oreo",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1418",
           "name": "Bananowiec",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1419",
           "name": "Karpatka",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1421",
           "name": "Deserek truskawka pod chmurką",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1439",
           "name": "Kopiec Kreta",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1440",
           "name": "Deser kokosowy z krakersami",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1446",
           "name": "Serniczek Mango",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1447",
           "name": "Deserek mango z bezą",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1745",
           "name": "Tiramisu pistacjowe",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1895",
           "name": "Deser kakaowy z galaretką i delicją",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1927",
           "name": "Deser winogronowy",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1928",
           "name": "Lemon velvet",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "1952",
           "name": "Deser Cytrynka",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2219",
           "name": "Deserek Kopiec Kreta",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2220",
           "name": "Deserek Gruszka",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2221",
           "name": "Deserek Truskawka z galaretką",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2247",
           "name": "Szarlotka",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2250",
           "name": "Krówka",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2284",
           "name": "Carmel Love",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2296",
           "name": "Deser Amore",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         },
         {
           "id": "2297",
           "name": "Deser śliwkowo-czekoladowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
         }
       ]
     },
@@ -1010,205 +1493,307 @@
           "id": "1391",
           "name": "Napój jabłko, mango, marakuja",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1420",
           "name": "Lemoniada pomarańczowa",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1422",
           "name": "Smoothie ŻÓŁTY detoks",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1423",
           "name": "Smoothie CZERWONY detoks",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1424",
           "name": "Smoothie ZIELONY detoks",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1425",
           "name": "Siła antyoksydantów",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1426",
           "name": "Witalna moc",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1427",
           "name": "Rajska energia",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1428",
           "name": "Naturalna odporność",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1431",
           "name": "Słodkie orzeźwienie",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1432",
           "name": "Zdrowa cera",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1433",
           "name": "Źródło młodości",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1434",
           "name": "Chwila relaksu",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1435",
           "name": "Płaski brzuch",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1436",
           "name": "Naturalna siła",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1437",
           "name": "Mocne serce",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1449",
           "name": "Lemoniada cytrynowa",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2203",
           "name": "Rajska energia MAŁY",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2204",
           "name": "Naturalna odporność MAŁY",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2205",
           "name": "Słodkie orzeźwienie MAŁY",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2206",
           "name": "Zdrowa cera MAŁY",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2207",
           "name": "Źródło młodości MAŁY",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2208",
           "name": "Chwila relaksu MAŁY",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2209",
           "name": "Płaski brzuch MAŁY",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2210",
           "name": "Naturalna siła MAŁY",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2211",
           "name": "Mocne serce MAŁY",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2301",
           "name": "Siła antyoksydantów MAŁY",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2302",
           "name": "Witalna moc MAŁY",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1573",
           "name": "Koktail waniliowo-truskawkowy",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "1000",
           "name": "Bombilla czarna",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "2000",
           "name": "Bombilla czerwona",
           "diet": null,
-          "hasPhoto": false
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "3050",
           "name": "Bubble Bob Mango",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "3051",
           "name": "Bubble Bob Truskawka",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         },
         {
           "id": "3052",
           "name": "Bubble Bob Brzoskwinia",
           "diet": null,
-          "hasPhoto": true
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
         }
       ]
     }
