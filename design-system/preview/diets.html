@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Diet colors</title>
+<style>
+  body { padding: 20px; }
+  .wrap { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+  .card {
+    border-radius: 14px;
+    padding: 12px 10px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--mr-black);
+    position: relative;
+    overflow: hidden;
+  }
+  .card .name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.1;
+  }
+  .card .hex {
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 9px;
+    font-weight: 600;
+    opacity: 0.7;
+  }
+  .card img {
+    width: 48px; height: 48px;
+    align-self: flex-end;
+    filter: invert(10%);
+    opacity: 0.85;
+  }
+  h3 { font-family: var(--font-display); font-weight: 600; font-size: 13px; margin-bottom: 10px; letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+<h3>7 diet · każda ma swój kolor i ikonę</h3>
+<div class="wrap">
+  <div class="card" style="background:#DDA79E">
+    <div><div class="name">Z Mięsem</div></div>
+    <img src="../assets/icons/chicken-leg.svg" alt="">
+    <div class="hex">#DDA79E</div>
+  </div>
+  <div class="card" style="background:#BAD173">
+    <div><div class="name">Vege</div></div>
+    <img src="../assets/icons/vege.svg" alt="">
+    <div class="hex">#BAD173</div>
+  </div>
+  <div class="card" style="background:#71B783">
+    <div><div class="name">Vege+</div></div>
+    <img src="../assets/icons/fish.svg" alt="">
+    <div class="hex">#71B783</div>
+  </div>
+  <div class="card" style="background:#93D0B4">
+    <div><div class="name">Wegan</div></div>
+    <img src="../assets/icons/strawberry.svg" alt="">
+    <div class="hex">#93D0B4</div>
+  </div>
+  <div class="card" style="background:#F3ABCD">
+    <div><div class="name">Low IG</div></div>
+    <img src="../assets/icons/low-ig.svg" alt="">
+    <div class="hex">#F3ABCD</div>
+  </div>
+  <div class="card" style="background:#86D0CC">
+    <div><div class="name">Keto</div></div>
+    <img src="../assets/icons/keto.svg" alt="">
+    <div class="hex">#86D0CC</div>
+  </div>
+  <div class="card" style="background:#F0ED6E">
+    <div><div class="name">Fit</div></div>
+    <img src="../assets/icons/strawberry.svg" alt="">
+    <div class="hex">#F0ED6E</div>
+  </div>
+</div>
+</body>
+</html>

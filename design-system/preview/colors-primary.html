@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Primary colors</title>
+<style>
+  body { padding: 20px; }
+  .wrap { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .sw {
+    border-radius: 16px;
+    height: 170px;
+    padding: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sw .name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+  .sw .role {
+    font-family: var(--font-body);
+    font-size: 11px;
+    opacity: 0.72;
+  }
+  .sw .hex {
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .green { background: var(--mr-green); color: var(--mr-black); }
+  .orange { background: var(--mr-orange); color: #fff; }
+  .black { background: var(--mr-black); color: #fff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="sw green">
+    <div>
+      <div class="name">Główny zielony</div>
+      <div class="role">primary · świeże, naturalne</div>
+    </div>
+    <div class="hex">#C6D359</div>
+  </div>
+  <div class="sw orange">
+    <div>
+      <div class="name">Pomarańcz</div>
+      <div class="role">accent only · nigdy w logo</div>
+    </div>
+    <div class="hex">#EF522D</div>
+  </div>
+  <div class="sw black">
+    <div>
+      <div class="name">Neutralna czerń</div>
+      <div class="role">tekst i podpora</div>
+    </div>
+    <div class="hex">#231F20</div>
+  </div>
+</div>
+</body>
+</html>

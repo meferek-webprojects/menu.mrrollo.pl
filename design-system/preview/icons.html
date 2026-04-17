@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Icons</title>
+<style>
+  body { padding: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+  .i {
+    aspect-ratio: 1;
+    border: 1px solid var(--neutral-100);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px;
+  }
+  .i img { width: 52px; height: 52px; }
+  .i span { font-family: 'Jost', sans-serif; font-size: 10px; color: var(--neutral-500); }
+  h3 { font-family: 'Jost', sans-serif; font-weight: 600; font-size: 13px; margin-bottom: 10px; letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+<h3>Ikony diet · line-art, ręcznie rysowane</h3>
+<div class="grid">
+  <div class="i"><img src="../assets/icons/chicken-leg.svg"><span>udko</span></div>
+  <div class="i"><img src="../assets/icons/vege.svg"><span>vege</span></div>
+  <div class="i"><img src="../assets/icons/fish.svg"><span>ryba</span></div>
+  <div class="i"><img src="../assets/icons/strawberry.svg"><span>truskawka</span></div>
+  <div class="i"><img src="../assets/icons/low-ig.svg"><span>niski IG</span></div>
+  <div class="i"><img src="../assets/icons/keto.svg"><span>keto</span></div>
+  <div class="i"><img src="../assets/icons/mustache.svg"><span>wąs</span></div>
+</div>
+</body>
+</html>

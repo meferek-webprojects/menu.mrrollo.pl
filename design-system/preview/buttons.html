@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Buttons</title>
+<style>
+  body { padding: 22px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+  .btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    border: 0;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    transition: transform 120ms var(--ease-out), background 120ms, box-shadow 120ms;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn.primary { background: var(--mr-black); color: #fff; }
+  .btn.secondary { background: var(--mr-green); color: var(--mr-black); }
+  .btn.accent { background: var(--mr-orange); color: #fff; }
+  .btn.outline { background: transparent; color: var(--mr-black); border: 2px solid var(--mr-black); }
+  .btn.ghost { background: transparent; color: var(--mr-black); }
+  .btn.sm { padding: 8px 14px; font-size: 13px; }
+  .btn.lg { padding: 14px 26px; font-size: 17px; }
+  .btn:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+  .lbl { font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--neutral-400); margin-bottom: 6px; }
+</style>
+</head>
+<body>
+  <div class="lbl">Warianty</div>
+  <div class="row">
+    <button class="btn primary">Zamów teraz</button>
+    <button class="btn secondary">Zobacz menu</button>
+    <button class="btn accent">Nowość</button>
+    <button class="btn outline">Szczegóły</button>
+    <button class="btn ghost">Anuluj</button>
+  </div>
+  <div class="lbl">Rozmiary</div>
+  <div class="row">
+    <button class="btn primary sm">Mały</button>
+    <button class="btn primary">Średni</button>
+    <button class="btn primary lg">Duży · +7 dni</button>
+  </div>
+</body>
+</html>

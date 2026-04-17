@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Form fields</title>
+<style>
+  body { padding: 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  label { display: block; font-family: 'Jost', sans-serif; font-size: 12px; font-weight: 600; color: var(--neutral-700); margin-bottom: 6px; }
+  .input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1.5px solid var(--neutral-200);
+    background: #fff;
+    width: 100%;
+    color: var(--mr-black);
+    transition: border 120ms, box-shadow 120ms;
+  }
+  .input::placeholder { color: var(--neutral-400); }
+  .input:focus { outline: none; border-color: var(--mr-green); box-shadow: 0 0 0 3px rgba(198, 211, 89, 0.35); }
+  .help { font-family: 'Open Sans', sans-serif; font-size: 11px; color: var(--neutral-500); margin-top: 4px; }
+  .err { color: var(--salmon-400); }
+  .toggle {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: 'Open Sans', sans-serif; font-size: 13px; color: var(--mr-black);
+  }
+  .sw { width: 40px; height: 24px; background: var(--mr-green); border-radius: 999px; position: relative; }
+  .sw::after { content:''; position:absolute; top:3px; left:19px; width:18px; height:18px; background:#fff; border-radius:50%; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
+  .chip {
+    display:inline-flex; gap: 6px; padding: 7px 14px; border-radius: 999px; font-family: 'Jost', sans-serif; font-size: 12px; font-weight: 600;
+    border: 1.5px solid var(--neutral-200); background: #fff; color: var(--mr-black);
+  }
+  .chip.on { background: var(--mr-black); color: #fff; border-color: var(--mr-black); }
+</style>
+</head>
+<body>
+  <div>
+    <label>Imię</label>
+    <input class="input" value="Anna">
+    <div class="help">Jak mamy się do Ciebie zwracać?</div>
+  </div>
+  <div>
+    <label>Kod pocztowy</label>
+    <input class="input" placeholder="00-000">
+  </div>
+  <div>
+    <label>Błąd</label>
+    <input class="input" value="anna@" style="border-color: var(--salmon-400); box-shadow: 0 0 0 3px rgba(184,68,56,0.18)">
+    <div class="help err">Wpisz poprawny adres e-mail.</div>
+  </div>
+  <div>
+    <label>Powiadomienia SMS</label>
+    <div class="toggle"><span class="sw"></span>Przypomnij mi o dostawie</div>
+  </div>
+  <div style="grid-column: span 2">
+    <label>Wybierz kaloraż</label>
+    <div style="display:flex; gap:8px; flex-wrap:wrap">
+      <span class="chip">1200</span>
+      <span class="chip">1500</span>
+      <span class="chip on">1800 kcal</span>
+      <span class="chip">2000</span>
+      <span class="chip">2500</span>
+    </div>
+  </div>
+</body>
+</html>

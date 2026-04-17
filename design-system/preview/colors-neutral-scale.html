@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Neutral scale</title>
+<style>
+  body { padding: 20px; }
+  .scale { display: grid; grid-template-columns: repeat(9, 1fr); gap: 4px; }
+  .step { aspect-ratio: 0.7; border-radius: 10px; position: relative; display: flex; flex-direction: column; justify-content: space-between; padding: 8px 6px; }
+  .step .n { font-family: var(--font-display); font-size: 10px; font-weight: 600; }
+  .step .h { font-family: ui-monospace, Menlo, monospace; font-size: 8px; font-weight: 600; letter-spacing: -0.02em; }
+  .dark .n, .dark .h { color: rgba(255,255,255,0.92); }
+  .light .n, .light .h { color: rgba(35,31,32,0.88); }
+  .star { position: absolute; top: 6px; right: 6px; font-size: 10px; }
+  h3 { font-family: var(--font-display); font-weight: 600; font-size: 13px; color: var(--mr-black); margin-bottom: 10px; letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+<h3>Neutralny · tekst, tła, obramowania</h3>
+<div class="scale">
+  <div class="step light" style="background:#F7F6F6; border:1px solid #E8E6E6"><div class="n">50</div><div class="h">F7F6F6</div></div>
+  <div class="step light" style="background:#E8E6E6"><div class="n">100</div><div class="h">E8E6E6</div></div>
+  <div class="step light" style="background:#D2CFCF"><div class="n">200</div><div class="h">D2CFCF</div></div>
+  <div class="step light" style="background:#B3AFAF"><div class="n">300</div><div class="h">B3AFAF</div></div>
+  <div class="step dark" style="background:#898485"><div class="n">400</div><div class="h">898485</div></div>
+  <div class="step dark" style="background:#635F60"><div class="n">500</div><div class="h">635F60</div></div>
+  <div class="step dark" style="background:#4A4647"><div class="n">600</div><div class="h">4A4647</div></div>
+  <div class="step dark" style="background:#373334"><div class="n">700</div><div class="h">373334</div></div>
+  <div class="step dark" style="background:#231F20"><div class="n">900</div><div class="h">231F20</div><span class="star">★</span></div>
+</div>
+</body>
+</html>

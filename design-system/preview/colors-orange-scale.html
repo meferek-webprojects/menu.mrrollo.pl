@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Orange scale</title>
+<style>
+  body { padding: 20px; }
+  .scale { display: grid; grid-template-columns: repeat(9, 1fr); gap: 4px; }
+  .step { aspect-ratio: 0.7; border-radius: 10px; position: relative; display: flex; flex-direction: column; justify-content: space-between; padding: 8px 6px; }
+  .step .n { font-family: var(--font-display); font-size: 10px; font-weight: 600; }
+  .step .h { font-family: ui-monospace, Menlo, monospace; font-size: 8px; font-weight: 600; letter-spacing: -0.02em; }
+  .dark .n, .dark .h { color: rgba(255,255,255,0.92); }
+  .light .n, .light .h { color: rgba(35,31,32,0.88); }
+  .star { position: absolute; top: 6px; right: 6px; font-size: 10px; }
+  h3 { font-family: var(--font-display); font-weight: 600; font-size: 13px; color: var(--mr-black); margin-bottom: 10px; letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+<h3>Pomarańcz · H 14 · S 84% · accent only</h3>
+<div class="scale">
+  <div class="step light" style="background:#FDF0EB"><div class="n">50</div><div class="h">FDF0EB</div></div>
+  <div class="step light" style="background:#FAD5C7"><div class="n">100</div><div class="h">FAD5C7</div></div>
+  <div class="step light" style="background:#F5A98E"><div class="n">200</div><div class="h">F5A98E</div></div>
+  <div class="step dark" style="background:#ED8149"><div class="n">300</div><div class="h">ED8149</div><span class="star">★</span></div>
+  <div class="step dark" style="background:#EF522D"><div class="n">400</div><div class="h">EF522D</div><span class="star">★</span></div>
+  <div class="step dark" style="background:#D43E1A"><div class="n">500</div><div class="h">D43E1A</div></div>
+  <div class="step dark" style="background:#AA3014"><div class="n">600</div><div class="h">AA3014</div></div>
+  <div class="step dark" style="background:#7E220E"><div class="n">700</div><div class="h">7E220E</div></div>
+  <div class="step dark" style="background:#4A1408"><div class="n">900</div><div class="h">4A1408</div></div>
+</div>
+</body>
+</html>

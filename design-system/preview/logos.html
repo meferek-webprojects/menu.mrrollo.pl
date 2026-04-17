@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Logos</title>
+<style>
+  body { padding: 0; }
+  .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    height: 280px;
+  }
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .cell img { width: 170px; height: 170px; display: block; }
+  .cell .tag {
+    position: absolute;
+    top: 14px; left: 14px;
+    font-family: var(--font-display);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.88);
+    color: var(--mr-black);
+  }
+  .cell.inv .tag { background: rgba(35,31,32,0.88); color: var(--mr-white); }
+  .one { background: var(--mr-black); }
+  .two { background: var(--mr-green); }
+  .three { background: var(--mr-cream); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="cell one inv">
+    <span class="tag">Główny · primary</span>
+    <img src="../assets/logos/mr-rollo-green.png" alt="Mr. Rollo" style="background:transparent; mix-blend-mode: normal;">
+  </div>
+  <div class="cell two">
+    <span class="tag">Wariant 2</span>
+    <img src="../assets/logos/mr-rollo-black.png" alt="Mr. Rollo">
+  </div>
+  <div class="cell three">
+    <span class="tag">Wariant 3</span>
+    <img src="../assets/logos/mr-rollo-black.png" alt="Mr. Rollo">
+  </div>
+</div>
+</body>
+</html>

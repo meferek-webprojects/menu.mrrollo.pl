@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Mr. Rollo — Naturalnie dla Ciebie (print)</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: #fff; color: var(--mr-black); font-family: var(--font-body); }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  button:hover { filter: none; }
+  button { cursor: default; }
+  img { max-width: 100%; }
+
+  @page { size: A4 portrait; margin: 0; }
+
+  @media print {
+    html, body { background: #fff; }
+    /* Fit to page width ~ 794px at 96dpi; our layout is 1280 */
+    #root { transform-origin: top left; transform: scale(0.62); width: 1280px; }
+    section, header, footer { break-inside: avoid; }
+    /* Page breaks between big sections */
+    section + section { break-before: page; }
+    header { break-after: avoid; }
+    footer { break-before: page; }
+  }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" src="Components.jsx"></script>
+<script type="text/babel" src="Sections.jsx"></script>
+<script type="text/babel">
+const { useState } = React;
+
+function App() {
+  const [diet, setDiet] = useState('Vege');
+  return (
+    <div>
+      <Header active="Menu" cartCount={3} />
+      <HeroSection />
+      <DietsSection active={diet} setActive={setDiet} />
+      <MenuSection />
+      <HowItWorks />
+      <CtaSection />
+      <Footer />
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+// Auto-print once fonts + images are ready
+(async () => {
+  try {
+    if (document.fonts && document.fonts.ready) await document.fonts.ready;
+    const imgs = Array.from(document.images);
+    await Promise.all(imgs.map(img => img.complete ? null : new Promise(r => {
+      img.onload = img.onerror = r;
+    })));
+    await new Promise(r => setTimeout(r, 700));
+    window.print();
+  } catch (e) { console.error(e); }
+})();
+</script>
+</body>
+</html>

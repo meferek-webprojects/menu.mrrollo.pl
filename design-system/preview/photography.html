@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Photography</title>
+<style>
+  body { padding: 18px; }
+  .grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 8px; height: 280px; }
+  .g { overflow: hidden; border-radius: 12px; }
+  .g img { width: 100%; height: 100%; object-fit: cover; }
+  .g.big { grid-row: span 2; }
+  .cap { font-family: 'Jost', sans-serif; font-size: 11px; color: var(--neutral-500); margin-top: 8px; letter-spacing: 0.03em; }
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="g big"><img src="../assets/photos/meals-grid.jpg"></div>
+  <div class="g"><img src="../assets/photos/pasta-salmon.jpg"></div>
+  <div class="g"><img src="../assets/photos/smoothie-cup.jpg"></div>
+  <div class="g"><img src="../assets/photos/oatmeal-pumpkin.jpg"></div>
+  <div class="g"><img src="../assets/photos/chicken-potato.jpg"></div>
+</div>
+<div class="cap">Fotografia · z góry lub pod kątem · naturalne światło · neutralne tła · świeże produkty w kadrze</div>
+</body>
+</html>

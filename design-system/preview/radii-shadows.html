@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Radii & shadows</title>
+<style>
+  body { padding: 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .block { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; }
+  .tile { background: var(--mr-green); width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 600; color: var(--mr-black); }
+  .sh { width: 80px; height: 70px; background: #fff; border-radius: 14px; display:flex; align-items:center; justify-content:center; font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 600; color: var(--neutral-500); }
+  h4 { font-family: 'Jost', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--neutral-400); margin-bottom: 10px; }
+</style>
+</head>
+<body>
+  <div>
+    <h4>Radii</h4>
+    <div class="block">
+      <div class="tile" style="border-radius:4px">4</div>
+      <div class="tile" style="border-radius:8px">8</div>
+      <div class="tile" style="border-radius:12px">12</div>
+      <div class="tile" style="border-radius:20px">20</div>
+      <div class="tile" style="border-radius:28px">28</div>
+      <div class="tile" style="border-radius:999px">pill</div>
+      <div class="tile" style="border-radius:50%">coin</div>
+    </div>
+  </div>
+  <div>
+    <h4>Shadows</h4>
+    <div class="block">
+      <div class="sh" style="box-shadow: 0 1px 2px rgba(35,31,32,0.06)">xs</div>
+      <div class="sh" style="box-shadow: 0 2px 6px rgba(35,31,32,0.08)">sm</div>
+      <div class="sh" style="box-shadow: 0 6px 18px rgba(35,31,32,0.10)">md</div>
+      <div class="sh" style="box-shadow: 0 16px 40px rgba(35,31,32,0.14)">lg</div>
+      <div class="sh" style="box-shadow: 0 28px 80px rgba(35,31,32,0.18)">xl</div>
+    </div>
+  </div>
+</body>
+</html>

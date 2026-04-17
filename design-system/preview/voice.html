@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Voice & tone</title>
+<style>
+  body { padding: 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .pill {
+    padding: 14px 16px;
+    border-radius: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .do { background: #E8EFB0; color: var(--mr-black); }
+  .dont { background: #FDF0EB; color: var(--salmon-600); }
+  .lbl { font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 6px; }
+  .do .lbl { color: #697518; }
+  .dont .lbl { color: var(--salmon-500); }
+</style>
+</head>
+<body>
+  <div class="pill do">
+    <div class="lbl">✓ Róbmy</div>
+    „Świeże składniki, naturalny smak.”<br>
+    „Wybierz dietę — resztą zajmiemy się my.”<br>
+    „Zamów do wtorku, dostawa od poniedziałku.”
+  </div>
+  <div class="pill dont">
+    <div class="lbl">✗ Unikajmy</div>
+    „Zrewolucjonizuj swoje odżywianie już dziś!”<br>
+    „Innowacyjne rozwiązanie dietetyczne 4.0”<br>
+    „🔥🚀 Mega promka tylko teraz!!!”
+  </div>
+  <div class="pill" style="background:var(--neutral-50); color:var(--mr-black); grid-column: span 2">
+    <div class="lbl" style="color:var(--neutral-500)">Ton · charakter</div>
+    Krótko · zwięźle · ciepło · po ludzku · domyślnie po polsku · „Ty” a nie „Państwo” · bez emoji · bez żargonu · bez wykrzykników poza wyjątkami
+  </div>
+</body>
+</html>

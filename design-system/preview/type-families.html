@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Type families</title>
+<style>
+  body { padding: 20px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .card {
+    border: 1px solid var(--neutral-100);
+    border-radius: 14px;
+    padding: 14px 16px;
+  }
+  .lbl { font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--neutral-400); }
+  .jost { font-family: 'Jost', sans-serif; font-size: 34px; font-weight: 600; letter-spacing: -0.02em; color: var(--mr-black); }
+  .opens { font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 400; color: var(--mr-black); }
+  .caveat { font-family: 'Caveat', cursive; font-size: 44px; color: var(--mr-orange); line-height: 0.95; }
+  .custom { font-family: 'Jost', sans-serif; font-size: 28px; font-weight: 700; color: var(--mr-black); font-style: italic; }
+  .use { margin-top: 6px; font-family: 'Open Sans', sans-serif; font-size: 11px; color: var(--neutral-500); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="lbl">Jost · główny</div>
+    <div class="jost">AaBbCc 123</div>
+    <div class="use">Nagłówki, UI, przyciski · variable</div>
+  </div>
+  <div class="card">
+    <div class="lbl">Open Sans · dodatkowy</div>
+    <div class="opens">AaBbCc 123</div>
+    <div class="use">Treść, dłuższe teksty</div>
+  </div>
+  <div class="card">
+    <div class="lbl">Caveat · akcent</div>
+    <div class="caveat">Naturalnie</div>
+    <div class="use">Akcent ręczny — oszczędnie</div>
+  </div>
+  <div class="card">
+    <div class="lbl">Mr. Rollo Custom · logo</div>
+    <div class="custom">Mr. ROLLO</div>
+    <div class="use">Tylko logo · użyj obrazka ↓</div>
+  </div>
+</body>
+</html>

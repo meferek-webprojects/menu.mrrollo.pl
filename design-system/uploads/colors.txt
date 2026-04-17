@@ -1,0 +1,183 @@
+========================================
+BAZA KOLORÓW — DESIGN SYSTEM
+========================================
+
+
+--- GŁÓWNY ZIELONY (H:71 S:59%) ---
+Główny zielony 50     #F5F8DC
+Główny zielony 100    #E8EFB0
+Główny zielony 200    #D9E481
+Główny zielony 300    #CBD45B
+Główny zielony 400    #C6D359  ★ primary
+Główny zielony 500    #AEBB36
+Główny zielony 600    #8DA01F
+Główny zielony 700    #697518
+Główny zielony 900    #3E4610
+
+
+--- POMARAŃCZ (H:14 S:84%) ---
+Pomarańcz 50          #FDF0EB
+Pomarańcz 100         #FAD5C7
+Pomarańcz 200         #F5A98E
+Pomarańcz 300         #ED8149  ★ firmowy
+Pomarańcz 400         #EF522D  ★ primary
+Pomarańcz 500         #D43E1A
+Pomarańcz 600         #AA3014
+Pomarańcz 700         #7E220E
+Pomarańcz 900         #4A1408
+
+
+--- NEUTRALNY / TEKST (H:345 S:4%) ---
+Neutralny 50          #F7F6F6
+Neutralny 100         #E8E6E6
+Neutralny 200         #D2CFCF
+Neutralny 300         #B3AFAF
+Neutralny 400         #898485
+Neutralny 500         #635F60
+Neutralny 600         #4A4647
+Neutralny 700         #373334
+Neutralny 900         #231F20  ★ primary
+
+
+--- ŻÓŁTY (H:58 S:81%) ---
+Żółty 50              #FFFDF0
+Żółty 100             #FDF8C2
+Żółty 200             #F0ED6E  ★ firmowy
+Żółty 300             #E8D820
+Żółty 400             #CCB800
+Żółty 500             #A89500
+Żółty 600             #7F7100
+Żółty 700             #575000
+Żółty 900             #2C2800
+
+
+--- MORSKI / TEAL (H:177 S:47%) ---
+Morski 50             #EDFAFA
+Morski 100            #C5EEEC
+Morski 200            #86D0CC  ★ firmowy
+Morski 300            #4BBAB5
+Morski 400            #1FA8A2
+Morski 500            #118580
+Morski 600            #0A6460
+Morski 700            #064846
+Morski 900            #022422
+
+
+--- CHARTREUSE / JASNY ZIELONY (H:79 S:49%) ---
+Chartreuse 50         #F4FAE6
+Chartreuse 100        #DCF0B2
+Chartreuse 200        #BAD173  ★ firmowy
+Chartreuse 300        #96B840
+Chartreuse 400        #79A018
+Chartreuse 500        #5F8010
+Chartreuse 600        #486208
+Chartreuse 700        #334706
+Chartreuse 900        #182303
+
+
+--- SZMARAGDOWY (H:152 S:40%) ---
+Szmaragdowy 50        #EBF9F4
+Szmaragdowy 100       #C4EDE0
+Szmaragdowy 200       #93D0B4  ★ firmowy
+Szmaragdowy 300       #56B48A
+Szmaragdowy 400       #279868
+Szmaragdowy 500       #167A52
+Szmaragdowy 600       #0E5E3E
+Szmaragdowy 700       #094530
+Szmaragdowy 900       #042218
+
+
+--- TRAWIASTY / LEŚNY (H:134 S:31%) ---
+Trawiasty 50          #EEF7F1
+Trawiasty 100         #CEEBD8
+Trawiasty 200         #A8D8BA
+Trawiasty 300         #71B783  ★ firmowy
+Trawiasty 400         #4A9860
+Trawiasty 500         #357A48
+Trawiasty 600         #255C34
+Trawiasty 700         #184026
+Trawiasty 900         #0A2013
+
+
+--- ŁOSOSIOWY / CEGLASTY (H:7 S:46%) ---
+Łososiowy 50          #FDF0EF
+Łososiowy 100         #F8D8D5
+Łososiowy 200         #DDA79E  ★ firmowy
+Łososiowy 300         #CC7066
+Łososiowy 400         #B84438
+Łososiowy 500         #962E24
+Łososiowy 600         #74211A
+Łososiowy 700         #561812
+Łososiowy 900         #2A0C09
+
+
+--- NIEBIESKI (H:210 S:68%) ---
+Niebieski 50          #E8F3FD
+Niebieski 100         #C0DEFA
+Niebieski 200         #89C2F5
+Niebieski 300         #4CA3ED
+Niebieski 400         #2287E0
+Niebieski 500         #116DC4
+Niebieski 600         #0C559C
+Niebieski 700         #083D72
+Niebieski 900         #041E38
+
+
+--- RÓŻOWY / FUKSJA (H:348 S:72%) ---
+Różowy 50             #FDE8EE
+Różowy 100            #F3ABCD  ★ firmowy
+Różowy 200            #F590A8
+Różowy 300            #EE6080
+Różowy 400            #E53560
+Różowy 500            #C31E48
+Różowy 600            #9C1739
+Różowy 700            #740F2A
+Różowy 900            #3A0714
+
+
+--- PIASKOWY / BRĄZ (H:33 S:48%) ---
+Piaskowy 50           #FBF5ED
+Piaskowy 100          #F3E2C8
+Piaskowy 200          #E5C898
+Piaskowy 300          #D2A968
+Piaskowy 400          #BF8D42
+Piaskowy 500          #9E7030
+Piaskowy 600          #7C5622
+Piaskowy 700          #5C3E18
+Piaskowy 900          #2D1E0A
+
+
+--- LIMONKOWY (H:88 S:62%) ---
+Limonkowy 50          #F2FAE6
+Limonkowy 100         #D8F2B8
+Limonkowy 200         #B8E47E
+Limonkowy 300         #94D448
+Limonkowy 400         #72BC20
+Limonkowy 500         #5A9A14
+Limonkowy 600         #447A0F
+Limonkowy 700         #305A0A
+Limonkowy 900         #182C05
+
+
+========================================
+KOLORY 200 — SKRÓT
+========================================
+Główny zielony 200    #D9E481
+Pomarańcz 200         #F5A98E
+Neutralny 200         #D2CFCF
+Żółty 200             #F0ED6E
+Morski 200            #86D0CC
+Chartreuse 200        #BAD173
+Szmaragdowy 200       #93D0B4
+Trawiasty 200         #A8D8BA
+Łososiowy 200         #DDA79E
+Niebieski 200         #89C2F5
+Różowy 200            #F590A8
+Piaskowy 200          #E5C898
+Limonkowy 200         #B8E47E
+
+
+========================================
+13 rodzin × 9 stopni = 117 tokenów
+★ = kotwica (kolor oryginalny firmy)
+========================================

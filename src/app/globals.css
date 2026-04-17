@@ -1,34 +1,59 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-brand-green: #c6d359;
-  --color-brand-green-dark: #a8b43a;
-  --color-brand-green-light: #e8edb5;
-  --color-brand-orange: #ef522d;
-  --color-brand-black: #231f20;
-  --color-brand-cream: #f7f7f2;
+  /* ── Brand core ── */
+  --color-brand-green:  #C6D359;
+  --color-brand-orange: #EF522D;
+  --color-brand-black:  #231F20;
+  --color-brand-white:  #FFFFFF;
+  --color-brand-cream:  #F7F6F6;
 
-  /* Diet badge colors — brandbook 2026 */
-  --color-diet-miesna: #dda79e;
-  --color-diet-vege:   #bbd173;
-  --color-diet-vegep:  #fad5c7;
-  --color-diet-wegan:  #5d9b42;
-  --color-diet-fit:    #efed6e;
-  --color-diet-keto:   #87d0cc;
-  --color-diet-lowig:  #f3abcd;
+  /* ── Green scale ── */
+  --color-green-50:  #F5F8DC;
+  --color-green-100: #E8EFB0;
+  --color-green-200: #D9E481;
+  --color-green-300: #CBD45B;
+  --color-green-400: #C6D359;
+  --color-green-500: #AEBB36;
+  --color-green-600: #8DA01F;
+  --color-green-700: #697518;
+  --color-green-900: #3E4610;
 
-  --font-sans: var(--font-jost), var(--font-open-sans), system-ui, sans-serif;
+  /* ── Neutral scale ── */
+  --color-neutral-50:  #F7F6F6;
+  --color-neutral-100: #E8E6E6;
+  --color-neutral-200: #D2CFCF;
+  --color-neutral-300: #B3AFAF;
+  --color-neutral-400: #898485;
+  --color-neutral-500: #635F60;
+  --color-neutral-600: #4A4647;
+  --color-neutral-700: #373334;
+  --color-neutral-900: #231F20;
+
+  /* ── Diet badge colors — brandbook 2026 ── */
+  --color-diet-miesna: #DDA79E;
+  --color-diet-vege:   #BAD173;
+  --color-diet-vegep:  #71B783;
+  --color-diet-wegan:  #93D0B4;
+  --color-diet-fit:    #F0ED6E;
+  --color-diet-keto:   #86D0CC;
+  --color-diet-lowig:  #F3ABCD;
+
+  /* ── Typography — variables injected by Next.js layout ── */
+  --font-display: var(--font-jost), 'Helvetica Neue', Arial, sans-serif;
+  --font-body:    var(--font-open-sans), 'Helvetica Neue', Arial, sans-serif;
+  --font-accent:  var(--font-caveat), 'Brush Script MT', cursive;
 }
 
 :root {
-  --background: #f7f7f2;
-  --foreground: #231f20;
+  --background: #F7F6F6;
+  --foreground: #231F20;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-jost), var(--font-open-sans), system-ui, sans-serif;
+  font-family: var(--font-display);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -38,5 +63,10 @@ body {
   -ms-overflow-style: none;
 }
 .scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Search input — remove browser default styles */
+input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }

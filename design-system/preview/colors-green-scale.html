@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<title>Green scale</title>
+<style>
+  body { padding: 20px; }
+  .scale { display: grid; grid-template-columns: repeat(9, 1fr); gap: 4px; }
+  .step {
+    aspect-ratio: 0.7;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 6px;
+  }
+  .step .n {
+    font-family: var(--font-display);
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .step .h {
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  .dark .n, .dark .h { color: rgba(255,255,255,0.92); }
+  .light .n, .light .h { color: rgba(35,31,32,0.88); }
+  .star {
+    position: absolute; top: 6px; right: 6px;
+    font-size: 10px;
+  }
+  h3 { font-family: var(--font-display); font-weight: 600; font-size: 13px; color: var(--mr-black); margin-bottom: 10px; letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+<h3>Główny zielony · H 71 · S 59%</h3>
+<div class="scale">
+  <div class="step light" style="background:#F5F8DC"><div class="n">50</div><div class="h">F5F8DC</div></div>
+  <div class="step light" style="background:#E8EFB0"><div class="n">100</div><div class="h">E8EFB0</div></div>
+  <div class="step light" style="background:#D9E481"><div class="n">200</div><div class="h">D9E481</div></div>
+  <div class="step light" style="background:#CBD45B"><div class="n">300</div><div class="h">CBD45B</div></div>
+  <div class="step light" style="background:#C6D359"><div class="n">400</div><div class="h">C6D359</div><span class="star">★</span></div>
+  <div class="step light" style="background:#AEBB36"><div class="n">500</div><div class="h">AEBB36</div></div>
+  <div class="step dark" style="background:#8DA01F"><div class="n">600</div><div class="h">8DA01F</div></div>
+  <div class="step dark" style="background:#697518"><div class="n">700</div><div class="h">697518</div></div>
+  <div class="step dark" style="background:#3E4610"><div class="n">900</div><div class="h">3E4610</div></div>
+</div>
+</body>
+</html>

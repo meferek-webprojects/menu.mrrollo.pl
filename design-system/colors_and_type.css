@@ -1,0 +1,430 @@
+/* =============================================================
+   Mr. Rollo — Design Tokens
+   Rebrand 2026. Naturalnie dla Ciebie.
+   ============================================================= */
+
+/* -------- Fonts ------ */
+/* Jost + Caveat: local variable fonts (uploaded by brand owner).
+   Open Sans: Google Fonts (no brand file uploaded yet — flag if needed).
+   Mr. Rollo Custom Letters: only used in logo, which is always a PNG image. */
+
+@font-face {
+  font-family: 'Jost';
+  src: url('fonts/Jost-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url('fonts/Jost-Italic-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Caveat';
+  src: url('fonts/Caveat-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  /* ========== MAIN BRAND COLORS ========== */
+  --mr-green:       #C6D359;  /* primary — główny zielony 400 */
+  --mr-orange:      #EF522D;  /* accent ONLY — kontrastowy pomarańcz 400 */
+  --mr-black:       #231F20;  /* neutralna czerń — neutralny 900 */
+  --mr-white:       #FFFFFF;
+  --mr-cream:       #F7F6F6;  /* neutralny 50 — backgrounds */
+
+  /* ========== MAIN GREEN (H:71 S:59%) ========== */
+  --green-50:  #F5F8DC;
+  --green-100: #E8EFB0;
+  --green-200: #D9E481;
+  --green-300: #CBD45B;
+  --green-400: #C6D359;   /* ★ primary */
+  --green-500: #AEBB36;
+  --green-600: #8DA01F;
+  --green-700: #697518;
+  --green-900: #3E4610;
+
+  /* ========== ORANGE (H:14 S:84%) — accent only ========== */
+  --orange-50:  #FDF0EB;
+  --orange-100: #FAD5C7;
+  --orange-200: #F5A98E;
+  --orange-300: #ED8149;   /* ★ firmowy */
+  --orange-400: #EF522D;   /* ★ primary */
+  --orange-500: #D43E1A;
+  --orange-600: #AA3014;
+  --orange-700: #7E220E;
+  --orange-900: #4A1408;
+
+  /* ========== NEUTRAL (H:345 S:4%) ========== */
+  --neutral-50:  #F7F6F6;
+  --neutral-100: #E8E6E6;
+  --neutral-200: #D2CFCF;
+  --neutral-300: #B3AFAF;
+  --neutral-400: #898485;
+  --neutral-500: #635F60;
+  --neutral-600: #4A4647;
+  --neutral-700: #373334;
+  --neutral-900: #231F20;   /* ★ primary */
+
+  /* ========== YELLOW — Fit diet ========== */
+  --yellow-50:  #FFFDF0;
+  --yellow-100: #FDF8C2;
+  --yellow-200: #F0ED6E;   /* ★ firmowy */
+  --yellow-300: #E8D820;
+  --yellow-400: #CCB800;
+  --yellow-500: #A89500;
+  --yellow-600: #7F7100;
+  --yellow-700: #575000;
+  --yellow-900: #2C2800;
+
+  /* ========== TEAL / MORSKI — Keto diet ========== */
+  --teal-50:  #EDFAFA;
+  --teal-100: #C5EEEC;
+  --teal-200: #86D0CC;   /* ★ firmowy */
+  --teal-300: #4BBAB5;
+  --teal-400: #1FA8A2;
+  --teal-500: #118580;
+  --teal-600: #0A6460;
+  --teal-700: #064846;
+  --teal-900: #022422;
+
+  /* ========== CHARTREUSE — Vege diet ========== */
+  --chartreuse-50:  #F4FAE6;
+  --chartreuse-100: #DCF0B2;
+  --chartreuse-200: #BAD173;   /* ★ firmowy */
+  --chartreuse-300: #96B840;
+  --chartreuse-400: #79A018;
+  --chartreuse-500: #5F8010;
+  --chartreuse-600: #486208;
+  --chartreuse-700: #334706;
+  --chartreuse-900: #182303;
+
+  /* ========== EMERALD / SZMARAGDOWY — Wegan diet ========== */
+  --emerald-50:  #EBF9F4;
+  --emerald-100: #C4EDE0;
+  --emerald-200: #93D0B4;   /* ★ firmowy */
+  --emerald-300: #56B48A;
+  --emerald-400: #279868;
+  --emerald-500: #167A52;
+  --emerald-600: #0E5E3E;
+  --emerald-700: #094530;
+  --emerald-900: #042218;
+
+  /* ========== GRASS / TRAWIASTY — Vege+ diet ========== */
+  --grass-50:  #EEF7F1;
+  --grass-100: #CEEBD8;
+  --grass-200: #A8D8BA;
+  --grass-300: #71B783;   /* ★ firmowy */
+  --grass-400: #4A9860;
+  --grass-500: #357A48;
+  --grass-600: #255C34;
+  --grass-700: #184026;
+  --grass-900: #0A2013;
+
+  /* ========== SALMON / ŁOSOSIOWY — Z Mięsem diet ========== */
+  --salmon-50:  #FDF0EF;
+  --salmon-100: #F8D8D5;
+  --salmon-200: #DDA79E;   /* ★ firmowy */
+  --salmon-300: #CC7066;
+  --salmon-400: #B84438;
+  --salmon-500: #962E24;
+  --salmon-600: #74211A;
+  --salmon-700: #561812;
+  --salmon-900: #2A0C09;
+
+  /* ========== BLUE / NIEBIESKI ========== */
+  --blue-50:  #E8F3FD;
+  --blue-100: #C0DEFA;
+  --blue-200: #89C2F5;
+  --blue-300: #4CA3ED;
+  --blue-400: #2287E0;
+  --blue-500: #116DC4;
+  --blue-600: #0C559C;
+  --blue-700: #083D72;
+  --blue-900: #041E38;
+
+  /* ========== PINK / RÓŻOWY — Low IG diet ========== */
+  --pink-50:  #FDE8EE;
+  --pink-100: #F3ABCD;   /* ★ firmowy */
+  --pink-200: #F590A8;
+  --pink-300: #EE6080;
+  --pink-400: #E53560;
+  --pink-500: #C31E48;
+  --pink-600: #9C1739;
+  --pink-700: #740F2A;
+  --pink-900: #3A0714;
+
+  /* ========== SAND / PIASKOWY ========== */
+  --sand-50:  #FBF5ED;
+  --sand-100: #F3E2C8;
+  --sand-200: #E5C898;
+  --sand-300: #D2A968;
+  --sand-400: #BF8D42;
+  --sand-500: #9E7030;
+  --sand-600: #7C5622;
+  --sand-700: #5C3E18;
+  --sand-900: #2D1E0A;
+
+  /* ========== LIME / LIMONKOWY ========== */
+  --lime-50:  #F2FAE6;
+  --lime-100: #D8F2B8;
+  --lime-200: #B8E47E;
+  --lime-300: #94D448;
+  --lime-400: #72BC20;
+  --lime-500: #5A9A14;
+  --lime-600: #447A0F;
+  --lime-700: #305A0A;
+  --lime-900: #182C05;
+
+  /* ========== DIET TOKENS ========== */
+  --diet-z-miesem:   var(--salmon-200);     /* Z Mięsem  */
+  --diet-vege:       var(--chartreuse-200); /* Vege      */
+  --diet-vege-plus:  var(--grass-300);      /* Vege+     */
+  --diet-wegan:      var(--emerald-200);    /* Wegan     */
+  --diet-low-ig:     var(--pink-100);       /* Low IG    */
+  --diet-keto:       var(--teal-200);       /* Keto      */
+  --diet-fit:        var(--yellow-200);     /* Fit       */
+
+  /* ========== SEMANTIC — SURFACES ========== */
+  --bg:              var(--mr-white);
+  --bg-elevated:     var(--mr-white);
+  --bg-muted:        var(--neutral-50);
+  --bg-inverse:      var(--mr-black);
+  --bg-brand:        var(--mr-green);
+
+  /* ========== SEMANTIC — FOREGROUND ========== */
+  --fg:              var(--mr-black);
+  --fg-muted:        var(--neutral-600);
+  --fg-subtle:       var(--neutral-400);
+  --fg-inverse:      var(--mr-white);
+  --fg-on-brand:     var(--mr-black);
+  --fg-link:         var(--green-600);
+  --fg-accent:       var(--mr-orange);
+
+  /* ========== SEMANTIC — BORDERS ========== */
+  --border:          var(--neutral-100);
+  --border-strong:   var(--neutral-200);
+  --border-inverse:  var(--mr-black);
+
+  /* ========== SEMANTIC — STATUS ========== */
+  --success:         var(--emerald-400);
+  --warning:         var(--orange-300);
+  --danger:          var(--salmon-400);
+  --info:            var(--blue-400);
+
+  /* ========== TYPOGRAPHY ========== */
+  --font-display:   'Jost', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:      'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-accent:    'Caveat', 'Brush Script MT', cursive;
+  --font-logo:      'Jost', sans-serif; /* substitute for Mr. Rollo Custom Letters — use logo images instead */
+
+  /* Font sizes — modular scale, tuned for food/web */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.375rem;   /* 22px */
+  --text-2xl:  1.75rem;    /* 28px */
+  --text-3xl:  2.25rem;    /* 36px */
+  --text-4xl:  3rem;       /* 48px */
+  --text-5xl:  4rem;       /* 64px */
+  --text-6xl:  5.5rem;     /* 88px */
+
+  /* Weights */
+  --fw-light:     300;
+  --fw-regular:   400;
+  --fw-medium:    500;
+  --fw-semibold:  600;
+  --fw-bold:      700;
+
+  /* Line heights */
+  --lh-tight:    1.1;
+  --lh-snug:     1.25;
+  --lh-normal:   1.5;
+  --lh-relaxed:  1.65;
+
+  /* Letter spacing */
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-caps:   0.08em;
+
+  /* ========== SPACING (4px base) ========== */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ========== RADII ========== */
+  --radius-xs:   4px;
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-2xl:  40px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;   /* logo coins */
+
+  /* ========== SHADOWS — soft, warm, foodie ========== */
+  --shadow-xs:  0 1px 2px rgba(35, 31, 32, 0.06);
+  --shadow-sm:  0 2px 6px rgba(35, 31, 32, 0.08);
+  --shadow-md:  0 6px 18px rgba(35, 31, 32, 0.10);
+  --shadow-lg:  0 16px 40px rgba(35, 31, 32, 0.14);
+  --shadow-xl:  0 28px 80px rgba(35, 31, 32, 0.18);
+  --shadow-focus: 0 0 0 3px rgba(198, 211, 89, 0.45);
+
+  /* ========== MOTION ========== */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast:   120ms;
+  --dur-base:   200ms;
+  --dur-slow:   360ms;
+
+  /* ========== LAYOUT ========== */
+  --container-sm:  640px;
+  --container-md:  960px;
+  --container-lg:  1200px;
+  --container-xl:  1440px;
+}
+
+/* =============================================================
+   SEMANTIC TYPE CLASSES
+   Use these instead of raw tokens in page-level code.
+   ============================================================= */
+
+.mr-display,
+h1.mr-h1 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: clamp(2.5rem, 5.5vw, var(--text-6xl));
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg);
+}
+
+h1, .mr-h1 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: clamp(2rem, 4vw, var(--text-5xl));
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg);
+  margin: 0;
+}
+
+h2, .mr-h2 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: clamp(1.75rem, 3vw, var(--text-4xl));
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg);
+  margin: 0;
+}
+
+h3, .mr-h3 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--text-2xl);
+  line-height: var(--lh-snug);
+  color: var(--fg);
+  margin: 0;
+}
+
+h4, .mr-h4 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-medium);
+  font-size: var(--text-xl);
+  line-height: var(--lh-snug);
+  color: var(--fg);
+  margin: 0;
+}
+
+.mr-eyebrow {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  color: var(--fg-muted);
+}
+
+p, .mr-body {
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--text-base);
+  line-height: var(--lh-relaxed);
+  color: var(--fg);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.mr-body-lg {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--fg);
+}
+
+.mr-body-sm,
+small {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: var(--lh-normal);
+  color: var(--fg-muted);
+}
+
+.mr-caption {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  line-height: var(--lh-normal);
+  color: var(--fg-subtle);
+  letter-spacing: var(--tracking-wide);
+}
+
+.mr-accent {
+  font-family: var(--font-accent);
+  font-weight: var(--fw-regular);
+  font-size: var(--text-3xl);
+  line-height: 1;
+  color: var(--mr-orange);
+}
+
+.mr-tagline {
+  font-family: var(--font-accent);
+  font-size: var(--text-4xl);
+  color: var(--mr-green);
+}
+
+code, .mr-mono {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--neutral-50);
+  padding: 0.1em 0.35em;
+  border-radius: var(--radius-xs);
+  color: var(--neutral-700);
+}
+
+/* Utility */
+.mr-reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
