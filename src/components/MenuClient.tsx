@@ -28,24 +28,24 @@ type Schedule = Record<string, Record<string, string[]>>;
 // ── Blank image URLs ──────────────────────────────────────────────────────────
 
 const BLANK_URL: Record<string, string> = {
-  DESER:    "/blanks/DESER.png",
-  KANAPKA:  "/blanks/KANAPKA.png",
-  OBIAD:    "/blanks/OBIAD.png",
-  "SAŁATKA":"/blanks/SA%C5%81ATKA.png",
-  SOK:      "/blanks/SOK.png",
-  ZUPA:     "/blanks/ZUPA.png",
+  DESER: "/blanks/DESER.png",
+  KANAPKA: "/blanks/KANAPKA.png",
+  OBIAD: "/blanks/OBIAD.png",
+  SAŁATKA: "/blanks/SA%C5%81ATKA.png",
+  SOK: "/blanks/SOK.png",
+  ZUPA: "/blanks/ZUPA.png",
 };
 
 // ── Diet config — brandbook 2026 ──────────────────────────────────────────────
 
 const DIET: Record<string, { label: string; bg: string; text: string }> = {
-  MIĘSNA:  { label: "Mięsna",  bg: "bg-diet-miesna", text: "text-brand-black" },
-  VEGE:    { label: "Vege",    bg: "bg-diet-vege",   text: "text-brand-black" },
-  "VEGE+": { label: "Vege+",   bg: "bg-diet-vegep",  text: "text-brand-black" },
-  WEGAN:   { label: "Wegan",   bg: "bg-diet-wegan",  text: "text-brand-black" },
-  FIT:     { label: "Fit",     bg: "bg-diet-fit",    text: "text-brand-black" },
-  KETO:    { label: "Keto",    bg: "bg-diet-keto",   text: "text-brand-black" },
-  LOW_IG:  { label: "Low IG",  bg: "bg-diet-lowig",  text: "text-brand-black" },
+  MIĘSNA: { label: "Mięsna", bg: "bg-diet-miesna", text: "text-brand-black" },
+  VEGE: { label: "Vege", bg: "bg-diet-vege", text: "text-brand-black" },
+  "VEGE+": { label: "Vege+", bg: "bg-diet-vegep", text: "text-brand-black" },
+  WEGAN: { label: "Wegan", bg: "bg-diet-wegan", text: "text-brand-black" },
+  FIT: { label: "Fit", bg: "bg-diet-fit", text: "text-brand-black" },
+  KETO: { label: "Keto", bg: "bg-diet-keto", text: "text-brand-black" },
+  LOW_IG: { label: "Low IG", bg: "bg-diet-lowig", text: "text-brand-black" },
 };
 
 function DietBadge({ tag }: { tag: string }) {
@@ -63,8 +63,21 @@ function DietBadge({ tag }: { tag: string }) {
 
 // ── Date / week helpers ───────────────────────────────────────────────────────
 
-const PL_DAYS_SHORT   = ["Pon", "Wt", "Śr", "Cz", "Pt"];
-const PL_MONTHS_SHORT = ["sty","lut","mar","kwi","maj","cze","lip","sie","wrz","paź","lis","gru"];
+const PL_DAYS_SHORT = ["Pon", "Wt", "Śr", "Cz", "Pt", "Sob", "Nd"];
+const PL_MONTHS_SHORT = [
+  "sty",
+  "lut",
+  "mar",
+  "kwi",
+  "maj",
+  "cze",
+  "lip",
+  "sie",
+  "wrz",
+  "paź",
+  "lis",
+  "gru",
+];
 
 function toISODate(d: Date) {
   return d.toISOString().slice(0, 10);
@@ -73,7 +86,9 @@ function toISODate(d: Date) {
 function getWeekDays(ref = new Date()): Date[] {
   const d = new Date(ref);
   const dow = d.getDay();
-  d.setDate(d.getDate() - (dow === 0 ? 6 : dow - 1));
+  // Sunday (0) → jump to next week's Monday (+1)
+  // Monday–Saturday → rewind to this week's Monday
+  d.setDate(d.getDate() + (dow === 0 ? 1 : 1 - dow));
   return Array.from({ length: 5 }, (_, i) => {
     const dd = new Date(d);
     dd.setDate(d.getDate() + i);
@@ -99,19 +114,24 @@ function Lightbox({ item, onClose }: { item: MenuItem; onClose: () => void }) {
     : (BLANK_URL[item.blankType] ?? "/blanks/DESER.png");
 
   useEffect(() => {
-    const h = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    const h = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
     window.addEventListener("keydown", h);
     return () => window.removeEventListener("keydown", h);
   }, [onClose]);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, []);
 
-  const priceText = item.price !== null
-    ? item.price.toLocaleString("pl-PL", { minimumFractionDigits: 2 }) + "\u00a0zł"
-    : "zapytaj";
+  const priceText =
+    item.price !== null
+      ? item.price.toLocaleString("pl-PL", { minimumFractionDigits: 2 }) + "\u00a0zł"
+      : "zapytaj";
 
   return (
     <div
@@ -166,7 +186,8 @@ function Lightbox({ item, onClose }: { item: MenuItem; onClose: () => void }) {
               className="text-sm font-semibold"
               style={{
                 fontFamily: "var(--font-display)",
-                color: item.price !== null ? "var(--color-brand-black)" : "var(--color-neutral-400)",
+                color:
+                  item.price !== null ? "var(--color-brand-black)" : "var(--color-neutral-400)",
                 fontStyle: item.price !== null ? "normal" : "italic",
                 fontWeight: item.price !== null ? 600 : 400,
               }}
@@ -195,8 +216,16 @@ function Lightbox({ item, onClose }: { item: MenuItem; onClose: () => void }) {
 
 // ── Category tab ──────────────────────────────────────────────────────────────
 
-function CategoryTab({ name, count, active, onClick }: {
-  name: string; count: number; active: boolean; onClick: () => void;
+function CategoryTab({
+  name,
+  count,
+  active,
+  onClick,
+}: {
+  name: string;
+  count: number;
+  active: boolean;
+  onClick: () => void;
 }) {
   const ref = useRef<HTMLButtonElement>(null);
   useEffect(() => {
@@ -218,10 +247,7 @@ function CategoryTab({ name, count, active, onClick }: {
       }}
     >
       {name}
-      <span
-        className="ml-1.5 text-[11px]"
-        style={{ opacity: active ? 0.5 : 0.35 }}
-      >
+      <span className="ml-1.5 text-[11px]" style={{ opacity: active ? 0.5 : 0.35 }}>
         {count}
       </span>
     </button>
@@ -231,17 +257,24 @@ function CategoryTab({ name, count, active, onClick }: {
 // ── Week day picker ───────────────────────────────────────────────────────────
 
 function WeekPicker({
-  weekDays, selectedDate, schedule, onSelect, onClear,
+  weekDays,
+  selectedDate,
+  schedule,
+  onSelect,
+  onClear,
 }: {
-  weekDays: Date[]; selectedDate: string | null; schedule: Schedule;
-  onSelect: (iso: string) => void; onClear: () => void;
+  weekDays: Date[];
+  selectedDate: string | null;
+  schedule: Schedule;
+  onSelect: (iso: string) => void;
+  onClear: () => void;
 }) {
   return (
     <div className="px-4 pb-3 border-t pt-3" style={{ borderColor: "rgba(255,255,255,0.08)" }}>
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-2 overflow-x-auto scrollbar-hide flex-1">
         <button
           onClick={onClear}
-          className="shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold transition-all"
+          className="shrink-0 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all"
           style={{
             fontFamily: "var(--font-display)",
             background: selectedDate === null ? "rgba(255,255,255,0.18)" : "rgba(255,255,255,0.08)",
@@ -253,8 +286,8 @@ function WeekPicker({
 
         <div className="flex gap-2 overflow-x-auto scrollbar-hide flex-1">
           {weekDays.map((d, i) => {
-            const iso    = toISODate(d);
-            const isAct  = selectedDate === iso;
+            const iso = toISODate(d);
+            const isAct = selectedDate === iso;
             const hasSch = !!schedule[iso];
             const isToday = iso === toISODate(new Date());
 
@@ -271,13 +304,17 @@ function WeekPicker({
                   outlineOffset: "-1px",
                 }}
               >
-                <span className="font-semibold text-[11px] uppercase tracking-[0.06em]">{PL_DAYS_SHORT[i]}</span>
+                <span className="font-semibold text-[11px] uppercase tracking-[0.06em]">
+                  {PL_DAYS_SHORT[i]}
+                </span>
                 <span className="text-base font-bold leading-none mt-0.5">{d.getDate()}</span>
                 <span
                   className="mt-1 w-1.5 h-1.5 rounded-full"
                   style={{
                     background: hasSch
-                      ? (isAct ? "rgba(35,31,32,0.35)" : "var(--color-brand-green)")
+                      ? isAct
+                        ? "rgba(35,31,32,0.35)"
+                        : "var(--color-brand-green)"
                       : "rgba(255,255,255,0.15)",
                   }}
                 />
@@ -294,12 +331,14 @@ function WeekPicker({
 
 function ItemCard({ item, onOpen }: { item: MenuItem; onOpen: (item: MenuItem) => void }) {
   const [imgError, setImgError] = useState(false);
-  const photoSrc = item.hasPhoto && !imgError
-    ? `/photos/${item.id}.png`
-    : (BLANK_URL[item.blankType] ?? "/blanks/DESER.png");
-  const priceText = item.price !== null
-    ? item.price.toLocaleString("pl-PL", { minimumFractionDigits: 2 }) + "\u00a0zł"
-    : "zapytaj";
+  const photoSrc =
+    item.hasPhoto && !imgError
+      ? `/photos/${item.id}.png`
+      : (BLANK_URL[item.blankType] ?? "/blanks/DESER.png");
+  const priceText =
+    item.price !== null
+      ? item.price.toLocaleString("pl-PL", { minimumFractionDigits: 2 }) + "\u00a0zł"
+      : "zapytaj";
 
   return (
     <li
@@ -352,8 +391,21 @@ function ItemCard({ item, onOpen }: { item: MenuItem; onOpen: (item: MenuItem) =
       </div>
 
       {/* Chevron */}
-      <svg className="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ color: "var(--color-neutral-300)" }}>
-        <path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <svg
+        className="shrink-0"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        style={{ color: "var(--color-neutral-300)" }}
+      >
+        <path
+          d="M6 4l4 4-4 4"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     </li>
   );
@@ -361,15 +413,28 @@ function ItemCard({ item, onOpen }: { item: MenuItem; onOpen: (item: MenuItem) =
 
 // ── Search results ────────────────────────────────────────────────────────────
 
-interface SearchGroup { category: MenuCategory; items: MenuItem[] }
+interface SearchGroup {
+  category: MenuCategory;
+  items: MenuItem[];
+}
 
-function SearchResults({ groups, onOpen }: { groups: SearchGroup[]; onOpen: (item: MenuItem) => void }) {
+function SearchResults({
+  groups,
+  onOpen,
+}: {
+  groups: SearchGroup[];
+  onOpen: (item: MenuItem) => void;
+}) {
   const total = groups.reduce((n, g) => n + g.items.length, 0);
   if (total === 0)
     return (
       <div className="text-center py-16" style={{ color: "var(--color-neutral-400)" }}>
-        <p className="font-medium" style={{ fontFamily: "var(--font-display)" }}>Brak wyników</p>
-        <p className="text-sm mt-1" style={{ fontFamily: "var(--font-body)" }}>Spróbuj innego hasła</p>
+        <p className="font-medium" style={{ fontFamily: "var(--font-display)" }}>
+          Brak wyników
+        </p>
+        <p className="text-sm mt-1" style={{ fontFamily: "var(--font-body)" }}>
+          Spróbuj innego hasła
+        </p>
       </div>
     );
   return (
@@ -381,7 +446,8 @@ function SearchResults({ groups, onOpen }: { groups: SearchGroup[]; onOpen: (ite
               className="text-[11px] font-semibold uppercase tracking-[0.1em] mb-2 px-1"
               style={{ fontFamily: "var(--font-display)", color: "var(--color-neutral-500)" }}
             >
-              {category.name} <span style={{ color: "var(--color-neutral-300)" }}>({items.length})</span>
+              {category.name}{" "}
+              <span style={{ color: "var(--color-neutral-300)" }}>({items.length})</span>
             </h2>
             <ul className="flex flex-col gap-2">
               {items.map((item) => (
@@ -399,15 +465,15 @@ function SearchResults({ groups, onOpen }: { groups: SearchGroup[]; onOpen: (ite
 
 export default function MenuClient() {
   const categories = menuData.categories as MenuCategory[];
-  const schedule   = (menuData as { schedule?: Schedule }).schedule ?? {};
+  const schedule = (menuData as { schedule?: Schedule }).schedule ?? {};
 
-  const [activeCatId,    setActiveCatId]    = useState(categories[0].id);
-  const [search,         setSearch]         = useState("");
-  const [lightboxItem,   setLightboxItem]   = useState<MenuItem | null>(null);
-  const [selectedDate,   setSelectedDate]   = useState<string | null>(() => toISODate(new Date()));
+  const [activeCatId, setActiveCatId] = useState(categories[0].id);
+  const [search, setSearch] = useState("");
+  const [lightboxItem, setLightboxItem] = useState<MenuItem | null>(null);
+  const [selectedDate, setSelectedDate] = useState<string | null>(() => toISODate(new Date()));
   const [weekPickerOpen, setWeekPickerOpen] = useState(false);
 
-  const weekDays    = useMemo(() => getWeekDays(), []);
+  const weekDays = useMemo(() => getWeekDays(), []);
   const isSearching = search.trim().length > 0;
 
   const categoryItems = useMemo(() => {
@@ -427,7 +493,10 @@ export default function MenuClient() {
       if (selectedDate) {
         const ids = schedule[selectedDate]?.[cat.id];
         if (!ids) pool = [];
-        else { const set = new Set(ids); pool = pool.filter((it) => set.has(it.id)); }
+        else {
+          const set = new Set(ids);
+          pool = pool.filter((it) => set.has(it.id));
+        }
       }
       return { category: cat, items: pool.filter((it) => it.name.toLowerCase().includes(q)) };
     });
@@ -435,12 +504,21 @@ export default function MenuClient() {
 
   const totalHits = searchGroups.reduce((n, g) => n + g.items.length, 0);
 
-  const openLightbox  = useCallback((item: MenuItem) => setLightboxItem(item), []);
+  const openLightbox = useCallback((item: MenuItem) => setLightboxItem(item), []);
   const closeLightbox = useCallback(() => setLightboxItem(null), []);
 
-  function selectCategory(id: string) { setActiveCatId(id); setSearch(""); }
-  function selectDay(iso: string) { setSelectedDate(iso); setWeekPickerOpen(false); }
-  function clearDay() { setSelectedDate(null); setWeekPickerOpen(false); }
+  function selectCategory(id: string) {
+    setActiveCatId(id);
+    setSearch("");
+  }
+  function selectDay(iso: string) {
+    setSelectedDate(iso);
+    setWeekPickerOpen(false);
+  }
+  function clearDay() {
+    setSelectedDate(null);
+    setWeekPickerOpen(false);
+  }
 
   function catCount(cat: MenuCategory) {
     if (!selectedDate) return cat.items.length;
@@ -449,17 +527,19 @@ export default function MenuClient() {
   }
 
   const activeCategory = categories.find((c) => c.id === activeCatId)!;
-  const dateBtnLabel   = selectedDate
+  const dateBtnLabel = selectedDate
     ? formatDateLong(new Date(selectedDate + "T00:00:00"))
     : formatDateLong(new Date());
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "var(--color-brand-cream)" }}>
-
       {/* ── Sticky header ── */}
       <div
         className="sticky top-0 z-20"
-        style={{ background: "var(--color-brand-black)", boxShadow: "0 4px 20px rgba(35,31,32,0.22)" }}
+        style={{
+          background: "var(--color-brand-black)",
+          boxShadow: "0 4px 20px rgba(35,31,32,0.22)",
+        }}
       >
         {/* Row 1: logo | search | date */}
         <div className="mx-auto px-4 pt-4 pb-3 flex items-center gap-3">
@@ -477,18 +557,26 @@ export default function MenuClient() {
           <div className="relative flex-1 min-w-0">
             <svg
               className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"
-              width="14" height="14" viewBox="0 0 16 16" fill="none"
+              width="14"
+              height="14"
+              viewBox="0 0 16 16"
+              fill="none"
               style={{ color: "rgba(255,255,255,0.30)" }}
             >
               <circle cx="7" cy="7" r="5" stroke="currentColor" strokeWidth="1.5" />
-              <path d="M11 11L14 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+              <path
+                d="M11 11L14 14"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
             </svg>
             <input
               type="search"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Szukaj w całym menu…"
-              className="w-full text-sm rounded-xl pl-9 pr-8 py-2.5 outline-none transition-colors"
+              placeholder="Szukaj…"
+              className="w-full text-sm rounded-xl pl-9 pr-8 py-2 outline-none transition-colors"
               style={{
                 fontFamily: "var(--font-display)",
                 background: "rgba(255,255,255,0.10)",
@@ -513,29 +601,52 @@ export default function MenuClient() {
           {/* Date pill */}
           <button
             onClick={() => setWeekPickerOpen((o) => !o)}
-            className="shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium transition-all"
+            className="shrink-0 flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-xs font-medium transition-all"
             style={{
               fontFamily: "var(--font-display)",
-              background: weekPickerOpen || selectedDate
-                ? "var(--color-brand-green)"
-                : "rgba(255,255,255,0.10)",
-              color: weekPickerOpen || selectedDate
-                ? "var(--color-brand-black)"
-                : "rgba(255,255,255,0.65)",
+              background:
+                weekPickerOpen || selectedDate
+                  ? "var(--color-brand-green)"
+                  : "rgba(255,255,255,0.10)",
+              color:
+                weekPickerOpen || selectedDate
+                  ? "var(--color-brand-black)"
+                  : "rgba(255,255,255,0.65)",
             }}
           >
             <svg width="13" height="13" viewBox="0 0 14 14" fill="none" className="shrink-0">
-              <rect x="1" y="2" width="12" height="11" rx="2" stroke="currentColor" strokeWidth="1.3" />
+              <rect
+                x="1"
+                y="2"
+                width="12"
+                height="11"
+                rx="2"
+                stroke="currentColor"
+                strokeWidth="1.3"
+              />
               <path d="M1 6h12" stroke="currentColor" strokeWidth="1.3" />
-              <path d="M4 1v2M10 1v2" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
+              <path
+                d="M4 1v2M10 1v2"
+                stroke="currentColor"
+                strokeWidth="1.3"
+                strokeLinecap="round"
+              />
             </svg>
             <span className="whitespace-nowrap">{dateBtnLabel}</span>
             <svg
-              width="10" height="10" viewBox="0 0 10 10" fill="none"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
               className="transition-transform"
               style={{ transform: weekPickerOpen ? "rotate(180deg)" : "rotate(0deg)" }}
             >
-              <path d="M2 3.5l3 3 3-3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
+              <path
+                d="M2 3.5l3 3 3-3"
+                stroke="currentColor"
+                strokeWidth="1.3"
+                strokeLinecap="round"
+              />
             </svg>
           </button>
         </div>
@@ -591,18 +702,25 @@ export default function MenuClient() {
         {isSearching ? (
           <>
             <div className="flex items-center justify-between mb-4">
-              <p className="text-sm" style={{ fontFamily: "var(--font-body)", color: "var(--color-neutral-600)" }}>
+              <p
+                className="text-sm"
+                style={{ fontFamily: "var(--font-body)", color: "var(--color-neutral-600)" }}
+              >
                 Wyniki dla{" "}
                 <span className="font-semibold" style={{ color: "var(--color-brand-black)" }}>
                   &ldquo;{search.trim()}&rdquo;
                 </span>
                 {selectedDate && (
                   <span style={{ color: "var(--color-neutral-400)" }}>
-                    {" · "}{formatDateShort(new Date(selectedDate + "T00:00:00"))}
+                    {" · "}
+                    {formatDateShort(new Date(selectedDate + "T00:00:00"))}
                   </span>
                 )}
               </p>
-              <span className="text-xs" style={{ color: "var(--color-neutral-400)", fontFamily: "var(--font-display)" }}>
+              <span
+                className="text-xs"
+                style={{ color: "var(--color-neutral-400)", fontFamily: "var(--font-display)" }}
+              >
                 {totalHits} pozycji
               </span>
             </div>
@@ -617,7 +735,10 @@ export default function MenuClient() {
               >
                 {activeCategory.name}
               </h1>
-              <span className="text-xs" style={{ color: "var(--color-neutral-400)", fontFamily: "var(--font-display)" }}>
+              <span
+                className="text-xs"
+                style={{ color: "var(--color-neutral-400)", fontFamily: "var(--font-display)" }}
+              >
                 {categoryItems.length} pozycji
               </span>
             </div>
