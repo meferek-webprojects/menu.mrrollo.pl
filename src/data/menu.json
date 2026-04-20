@@ -10,7 +10,7 @@
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 23,
           "new": false
         },
         {
@@ -19,7 +19,7 @@
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 26,
           "new": false
         },
         {
@@ -33,11 +33,11 @@
         },
         {
           "id": "1468",
-          "name": "Vege sałatka z humusem, fasolą edamame, klopsami i komosą ryżową",
+          "name": "VEGE sałatka z hummusem, fasolą edamame, klopsami i komosą ryżową",
           "diet": "VEGE",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 24,
           "new": false
         },
         {
@@ -46,7 +46,7 @@
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 23,
           "new": false
         },
         {
@@ -60,29 +60,29 @@
         },
         {
           "id": "1585",
-          "name": "Oriental Chicken Bowl z makaronem razowym",
+          "name": "Oriental Chicken Bowl na makaronie razowym",
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
           "id": "1603",
-          "name": "Sałatka Surimi Mała",
+          "name": "Sałatka Surimi mała na makaronie ryżowym",
           "diet": "VEGE+",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 16,
           "new": false
         },
         {
           "id": "1604",
-          "name": "Sałatka Ryżowa z Kurczakiem",
+          "name": "Sałatka ryżowa z Kurczakiem",
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 17,
           "new": false
         },
         {
@@ -109,16 +109,7 @@
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1642D",
-          "name": "Sałatka z polędwiczką,  serem blue i żurawiną",
-          "diet": "MIĘSNA",
-          "hasPhoto": false,
-          "blankType": "SAŁATKA",
-          "price": null,
+          "price": 24,
           "new": false
         },
         {
@@ -127,7 +118,7 @@
           "diet": "VEGE",
           "hasPhoto": false,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 20,
           "new": false
         },
         {
@@ -145,7 +136,7 @@
           "diet": "VEGE+",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 22,
           "new": false
         },
         {
@@ -186,11 +177,11 @@
         },
         {
           "id": "1703",
-          "name": "Misa Buddy z kurczakiem",
+          "name": "Sałatka z kurczakiem na makaronie ryżowym",
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
@@ -204,7 +195,7 @@
         },
         {
           "id": "1707",
-          "name": "Sałatka z kurczakiem, burakiem  i grzankami",
+          "name": "Sałatka z kurczakiem, burakiem i grzankami",
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
@@ -226,7 +217,7 @@
           "diet": "KETO",
           "hasPhoto": false,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 19,
           "new": false
         },
         {
@@ -249,11 +240,11 @@
         },
         {
           "id": "1718",
-          "name": "Sałatka z kurczakiem i brzoskwinią na makaronie razowym",
+          "name": "Sałatka z kurczakiem i brzoskwinią na makaronie spaghetti razowym",
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
@@ -267,11 +258,11 @@
         },
         {
           "id": "1721",
-          "name": "FIT Sałatka z twarożkiem i warzywami",
+          "name": "Sałatka z twarożkiem i warzywami",
           "diet": "FIT",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 18,
           "new": false
         },
         {
@@ -280,7 +271,7 @@
           "diet": "VEGE+",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 20,
           "new": false
         },
         {
@@ -298,7 +289,7 @@
           "diet": "VEGE+",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 22,
           "new": false
         },
         {
@@ -307,7 +298,7 @@
           "diet": "VEGE",
           "hasPhoto": false,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 20,
           "new": false
         },
         {
@@ -339,20 +330,11 @@
         },
         {
           "id": "1730",
-          "name": "Sałatka z wątróbką,brzoskwinią i granatem",
+          "name": "Sałatka z wątróbką, brzoskwinią i granatem",
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1730S",
-          "name": "Sałatka z wątróbką, truskawkami i granatem",
-          "diet": "MIĘSNA",
-          "hasPhoto": false,
-          "blankType": "SAŁATKA",
-          "price": null,
+          "price": 20,
           "new": false
         },
         {
@@ -361,7 +343,7 @@
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
@@ -370,21 +352,12 @@
           "diet": "VEGE+",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1735S",
-          "name": "Sałatka z tuńczykiem, warzywami, kukurydzą i fetą",
-          "diet": "VEGE+",
-          "hasPhoto": false,
-          "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
           "id": "1736",
-          "name": "KETO Sałatka z kurczakiem i serem grilowym",
+          "name": "KETO Sałatka z kurczakiem i serem grillowym",
           "diet": "KETO",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
@@ -397,7 +370,7 @@
           "diet": "VEGE+",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 20,
           "new": false
         },
         {
@@ -433,34 +406,25 @@
           "diet": "VEGE+",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
           "id": "1753",
-          "name": "Sałatka z polędwiczką z kurczaka z burakiem i fetą",
+          "name": "Polędwiczki z kurczaka z burakiem, fetą i dressingiem miodowo-musztardowym",
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
           "id": "1755",
-          "name": "Sałatka z jajkiem, łososiem i fasolą szparagową",
+          "name": "Sałatka z jajkiem, łososiem i fasolką szparagową",
           "diet": "VEGE+",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1755S",
-          "name": "Sałatka z jajkiem, łososiem i szparagami",
-          "diet": "VEGE+",
-          "hasPhoto": false,
-          "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
@@ -469,7 +433,7 @@
           "diet": "VEGE",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 20,
           "new": false
         },
         {
@@ -500,12 +464,21 @@
           "new": false
         },
         {
+          "id": "1761z",
+          "name": "Sałatka tortellini z suszonymi pomidorami",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "SAŁATKA",
+          "price": 21,
+          "new": false
+        },
+        {
           "id": "1763",
-          "name": "Sałatka z sezamowymi nuggetsami z fasolką i prażoną ciecierzycą",
+          "name": "Sezamowe nuggetsy z fasolką i prażoną ciecierzycą",
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
@@ -514,7 +487,7 @@
           "diet": "FIT",
           "hasPhoto": false,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 19,
           "new": false
         },
         {
@@ -532,7 +505,7 @@
           "diet": "KETO",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 20,
           "new": false
         },
         {
@@ -546,11 +519,11 @@
         },
         {
           "id": "1774",
-          "name": "Vege Bowl z klopsikami i grzybami shimej na kaszy gryczanej",
+          "name": "VEGE Bowl z klopsikami i grzybami shimeji na kaszy gryczanej",
           "diet": "VEGE",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 23,
           "new": false
         },
         {
@@ -577,7 +550,7 @@
           "diet": "KETO",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 20,
           "new": false
         },
         {
@@ -586,7 +559,7 @@
           "diet": "VEGE",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
@@ -595,16 +568,16 @@
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 23,
           "new": false
         },
         {
           "id": "1942",
-          "name": "Sałatka z łososiem, fasolką edamame, grzybami shimeji z makaronem razowym",
+          "name": "Sałatka z łososiem, fasolką edamame i grzybami shimeji na makaronie razowym",
           "diet": "VEGE+",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 22,
           "new": false
         },
         {
@@ -618,20 +591,20 @@
         },
         {
           "id": "1944",
-          "name": "FIT  bowl z kurczakiem, batatem, humusem i warzywami chrupkimi",
+          "name": "FIT bowl z kurczakiem, batatem, humusem i warzywami chrupkimi",
           "diet": "FIT",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 24,
           "new": false
         },
         {
           "id": "1945",
-          "name": "FIT  bowl z tofu, komosą ryżową, burakiem i szpinakiem",
+          "name": "FIT bowl z tofu, komosą ryżową, burakiem i szpinakiem",
           "diet": "FIT",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
@@ -649,31 +622,1858 @@
           "diet": "MIĘSNA",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 21,
           "new": false
         },
         {
           "id": "2200",
-          "name": "KETO Sałatka z tuńczykiem i mozzarellą",
+          "name": "KETO Sałatka z tuńczykiem i kulkami mocy",
           "diet": "KETO",
           "hasPhoto": true,
           "blankType": "SAŁATKA",
-          "price": null,
+          "price": 20,
           "new": false
         }
       ]
     },
     {
-      "id": "owsianki",
-      "name": "Owsianki & Jaglanki",
+      "id": "kanapki",
+      "name": "Kanapki",
       "items": [
         {
-          "id": "1270",
-          "name": "Kokosowa Princessa owsianka białkowa",
+          "id": "1002",
+          "name": "Boczek grillowany z jajkiem PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1003",
+          "name": "Wieprzowina szarpana na ostro PÓŁBAGIETKA WIELOZIARNISTA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1004",
+          "name": "Chorizo z jalapeno i rukolą SCHIACCIATA NERO",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1005",
+          "name": "Chorizo z rukolą i parmezanem SCHIACCIATA NERO",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1005M",
+          "name": "Carpaccio z rucolą i parmezanem SCHIACCIATA NERO",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1006",
+          "name": "Kurczak w sosie miodowo-musztardowym PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1007",
+          "name": "Kurczak w sosie salsa mango PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1012",
+          "name": "Kurczak Missisipi BUŁKA PROTEINOWA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1024",
+          "name": "Pasta z łososia z rukolą i pomidorem BAJGIEL",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "1025",
+          "name": "Indyk z kwaszeniakiem PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1026",
+          "name": "Pasta z łososia z rukolą i ogórkiem BAJGIEL",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "1052",
+          "name": "Krakowska, żółty ser i jalapeno PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1053",
+          "name": "Mozzarella z suszonym pomidorem BUŁKA Z OLIWKAMI",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1055",
+          "name": "Kurczak Missisipi PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1057",
+          "name": "Kurczak w sosie ziołowym PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1060",
+          "name": "Kurczak z curry PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1061",
+          "name": "Kanapka z wątróbką PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1065",
+          "name": "Kurczak, suszony pomidor i rukola PÓŁBAGIETKA WIELOZIARNISTA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1073",
+          "name": "Kanapka z brie, gruszką, żurawiną i rukolą BUŁKA SZNYTKA",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1075",
+          "name": "Parmeńska, rukola i ementaler PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1076",
+          "name": "Pasta z tuńczyka PÓŁBAGIETKA PSZENNA",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1079",
+          "name": "Pasta jajeczna ze szczypiorem PÓŁBAGIETKA PSZENNA",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1087",
+          "name": "Żółty ser z warzywami PÓŁBAGIETKA WIELOZIARNISTA",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1104",
+          "name": "Kanapka Premium z filetem z kurczaka, pomidorem i ogórkiem BUŁKA CHIA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1106",
+          "name": "Kanapka z brie, suszonym pomidorem i rukolą CHLEB GRAHAM",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1108",
+          "name": "Stripsy z kurczaka PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1113",
+          "name": "Szynka, ser, jajko i kwaszeniak PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1116",
+          "name": "WEGAN Pasztet z ogórkiem kwaszonym CHLEB GRAHAM",
+          "diet": "WEGAN",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1129",
+          "name": "Indyk z żurawiną i rukolą SCHIACCIATA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1198",
+          "name": "Mozzarella z suszonymi pomidorami i pesto CIABATTA",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1201",
+          "name": "Pasta jajeczna z boczkiem PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1208",
+          "name": "Kurczak w sosie ziołowym BUŁKA Z OLIWKAMI",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1219",
+          "name": "Kurczak San Marino z pesto, mozzarellą i pomidorem SCHIACCIATA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 15,
+          "new": false
+        },
+        {
+          "id": "1223S",
+          "name": "Pasta jajeczna ze szczypiorkiem BUŁKA SZNYTKA",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1225",
+          "name": "Salami Spianata z rukolą i żółtym serem SCHIACCIATA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1227",
+          "name": "Pasta z tuńczyka BUŁKA SZNYTKA",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1235",
+          "name": "Schab w sosie żurawinowym CHLEB PYTLOWY",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1246",
+          "name": "Wołowina w sosie ziołowym BUŁKA PROTEINOWA Z ZIARNAMI",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1257",
+          "name": "Szynka staropolska, jajko i kwaszeniak BUŁKA PROTEINOWA Z ZIARNAMI",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1257S",
+          "name": "Szynka staropolska, jajko i kwaszeniak BUŁKA CHIA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1259",
+          "name": "Focaccia z pesto, mozzarellą i pomidorem FOCACCIA",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1260",
+          "name": "Kanapka włoska z kurczakiem i rukolą BUŁKA Z OLIWKAMI",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1263",
+          "name": "Panini z brie, rukolą i pomarańczą PANINI",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1269",
+          "name": "Pieczony indyk z fetą i gotowanym burakiem BUŁKA PROTEINOWA Z ZIARNAMI",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1301",
+          "name": "Pieczony indyk z fetą i gotowanym burakiem CIABATTA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1303",
+          "name": "Ciabatta z pieczarkami CIABATTA",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1304",
+          "name": "Pikantna pasta z tuńczyka BUŁKA PROTEINOWA Z ZIARNAMI",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1305",
+          "name": "Uczta twarogowa BUŁKA PROTEINOWA Z ZIARNAMI",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1306",
+          "name": "Burger buraczany z sosem tatarskim CIABATTA",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1310",
+          "name": "Kanapka z kurczakiem i grillowanymi warzywami CIABATTA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1311",
+          "name": "Wołowina Jalapeno CIABATTA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 10,
+          "new": false
+        },
+        {
+          "id": "1313",
+          "name": "Hot-Dog PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1334",
+          "name": "Kurczak z cukinią SCHIACCIATA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1335",
+          "name": "Francuskie salami z orzechami i papryką SCHIACCIATA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1602",
+          "name": "Pikantna pasta z tuńczyka CHLEB TOSTOWY GRAHAM",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1699",
+          "name": "Pastrami wołowe z jalapeno BAJGIEL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 15,
+          "new": false
+        },
+        {
+          "id": "1720",
+          "name": "Szynka, ser, ogórek i pomidor BAJGIEL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 15,
+          "new": false
+        },
+        {
+          "id": "1866",
+          "name": "Burger z boczkiem, jajkiem i kwaszeniakiem HAMBURGER MAŚLANY",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "2215",
+          "name": "Szynka, ser, ogórek i pomidor BUŁKA KUKURYDZIANA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "2216",
+          "name": "Pastrami wołowe z jalapeno BUŁKA KUKURYDZIANA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "2259",
+          "name": "Kanapka włoska z kurczakiem i rukolą PÓŁBAGIETKA PSZENNA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "KANAPKA",
+          "price": 11,
+          "new": false
+        }
+      ]
+    },
+    {
+      "id": "zupy",
+      "name": "Zupy",
+      "items": [
+        {
+          "id": "1802",
+          "name": "Barszcz Ukraiński",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "ZUPA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1805",
+          "name": "Zupa fasolowa",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "ZUPA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1819",
+          "name": "Krem z pomidorów z mozzarellą",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "ZUPA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1825",
+          "name": "Marokańska zupa harira",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "ZUPA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1829",
+          "name": "Pomidorowa z makaronem",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "ZUPA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1835",
+          "name": "Zupa Ogórkowa",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "ZUPA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1836",
+          "name": "Zupa pieczarkowa",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "ZUPA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1841",
+          "name": "Żurek",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "ZUPA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1846",
+          "name": "Krupnik",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "ZUPA",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "1956",
+          "name": "Zupa gulaszowa",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "ZUPA",
+          "price": 15,
+          "new": false
+        }
+      ]
+    },
+    {
+      "id": "obiady",
+      "name": "Obiady",
+      "items": [
+        {
+          "id": "1095",
+          "name": "Fish tikka masala z ryżem",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 23,
+          "new": false
+        },
+        {
+          "id": "1107",
+          "name": "Bułeczki bao z krewetkami w tempurze i kimchi",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 24,
+          "new": false
+        },
+        {
+          "id": "1110",
+          "name": "Kurczak w sosie dragon z puree i surówką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 24,
+          "new": false
+        },
+        {
+          "id": "1350",
+          "name": "Tortilla VEGE z burakiem, kozim serem i rukolą",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "1357",
+          "name": "Tortilla ze szpinakiem, suszonym pomidorem i mozarellą",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1361",
+          "name": "Makaron Caprese z pesto i mozzarellą",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1366",
+          "name": "Polędwiczka w sosie serowym ze szpeclami szpinakowymi i buraczkami zasmażanymi",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 24,
+          "new": false
+        },
+        {
+          "id": "1441",
+          "name": "Racuchy z dynią",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 15,
+          "new": false
+        },
+        {
+          "id": "1448",
+          "name": "KETO Kotlety drobiowe z kapustą kwaszoną i puree z kalafiora",
+          "diet": "KETO",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "1452",
+          "name": "Łosoś ryflowany na tagliatelle z pomidorami",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1455",
+          "name": "Tagliatelle z kurczakiem, pieczarkami, pomidorami i mlekiem kokosowym",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1462",
+          "name": "Kurczak w sosie pieczarkowo-kaparowym na razowym penne",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1464",
+          "name": "Dyniowe curry z kurczakiem i razowym penne",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1465",
+          "name": "Wątróbka z cebulką, puree i sałatką szwedzką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1478",
+          "name": "Kluski leniwe",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 15,
+          "new": false
+        },
+        {
+          "id": "1482",
+          "name": "Naleśniki azjatyckie z wieprzowiną",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1485",
+          "name": "Kotlet de volaille z puree i surówką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1486",
+          "name": "Kotlet de volaille XXL z puree i surówką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1486M",
+          "name": "Kotlet de volaille XXL z puree i marchewką z groszkiem",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1489",
+          "name": "Kotlet mielony z puree i buraczkami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1490",
+          "name": "Kotlet mielony z puree i buraczkami XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1490M",
+          "name": "Kotlet mielony z puree i marchewką z groszkiem XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1493",
+          "name": "Kotlet schabowy z ziemniakami i kapustą zasmażaną",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1495",
+          "name": "Kotlet schabowy z ziemniakami i kapustą zasmażaną XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1495M",
+          "name": "Kotlet schabowy z ziemniakami i surówką z kapusty XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1096",
+          "name": "Bitki wieprzowe z kopytkami i buraczkami XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 23,
+          "new": false
+        },
+        {
+          "id": "1098S",
+          "name": "Sałatka z kurczakiem i makaronem udon w sosie teriyaki (obiad)",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 23,
+          "new": false
+        },
+        {
+          "id": "1498",
+          "name": "VEGE kotlety sojowe w sosie kurkowym z kaszą bulgur i buraczkami",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "1501",
+          "name": "Kaszotto z kurczakiem, burakiem, szpinakiem i fetą",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1505",
+          "name": "KETO Schabowy z kapustą kwaszoną i puree z kalafiora",
+          "diet": "KETO",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "1508",
+          "name": "Krążki z kurczaka z serem, pieczonymi ziemniakami i surówką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "1510",
+          "name": "KETO Polędwiczka z boczkiem, pieczarkami, brokułem i kalafiorem",
+          "diet": "KETO",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "1514",
+          "name": "Kebab z pieczonymi ziemniakami, sosem czosnkowym i surówką z czerwonej kapusty",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1519",
+          "name": "Buddha Bowl z tofu",
+          "diet": "WEGAN",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1523",
+          "name": "Kaszotto z białej kaszy gryczanej z kurczakiem, pestkami dyni, słonecznika oraz suszonym pomidorem",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1527",
+          "name": "Filet z kurczaka zapiekany z pomidorami i mozzarellą z szpeclami szpinakowymi",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1542",
+          "name": "Spaghetti a`la Carbonara",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1548",
+          "name": "Zielone naleśniki z serkiem i łososiem",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1550",
+          "name": "Penne z fasolką szparagową i szynką szwarcwaldzką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1555",
+          "name": "VEGE Klopsiki w sosie żurawinowym z kopytkami",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1560",
+          "name": "Pierogi ruskie",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 16,
+          "new": false
+        },
+        {
+          "id": "1570",
+          "name": "Pad Thai z kurczakiem po tajsku na makaronie ryżowym",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1574",
+          "name": "Naleśniki curry włoskie",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1575",
+          "name": "Bitki wieprzowe z kaszą gryczaną i buraczkami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1577",
+          "name": "Tagliatelle z kurczakiem i orzechami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1579",
+          "name": "Lasagne VEGE",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1583",
+          "name": "Kotlety z indyka w sosie koperkowym z kaszą bulgur i surówką z czerwonej kapusty",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1587",
+          "name": "Racuchy z jabłkami",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 15,
+          "new": false
+        },
+        {
+          "id": "1589",
+          "name": "Roladki z kurczaka ze szpinakiem i sosem z suszonych pomidorów z puree",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1591",
+          "name": "Roladki z kurczaka ze szpinakiem na duszonej dyni i marchewce z kopytkami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1597",
+          "name": "Wątróbka z cebulką, kopytkami i buraczkami XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1598",
+          "name": "Tajskie curry z ciecierzycą i szpinakiem podane z ryżem",
+          "diet": "WEGAN",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "1606",
+          "name": "Curry z kurczakiem, cieciorką i ryżem",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1612",
+          "name": "Kotlety warzywne w sosie z czerwonego curry z surówką z czerwonej kapusty",
+          "diet": "WEGAN",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1614",
+          "name": "Schab z sosem myśliwskim, kaszą bulgur i buraczkami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1616",
+          "name": "Placek po zbójnicku",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "1617",
+          "name": "Spaghetti bolognese",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1619",
+          "name": "Spaghetti po chińsku z wieprzowiną XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 23,
+          "new": false
+        },
+        {
+          "id": "1624",
+          "name": "Penne ze szpinakiem i pieczarkami",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 16,
+          "new": false
+        },
+        {
+          "id": "1627",
+          "name": "Tagliatelle z kurczakiem, szpinakiem, pieczarkami i parmezanem",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1631",
+          "name": "Quiche ze szpinakiem i kozim serem na ziemniakach",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1633",
+          "name": "Pierś z kurczaka w sosie serowym z gnocchi i fasolką szparagową",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 23,
+          "new": false
+        },
+        {
+          "id": "1638",
+          "name": "Pierś kurczaka w panco z ryżem, warzywami i surówką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1640",
+          "name": "Ryż smażony z kurczakiem, warzywami i orzechami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "1645",
+          "name": "KETO Bitka w sosie węgierskim z ryżem z kalafiora i sałatką z pomidorka",
+          "diet": "KETO",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1649",
+          "name": "Skrzydełka barbecue z pieczonymi batatami i surówką z czerwonej kapusty",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1658",
+          "name": "VEGE FALAFELKI w sosie sweet chilli z pieczonymi ziemniaczkami i surówką z kapusty",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1659",
+          "name": "Spaghetti bolognese XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "1661",
+          "name": "Kotlet drobiowo-warzywny z sosem koperkowym, pieczonymi ziemniakami i surówką colesław",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1662",
+          "name": "Kurczak w sosie koperkowym z brązowym ryżem i warzywami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1663",
+          "name": "Tortellini z ananasami, rukolą i orzechami",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1664M",
+          "name": "Mintaj panierowany z puree i sałatką z białej kapusty XXL",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "1666",
+          "name": "Lasagne z łososiem i szpinakiem",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 22,
+          "new": false
+        },
+        {
+          "id": "1670",
+          "name": "Kurczak balsamico z puree i marchewką mini",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1680",
+          "name": "Kurczak w ziołach z żółtym ryżem i warzywami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1691",
+          "name": "Bitki wieprzowe z kopytkami i buraczkami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "1695",
+          "name": "Szpinakowe naleśniki z pomidorem i mozzarellą",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1696",
+          "name": "Kurczak po tajsku z makaronem ryżowym",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1097",
+          "name": "Pierś kurczaka w panco z ryżem, warzywami i surówką XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 24,
+          "new": false
+        },
+        {
+          "id": "1098O",
+          "name": "Sałatka z kurczakiem i makaronem udon w sosie teriyaki (obiad)",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 23,
+          "new": false
+        },
+        {
+          "id": "1705",
+          "name": "Kurczak z pieczonymi warzywami, fetą, pesto bazyliowym i razowym penne",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1709",
+          "name": "Chinkali z mięsem wieprzowo-wołowym",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1738",
+          "name": "Bułeczki BAO z szarpaną wieprzowiną i surówką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 24,
+          "new": false
+        },
+        {
+          "id": "1765",
+          "name": "Wątróbka z jabłkiem, żurawiną, kopytkami i buraczkami XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 23,
+          "new": false
+        },
+        {
+          "id": "1766",
+          "name": "Pierogi Gyoza z warzywami i kurczakiem z sosem ponzu",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 25,
+          "new": false
+        },
+        {
+          "id": "1780",
+          "name": "Kotlety siekane z indyka w sosie szpinakowym z kopytkami i surówką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1823",
+          "name": "Pierogi z jagodami",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "1876",
+          "name": "KETO Burger wołowy XXL z boczkiem, chedarem i brokułem",
+          "diet": "KETO",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 26,
+          "new": false
+        },
+        {
+          "id": "1925",
+          "name": "Wołowina po syczuańsku z makaronem udon",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 27,
+          "new": false
+        },
+        {
+          "id": "1936",
+          "name": "Kurczak po koreańsku z makaronem chow-mein z warzywami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1937",
+          "name": "Chilli Chicken Udon",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 23,
+          "new": false
+        },
+        {
+          "id": "1938",
+          "name": "Filet z kurczaka po toskańsku z gnocchi i surówką ZEN-KA",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "1957",
+          "name": "POWER Tortilla z kurczakiem, cukinią i mozzarellą",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 16,
+          "new": false
+        },
+        {
+          "id": "1960",
+          "name": "Łosoś miodowo-imbirowy z ryżem i warzywami",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 24,
+          "new": false
+        },
+        {
+          "id": "2102",
+          "name": "VEGE klopsiki w sosie grzybowym na makaronie tagliatelle",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "2104",
+          "name": "FIT Kokosowe curry z kurczakiem, fasolką szparagową i kolorowym ryżem",
+          "diet": "FIT",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "2110",
+          "name": "FIT Kurczak w sosie kurkowym z ryżem brązowym i buraczkami",
+          "diet": "FIT",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "2114",
+          "name": "VEGE klopsiki w ciemnym sosie z pieczonymi ziemniakami i surówką z czerwonej kapusty",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "2116",
+          "name": "Boczniak po tajsku z ryżem",
+          "diet": "WEGAN",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "2119",
+          "name": "Spaghetti a`la Carbonara XXL",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "2120",
+          "name": "FIT Dyniowe curry z kurczakiem i ryżem basmati",
+          "diet": "FIT",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "2124",
+          "name": "VEGE gołąbki z kaszą gryczaną i sosem pieczarkowym",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "2127",
+          "name": "Nuggetsy w sosie sweet chilli z pieczonymi ziemniaczkami i surówką z czerwonej kapusty",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "2128",
+          "name": "KETO Łosoś pieczony z sosem chimichurri, ryżem z kalafiora i sałatką z pomidorów cherry",
+          "diet": "KETO",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 25,
+          "new": false
+        },
+        {
+          "id": "2130",
+          "name": "Pad Thai z tofu na makaronie ryżowym",
+          "diet": "WEGAN",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "2132",
+          "name": "Pad Thai z tofu na makaronie ryżowym",
+          "diet": "WEGAN",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "2133",
+          "name": "Filet z kurczaka w panco z puree i marchewką z groszkiem",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "2134",
+          "name": "Penne z łososiem i suszonym pomidorem w sosie śmietanowym",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "2136",
+          "name": "Polędwiczki wieprzowe w sosie żurawinowym z kopytkami i buraczkami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "2138",
+          "name": "KETO Kurczak ze szpinakiem, jajkiem i sosem jogurtowym",
+          "diet": "KETO",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 23,
+          "new": false
+        },
+        {
+          "id": "2139",
+          "name": "KETO Podudzie z kurczaka",
+          "diet": "KETO",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 23,
+          "new": false
+        },
+        {
+          "id": "2140",
+          "name": "Stripsy w pomarańczach z pieczonymi ziemniaczkami i mini marchewką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "2149",
+          "name": "KETO de volaille z puree z kalafiora i brokułem",
+          "diet": "KETO",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "2156",
+          "name": "Kurczak z makaronem chow mein i sosem chimichurri",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "2230",
+          "name": "Makaron razowy z pesto, kurczakiem, suszonymi pomidorami i pestkami",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "2231",
+          "name": "Pieczony indyk z sosem z zielonego pieprzu ze szpeclami szpinakowymi i surówką z czerwonej kapusty",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "2232",
+          "name": "Filet z indyka w sosie z suszonych pomidorów ze szpeclami szpinakowymi i surówką z czerwonej kapusty",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "2236",
+          "name": "Kurczak w sosie musztardowo-miodowym z ryżem i surówką z czerwonej kapusty",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 19,
+          "new": false
+        },
+        {
+          "id": "2239",
+          "name": "Polędwiczka wieprzowa na tagliatelle z sosem grzybowym",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 21,
+          "new": false
+        },
+        {
+          "id": "2240",
+          "name": "Roladka z indyka faszerowana fetą i pieczarkami z puree i marchewką mini",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "2244",
+          "name": "KETO Pierś z kurczaka na szpinaku z ryżem kalafiora i sałatką z pomidorków koktajlowych",
+          "diet": "KETO",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "2253",
+          "name": "VEGE Pęczotto grzybowo-cukiniowe z ciecierzycą",
+          "diet": "VEGE",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "2268",
+          "name": "Szarpana wieprzowina z sosem mango-habanero i ryżem",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "2269",
+          "name": "Łosoś z pieczonymi ziemniaczkami i sosem habanero",
+          "diet": "VEGE+",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 25,
+          "new": false
+        },
+        {
+          "id": "2270",
+          "name": "Polędwiczki z kurczaka w sosie mango z ryżem",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        },
+        {
+          "id": "2280",
+          "name": "Kurczak z tagliatelle, suszonym pomidorem i marchewką",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 17,
+          "new": false
+        },
+        {
+          "id": "2292",
+          "name": "Schab zapiekany z pieczarkami podany z kopytkami i marchewką z groszkiem",
+          "diet": "MIĘSNA",
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 20,
+          "new": false
+        }
+      ]
+    },
+    {
+      "id": "desery",
+      "name": "Desery",
+      "items": [
+        {
+          "id": "1017",
+          "name": "Deser walentynkowy - truskawkowe red velvet",
           "diet": null,
           "hasPhoto": true,
           "blankType": "DESER",
           "price": null,
+          "new": false
+        },
+        {
+          "id": "1270",
+          "name": "Kokosowa Princessa białkowa",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1271",
+          "name": "Deser czekoladowo śliwkowy z musem palone masło",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1272",
+          "name": "Mus śliwkowy",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 13,
           "new": false
         },
         {
@@ -686,484 +2486,10 @@
           "new": false
         },
         {
-          "id": "1367",
-          "name": "WEGAN Owsianka z nasionami chia",
-          "diet": "WEGAN",
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1368",
-          "name": "WEGAN Jaglanka z masłem orzechowym",
-          "diet": "WEGAN",
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1386",
-          "name": "Jaglanka czekoladowa z owocami, orzechami i płatkami kokosa",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1387",
-          "name": "Jaglanka truskawkowa z owocami, orzechami i płatkami kokosa",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1395",
-          "name": "WEGAN Owsianka dyniowa",
-          "diet": "WEGAN",
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1415",
-          "name": "WEGAN Owsianka z musem mango",
-          "diet": "WEGAN",
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1445",
-          "name": "Jaglanka czekoladowa z bakaliami",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1828",
-          "name": "Owsianka bez laktozy z nasionami chia",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1843",
-          "name": "Owsianka dyniowa na mleku kokosowym z owocami",
-          "diet": null,
-          "hasPhoto": false,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1848",
-          "name": "Owsianka dyniowa na mleku bez laktozy",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2223",
-          "name": "Jaglanka na maśle orzechowym z chili",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        }
-      ]
-    },
-    {
-      "id": "musy",
-      "name": "Musy",
-      "items": [
-        {
-          "id": "1272",
-          "name": "Mus śliwkowy",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
           "id": "1339",
           "name": "Mus brzoskwiniowo-bananowy",
           "diet": null,
           "hasPhoto": false,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1401",
-          "name": "Mus mango",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1402",
-          "name": "Mus malinowy",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1403",
-          "name": "Mus truskawkowy",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1410",
-          "name": "Mango Lassi z owocami",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2218",
-          "name": "MUS czekolado-orzechowy",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2266",
-          "name": "Mus z jabłkiem prażonym",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        }
-      ]
-    },
-    {
-      "id": "tapioiki",
-      "name": "Tapioiki & Chia",
-      "items": [
-        {
-          "id": "1378",
-          "name": "Tapioka czekoladowa",
-          "diet": null,
-          "hasPhoto": false,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1385",
-          "name": "PREMIUM Pudding z tapioki z owocami",
-          "diet": null,
-          "hasPhoto": false,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1389",
-          "name": "Pudding z tapioki z musem mango i marukają",
-          "diet": null,
-          "hasPhoto": false,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1413",
-          "name": "Tapioka Karmelowa",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1414",
-          "name": "Pudding z zielonej tapioki z serkiem pomarańczowym (tymczasowo biała tapioka)",
-          "diet": null,
-          "hasPhoto": false,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1430",
-          "name": "Kokosowy pudding z nasionami chia",
-          "diet": null,
-          "hasPhoto": false,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2224",
-          "name": "Tapioka pistacjowa (tymczasowo z białą tapioką)",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2225",
-          "name": "Tapioka kokosowa",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2226",
-          "name": "Tapioka truskawkowa",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2248",
-          "name": "Tapioka pomarańczowa",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2290",
-          "name": "WEGAN Pudding z zielonej tapioki z owocami (tymczasowo biała tapioka)",
-          "diet": "WEGAN",
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1365",
-          "name": "WEGAN Kokosowy puding z nasionami chia na mleku sojowym",
-          "diet": "WEGAN",
-          "hasPhoto": false,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1406",
-          "name": "Deser chia z mango",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1411",
-          "name": "Sernikowa chia",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1417",
-          "name": "Mus z pomarańczowym chia",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2249",
-          "name": "Zielone chia z brzoskwinią",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2251",
-          "name": "Truskawkowa chia",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        }
-      ]
-    },
-    {
-      "id": "nalewniki",
-      "name": "Naleśniki",
-      "items": [
-        {
-          "id": "1363",
-          "name": "Naleśniki truskawkowe",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1364",
-          "name": "Naleśniki z cynamonem i jabłkami",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1369",
-          "name": "Zielone nalesniki z owocami",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1371",
-          "name": "Naleśniki kokosowe",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1388",
-          "name": "Naleśniki pomarańczowe",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1405",
-          "name": "KETO Naleśniki czekoladowe",
-          "diet": "KETO",
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1412",
-          "name": "Naleśniki z serkiem",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1416",
-          "name": "Naleśniki czekoladowo-bananowe",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1438",
-          "name": "Naleśniki czekoladowe z twarożkiem",
-          "diet": null,
-          "hasPhoto": false,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1496",
-          "name": "Naleśniki szpinakowe z owocami",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1497",
-          "name": "Nalesniki z mango i maracują",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1869",
-          "name": "Naleśniki z kremem orzechowo-kakaowym",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1878",
-          "name": "Naleśniki z serkiem i powidłami śliwkowymi",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        }
-      ]
-    },
-    {
-      "id": "desery",
-      "name": "Desery",
-      "items": [
-        {
-          "id": "1017",
-          "name": "(NOWOŚĆ) Deser walentynkowy - truskawkowe red velvet",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "DESER",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1271",
-          "name": "Deser czekoladowo śliwkowy z musem palone masło",
-          "diet": null,
-          "hasPhoto": true,
           "blankType": "DESER",
           "price": null,
           "new": false
@@ -1192,16 +2518,88 @@
           "diet": null,
           "hasPhoto": false,
           "blankType": "DESER",
-          "price": null,
+          "price": 14,
           "new": false
         },
         {
           "id": "1343",
-          "name": "Deser kakaowo - wiśniowy",
+          "name": "Deser kakaowo-wiśniowy",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 15,
+          "new": false
+        },
+        {
+          "id": "1362",
+          "name": "Deserek malinowy z galaretką",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1363",
+          "name": "Naleśniki truskawkowe",
           "diet": null,
           "hasPhoto": true,
           "blankType": "DESER",
           "price": null,
+          "new": false
+        },
+        {
+          "id": "1364",
+          "name": "Naleśniki z jabłkami i cynamonem",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1365",
+          "name": "WEGAN Kokosowy pudding z nasionami chia na mleku sojowym",
+          "diet": "WEGAN",
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1367",
+          "name": "WEGAN Owsianka z nasionami chia",
+          "diet": "WEGAN",
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1368",
+          "name": "WEGAN Jaglanka z masłem orzechowym",
+          "diet": "WEGAN",
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1369",
+          "name": "Zielone naleśniki z owocami",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1371",
+          "name": "Naleśniki kokosowe",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 15,
           "new": false
         },
         {
@@ -1241,6 +2639,15 @@
           "new": false
         },
         {
+          "id": "1378",
+          "name": "Tapioka czekoladowa",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
           "id": "1379",
           "name": "Tiramisu malinowo-jagodowe",
           "diet": null,
@@ -1252,6 +2659,51 @@
         {
           "id": "1383",
           "name": "Deser piernikowy",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1385",
+          "name": "PREMIUM Pudding z tapioki z owocami",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1386",
+          "name": "Jaglanka czekoladowa z owocami, orzechami i płatkami kokosa",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1387",
+          "name": "Jaglanka truskawkowa z owocami, orzechami i płatkami kokosa",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1388",
+          "name": "Naleśniki pomarańczowe",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 15,
+          "new": false
+        },
+        {
+          "id": "1389",
+          "name": "Pudding z tapioki z musem mango i marakują",
           "diet": null,
           "hasPhoto": false,
           "blankType": "DESER",
@@ -1277,8 +2729,62 @@
           "new": false
         },
         {
+          "id": "1395",
+          "name": "WEGAN Owsianka dyniowa",
+          "diet": "WEGAN",
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
           "id": "1400",
           "name": "Deser Gajowego",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1401",
+          "name": "Mus mango",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1402",
+          "name": "Mus malinowy",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1403",
+          "name": "Mus truskawkowy",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "1405",
+          "name": "KETO Naleśniki czekoladowe",
+          "diet": "KETO",
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1406",
+          "name": "Deser chia z mango",
           "diet": null,
           "hasPhoto": true,
           "blankType": "DESER",
@@ -1296,7 +2802,79 @@
         },
         {
           "id": "1409",
-          "name": "Deser oreo",
+          "name": "Deser Oreo",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 15,
+          "new": false
+        },
+        {
+          "id": "1410",
+          "name": "Mango Lassi z owocami",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1411",
+          "name": "Sernikowa chia",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1412",
+          "name": "Naleśniki z serkiem",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1413",
+          "name": "Tapioka Karmelowa",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1414",
+          "name": "Pudding z zielonej tapioki z serkiem pomarańczowym",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1415",
+          "name": "WEGAN Owsianka z musem mango",
+          "diet": "WEGAN",
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1416",
+          "name": "Naleśniki czekoladowo-bananowe",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 18,
+          "new": false
+        },
+        {
+          "id": "1417",
+          "name": "Mus z pomarańczowym chia",
           "diet": null,
           "hasPhoto": true,
           "blankType": "DESER",
@@ -1309,7 +2887,7 @@
           "diet": null,
           "hasPhoto": false,
           "blankType": "DESER",
-          "price": null,
+          "price": 14,
           "new": false
         },
         {
@@ -1326,6 +2904,24 @@
           "name": "Deserek truskawka pod chmurką",
           "diet": null,
           "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1430",
+          "name": "Kokosowy pudding z nasionami chia",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1438",
+          "name": "Naleśniki czekoladowe z twarożkiem",
+          "diet": null,
+          "hasPhoto": false,
           "blankType": "DESER",
           "price": null,
           "new": false
@@ -1349,6 +2945,15 @@
           "new": false
         },
         {
+          "id": "1445",
+          "name": "Jaglanka czekoladowa z bakaliami",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
           "id": "1446",
           "name": "Serniczek Mango",
           "diet": null,
@@ -1363,12 +2968,75 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "DESER",
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "1496",
+          "name": "Naleśniki szpinakowe z owocami",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1497",
+          "name": "Naleśniki z mango i maracują",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
           "price": null,
           "new": false
         },
         {
           "id": "1745",
           "name": "Tiramisu pistacjowe",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 16,
+          "new": false
+        },
+        {
+          "id": "1828",
+          "name": "Owsianka bez laktozy z nasionami chia",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1843",
+          "name": "Owsianka dyniowa na mleku kokosowym z owocami",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1848",
+          "name": "Owsianka dyniowa na mleku bez laktozy",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 11,
+          "new": false
+        },
+        {
+          "id": "1869",
+          "name": "Naleśniki z kremem orzechowo-kakaowym",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "1878",
+          "name": "Naleśniki z serkiem i powidłami śliwkowymi",
           "diet": null,
           "hasPhoto": true,
           "blankType": "DESER",
@@ -1412,6 +3080,15 @@
           "new": false
         },
         {
+          "id": "2218",
+          "name": "MUS czekolado-orzechowy",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 14,
+          "new": false
+        },
+        {
           "id": "2219",
           "name": "Deserek Kopiec Kreta",
           "diet": null,
@@ -1439,12 +3116,66 @@
           "new": false
         },
         {
+          "id": "2223",
+          "name": "Jaglanka na maśle orzechowym z chili",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "2224",
+          "name": "Tapioka pistacjowa",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 15,
+          "new": false
+        },
+        {
+          "id": "2225",
+          "name": "Tapioka kokosowa",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "2226",
+          "name": "Tapioka truskawkowa",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
           "id": "2247",
           "name": "Szarlotka",
           "diet": null,
           "hasPhoto": true,
           "blankType": "DESER",
           "price": null,
+          "new": false
+        },
+        {
+          "id": "2248",
+          "name": "Tapioka pomarańczowa",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 12,
+          "new": false
+        },
+        {
+          "id": "2249",
+          "name": "Zielone chia z brzoskwinią",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 12,
           "new": false
         },
         {
@@ -1457,12 +3188,39 @@
           "new": false
         },
         {
+          "id": "2251",
+          "name": "Truskawkowa chia",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 13,
+          "new": false
+        },
+        {
+          "id": "2266",
+          "name": "Mus z jabłkiem prażonym",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": null,
+          "new": false
+        },
+        {
           "id": "2284",
           "name": "Carmel Love",
           "diet": null,
           "hasPhoto": true,
           "blankType": "DESER",
-          "price": null,
+          "price": 14,
+          "new": false
+        },
+        {
+          "id": "2290",
+          "name": "WEGAN Pudding z zielonej tapioki z owocami",
+          "diet": "WEGAN",
+          "hasPhoto": true,
+          "blankType": "DESER",
+          "price": 12,
           "new": false
         },
         {
@@ -1480,14 +3238,14 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "DESER",
-          "price": null,
+          "price": 14,
           "new": false
         }
       ]
     },
     {
       "id": "soki",
-      "name": "Soki i napoje",
+      "name": "Soki",
       "items": [
         {
           "id": "1391",
@@ -1504,7 +3262,7 @@
           "diet": null,
           "hasPhoto": false,
           "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1513,7 +3271,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 15,
           "new": false
         },
         {
@@ -1522,7 +3280,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 15,
           "new": false
         },
         {
@@ -1531,7 +3289,7 @@
           "diet": null,
           "hasPhoto": false,
           "blankType": "SOK",
-          "price": null,
+          "price": 15,
           "new": false
         },
         {
@@ -1540,7 +3298,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 13,
           "new": false
         },
         {
@@ -1549,7 +3307,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 13,
           "new": false
         },
         {
@@ -1558,7 +3316,7 @@
           "diet": null,
           "hasPhoto": false,
           "blankType": "SOK",
-          "price": null,
+          "price": 13,
           "new": false
         },
         {
@@ -1567,7 +3325,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 13,
           "new": false
         },
         {
@@ -1576,7 +3334,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 13,
           "new": false
         },
         {
@@ -1585,7 +3343,7 @@
           "diet": null,
           "hasPhoto": false,
           "blankType": "SOK",
-          "price": null,
+          "price": 13,
           "new": false
         },
         {
@@ -1594,7 +3352,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 13,
           "new": false
         },
         {
@@ -1603,7 +3361,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 13,
           "new": false
         },
         {
@@ -1612,7 +3370,7 @@
           "diet": null,
           "hasPhoto": false,
           "blankType": "SOK",
-          "price": null,
+          "price": 13,
           "new": false
         },
         {
@@ -1621,7 +3379,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 13,
           "new": false
         },
         {
@@ -1643,12 +3401,30 @@
           "new": false
         },
         {
+          "id": "1573",
+          "name": "Koktail waniliowo-truskawkowy",
+          "diet": null,
+          "hasPhoto": true,
+          "blankType": "SOK",
+          "price": null,
+          "new": false
+        },
+        {
+          "id": "2000",
+          "name": "Bombilla czerwona",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "SOK",
+          "price": 7,
+          "new": false
+        },
+        {
           "id": "2203",
           "name": "Rajska energia MAŁY",
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1657,7 +3433,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1666,7 +3442,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1675,7 +3451,7 @@
           "diet": null,
           "hasPhoto": false,
           "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1684,7 +3460,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1693,7 +3469,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1702,7 +3478,7 @@
           "diet": null,
           "hasPhoto": false,
           "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1711,7 +3487,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1729,7 +3505,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1738,34 +3514,7 @@
           "diet": null,
           "hasPhoto": true,
           "blankType": "SOK",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1573",
-          "name": "Koktail waniliowo-truskawkowy",
-          "diet": null,
-          "hasPhoto": true,
-          "blankType": "SOK",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "1000",
-          "name": "Bombilla czarna",
-          "diet": null,
-          "hasPhoto": false,
-          "blankType": "SOK",
-          "price": null,
-          "new": false
-        },
-        {
-          "id": "2000",
-          "name": "Bombilla czerwona",
-          "diet": null,
-          "hasPhoto": false,
-          "blankType": "SOK",
-          "price": null,
+          "price": 9,
           "new": false
         },
         {
@@ -1796,26 +3545,120 @@
           "new": false
         }
       ]
+    },
+    {
+      "id": "sushi",
+      "name": "Sushi",
+      "items": [
+        {
+          "id": "1913",
+          "name": "Sushi zestaw mix",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 34,
+          "new": false
+        },
+        {
+          "id": "1914",
+          "name": "Sushi zestaw pieczone maki",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 34,
+          "new": false
+        },
+        {
+          "id": "1915",
+          "name": "Sushi zestaw surowe maki",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 34,
+          "new": false
+        },
+        {
+          "id": "1918",
+          "name": "Sushi zestaw California Gold surowe",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 36,
+          "new": false
+        },
+        {
+          "id": "1919",
+          "name": "Sushi zestaw California Gold pieczone",
+          "diet": null,
+          "hasPhoto": false,
+          "blankType": "OBIAD",
+          "price": 36,
+          "new": false
+        }
+      ]
     }
   ],
   "schedule": {
     "2026-04-14": {
       "salatki": ["1098", "1685", "1703", "1721", "1727", "1729", "1757", "1798", "1941", "1944"],
-      "owsianki": ["1270", "1337", "1367", "1395"],
-      "musy": ["1401", "1402", "1403"],
-      "tapioiki": ["1413", "1411", "2224", "2225", "1417"],
-      "nalewniki": ["1363", "1388", "1412", "1416", "1497"],
-      "desery": ["1341", "1373", "1400", "1408", "1409", "1439"],
-      "soki": ["1422", "1425", "1426", "1428", "1431", "1573", "2301"]
+      "desery": [
+        "1270",
+        "1337",
+        "1367",
+        "1395",
+        "1401",
+        "1402",
+        "1403",
+        "1413",
+        "1411",
+        "2224",
+        "2225",
+        "1417",
+        "1363",
+        "1388",
+        "1412",
+        "1416",
+        "1497",
+        "1341",
+        "1373",
+        "1400",
+        "1408",
+        "1409",
+        "1439"
+      ],
+      "soki": ["1422", "1425", "1426", "1428", "1431", "1573", "2301"],
+      "sushi": ["1913", "1914", "1915", "1918", "1919"]
     },
     "2026-04-15": {
       "salatki": ["1103", "1443", "1634", "1686", "1702", "1707", "1722", "1735", "1751", "1755"],
-      "owsianki": ["1368", "1386", "1387", "1415", "1848"],
-      "musy": ["1272", "1410", "2218", "2266"],
-      "tapioiki": ["1406", "2226", "2248", "2249", "2251"],
-      "nalewniki": ["1364", "1369", "1371", "1496", "1869"],
-      "desery": ["1376", "1379", "1446", "1447", "2247"],
-      "soki": ["1423", "1425", "1428", "1433", "1434", "2203", "2207"]
+      "desery": [
+        "1368",
+        "1386",
+        "1387",
+        "1415",
+        "1848",
+        "1272",
+        "1410",
+        "2218",
+        "2266",
+        "1406",
+        "2226",
+        "2248",
+        "2249",
+        "2251",
+        "1364",
+        "1369",
+        "1371",
+        "1496",
+        "1869",
+        "1376",
+        "1379",
+        "1446",
+        "1447",
+        "2247"
+      ],
+      "soki": ["1423", "1425", "1428", "1433", "1434", "2203", "2207"],
+      "sushi": ["1913", "1914", "1915", "1918", "1919"]
     },
     "2026-04-16": {
       "salatki": [
@@ -1831,12 +3674,35 @@
         "1748",
         "1760"
       ],
-      "owsianki": ["1270", "1337", "1367", "1395", "1828"],
-      "musy": ["1401", "1272", "2218", "2266"],
-      "tapioiki": ["1413", "1417", "2224", "2249", "2251"],
-      "nalewniki": ["1388", "1412", "1416", "1869", "1878"],
-      "desery": ["1341", "1400", "1409", "1439", "1895", "2284"],
-      "soki": ["1422", "1423", "1431", "1436", "1437", "2205", "2302"]
+      "desery": [
+        "1270",
+        "1337",
+        "1367",
+        "1395",
+        "1828",
+        "1401",
+        "1272",
+        "2218",
+        "2266",
+        "1413",
+        "1417",
+        "2224",
+        "2249",
+        "2251",
+        "1388",
+        "1412",
+        "1416",
+        "1869",
+        "1878",
+        "1341",
+        "1400",
+        "1409",
+        "1439",
+        "1895",
+        "2284"
+      ],
+      "soki": ["1422", "1423", "1431", "1436", "1437", "2205", "2302"],
+      "sushi": ["1913", "1914", "1915", "1918", "1919"]
     },
     "2026-04-17": {
       "salatki": [
@@ -1852,58 +3718,302 @@
         "1774",
         "1775"
       ],
-      "owsianki": ["1368", "1386", "1387", "1415", "1848"],
-      "musy": ["1402", "1403", "1410", "2218"],
-      "tapioiki": ["1406", "2225", "2248", "2251", "1417"],
-      "nalewniki": ["1363", "1364", "1369", "1371", "1496"],
-      "desery": ["1373", "1376", "1379", "1446", "2247", "1895"],
-      "soki": ["1425", "1426", "1428", "1433", "1434", "2207", "2208"]
+      "desery": [
+        "1368",
+        "1386",
+        "1387",
+        "1415",
+        "1848",
+        "1402",
+        "1403",
+        "1410",
+        "2218",
+        "1406",
+        "2225",
+        "2248",
+        "2251",
+        "1417",
+        "1363",
+        "1364",
+        "1369",
+        "1371",
+        "1496",
+        "1373",
+        "1376",
+        "1379",
+        "1446",
+        "2247",
+        "1895"
+      ],
+      "soki": ["1425", "1426", "1428", "1433", "1434", "2207", "2208"],
+      "sushi": ["1913", "1914", "1915", "1918", "1919"]
     },
     "2026-04-18": {
       "salatki": ["1103", "1468", "1685", "1703", "1757", "1778", "1798", "1941", "1943", "1945"],
-      "owsianki": ["1270", "1337", "1395", "1828"],
-      "musy": ["1272", "1401", "1402", "1403", "2266"],
-      "tapioiki": ["1413", "1411", "2224", "2248", "2249"],
-      "nalewniki": ["1388", "1412", "1416", "1869", "1878"],
-      "desery": ["1341", "1400", "1409", "2247", "2284", "2297"],
-      "soki": ["1422", "1423", "1425", "1431", "1573", "2301", "2302"]
+      "desery": [
+        "1270",
+        "1337",
+        "1395",
+        "1828",
+        "1272",
+        "1401",
+        "1402",
+        "1403",
+        "2266",
+        "1413",
+        "1411",
+        "2224",
+        "2248",
+        "2249",
+        "1388",
+        "1412",
+        "1416",
+        "1869",
+        "1878",
+        "1341",
+        "1400",
+        "1409",
+        "2247",
+        "2284",
+        "2297"
+      ],
+      "soki": ["1422", "1423", "1425", "1431", "1573", "2301", "2302"],
+      "sushi": ["1913", "1914", "1915", "1918", "1919"]
     },
     "2026-04-20": {
       "salatki": ["1585", "1643", "1721", "1722", "1753", "1755", "1098", "1761z"],
-      "owsianki": ["1386"],
-      "musy": ["1402"],
-      "tapioiki": ["2251", "2224"],
-      "nalewniki": ["1371"],
-      "desery": ["2284"],
-      "soki": ["1428", "1434", "2204", "2208", "1420"]
+      "kanapki": [
+        "1002",
+        "1004",
+        "1006",
+        "1025",
+        "1052",
+        "1055",
+        "1057",
+        "1060",
+        "1065",
+        "1076",
+        "1079",
+        "1087",
+        "1108",
+        "1113",
+        "1198",
+        "1301",
+        "1303",
+        "1310",
+        "1311",
+        "1313",
+        "1334",
+        "2259",
+        "1005M"
+      ],
+      "zupy": ["1802", "1836"],
+      "obiady": [
+        "1361",
+        "1464",
+        "1482",
+        "1485",
+        "1486",
+        "1498",
+        "1501",
+        "1560",
+        "1575",
+        "1579",
+        "1617",
+        "1659",
+        "1691",
+        "1960",
+        "2114",
+        "2132",
+        "2133",
+        "2139",
+        "2232",
+        "2236",
+        "2244",
+        "2268",
+        "2280",
+        "1486M",
+        "1096"
+      ],
+      "desery": ["1386", "1402", "2251", "2224", "1371", "2284"],
+      "soki": ["1428", "1434", "2204", "2208", "1420"],
+      "sushi": ["1913", "1914", "1915", "1918", "1919"]
     },
     "2026-04-21": {},
     "2026-04-22": {
       "salatki": ["1603", "1642", "1703", "1730", "1774", "1778", "1942", "1944"],
-      "owsianki": ["1387"],
-      "musy": ["1272", "2218"],
-      "tapioiki": [],
-      "nalewniki": ["1364"],
-      "desery": ["1447", "1745"],
-      "soki": ["1423", "1427", "1436", "2203", "2210"]
+      "kanapki": [
+        "1057",
+        "1106",
+        "1303",
+        "1311",
+        "1003",
+        "1025",
+        "1052",
+        "1055",
+        "1065",
+        "1073",
+        "1113",
+        "1310",
+        "1007",
+        "1012",
+        "1227",
+        "1223S",
+        "1334",
+        "2216",
+        "1005",
+        "1304",
+        "1720",
+        "1104"
+      ],
+      "zupy": ["1846", "1956"],
+      "obiady": [
+        "1357",
+        "1570",
+        "1612",
+        "1638",
+        "1658",
+        "1709",
+        "2230",
+        "1462",
+        "1452",
+        "1465",
+        "1588",
+        "1645",
+        "2116",
+        "2124",
+        "2140",
+        "2240",
+        "2270",
+        "1616",
+        "2239",
+        "1548",
+        "1597",
+        "1633",
+        "1765",
+        "1097",
+        "1876",
+        "1925"
+      ],
+      "desery": ["1387", "1272", "2218", "1364", "1447", "1745"],
+      "soki": ["1423", "1427", "1436", "2203", "2210"],
+      "sushi": ["1913", "1914", "1915", "1918", "1919"]
     },
     "2026-04-23": {
       "salatki": ["1711", "1757", "1772", "1734", "1735", "1945", "1484", "1103"],
-      "owsianki": ["1270"],
-      "musy": ["1401"],
-      "tapioiki": ["2290"],
-      "nalewniki": ["1388"],
-      "desery": ["1362", "1409"],
-      "soki": ["2205", "2206", "1431", "1432", "1424"]
+      "kanapki": [
+        "1053",
+        "1057",
+        "1106",
+        "1303",
+        "1311",
+        "1003",
+        "1025",
+        "1052",
+        "1055",
+        "1065",
+        "1073",
+        "1113",
+        "1310",
+        "1007",
+        "1012",
+        "1227",
+        "1223S",
+        "1334",
+        "2216",
+        "1005",
+        "1304",
+        "1720",
+        "1104"
+      ],
+      "zupy": ["1846", "1956"],
+      "obiady": [
+        "1357",
+        "1570",
+        "1612",
+        "1638",
+        "1658",
+        "1709",
+        "2230",
+        "1462",
+        "1452",
+        "1465",
+        "1645",
+        "2116",
+        "2124",
+        "2140",
+        "2240",
+        "2270",
+        "1616",
+        "2239",
+        "1548",
+        "1597",
+        "1633",
+        "1765",
+        "1097",
+        "1876",
+        "1925"
+      ],
+      "desery": ["1270", "1401", "2290", "1388", "1401", "1270", "1362", "1409"],
+      "soki": ["2205", "2206", "1431", "1432", "1424"],
+      "sushi": ["1913", "1914", "1915", "1918", "1919"]
     },
     "2026-04-24": {
       "salatki": ["1685", "1725", "1726", "1741", "1763", "1764", "1798"],
-      "owsianki": ["1368"],
-      "musy": ["1402"],
-      "tapioiki": ["2248"],
-      "nalewniki": ["1412"],
-      "desery": ["1418", "2297"],
-      "soki": ["1425", "1433", "2207", "2301"]
+      "kanapki": [
+        "1002",
+        "1004",
+        "1006",
+        "1025",
+        "1026",
+        "1055",
+        "1061",
+        "1065",
+        "1087",
+        "1108",
+        "1113",
+        "1198",
+        "1227",
+        "1257",
+        "1263",
+        "1269",
+        "1301",
+        "1303",
+        "1311",
+        "1335",
+        "1602",
+        "2215",
+        "1223S"
+      ],
+      "zupy": ["1805", "1825"],
+      "obiady": [
+        "1095",
+        "1441",
+        "1448",
+        "1455",
+        "1478",
+        "1523",
+        "1555",
+        "1589",
+        "1614",
+        "1619",
+        "1624",
+        "1631",
+        "1661",
+        "1670",
+        "1680",
+        "1937",
+        "1938",
+        "2120",
+        "2128",
+        "2156",
+        "2231",
+        "2292",
+        "1664M"
+      ],
+      "desery": ["1368", "1402", "2248", "1412", "1418", "2297"],
+      "soki": ["1425", "1433", "2207", "2301"],
+      "sushi": ["1913", "1914", "1915", "1918", "1919"]
     }
   }
 }

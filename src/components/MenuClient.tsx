@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import menuData from "@/data/menu.json";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
@@ -34,6 +33,7 @@ const BLANK_URL: Record<string, string> = {
   SAŁATKA: "/blanks/SA%C5%81ATKA.png",
   SOK: "/blanks/SOK.png",
   ZUPA: "/blanks/ZUPA.png",
+  SUSHI: "/blanks/OBIAD.png",
 };
 
 // ── Diet config — brandbook 2026 ──────────────────────────────────────────────
@@ -195,19 +195,6 @@ function Lightbox({ item, onClose }: { item: MenuItem; onClose: () => void }) {
               {priceText}
             </span>
           </div>
-          <Link
-            href="https://sklep.mrrollo.pl/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 text-sm font-semibold py-3 px-5 rounded-full transition-all"
-            style={{
-              background: "var(--color-brand-black)",
-              color: "#fff",
-              fontFamily: "var(--font-display)",
-            }}
-          >
-            Przejdź do sklepu →
-          </Link>
         </div>
       </div>
     </div>
