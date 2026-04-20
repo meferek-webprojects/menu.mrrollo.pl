@@ -3,11 +3,13 @@
 import { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import Image from "next/image";
 import menuData from "@/data/menu.json";
+import scheduleData from "@/data/schedule.json";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 interface MenuItem {
   id: string;
+  category: string;
   name: string;
   diet: string | null;
   hasPhoto: boolean;
@@ -19,10 +21,9 @@ interface MenuItem {
 interface MenuCategory {
   id: string;
   name: string;
-  items: MenuItem[];
 }
 
-type Schedule = Record<string, Record<string, string[]>>;
+type Schedule = Record<string, string[]>;
 
 // ── Blank image URLs ──────────────────────────────────────────────────────────
 
@@ -452,7 +453,8 @@ function SearchResults({
 
 export default function MenuClient() {
   const categories = menuData.categories as MenuCategory[];
-  const schedule = (menuData as { schedule?: Schedule }).schedule ?? {};
+  const allItems = menuData.items as MenuItem[];
+  const schedule = scheduleData as Schedule;
 
   const [activeCatId, setActiveCatId] = useState(categories[0].id);
   const [search, setSearch] = useState("");
@@ -463,31 +465,26 @@ export default function MenuClient() {
   const weekDays = useMemo(() => getWeekDays(), []);
   const isSearching = search.trim().length > 0;
 
+  const scheduledSet = useMemo(
+    () => (selectedDate ? new Set(schedule[selectedDate] ?? []) : null),
+    [selectedDate, schedule]
+  );
+
   const categoryItems = useMemo(() => {
-    const base = categories.find((c) => c.id === activeCatId)?.items ?? [];
-    if (!selectedDate) return base;
-    const ids = schedule[selectedDate]?.[activeCatId];
-    if (!ids) return [];
-    const set = new Set(ids);
-    return base.filter((it) => set.has(it.id));
-  }, [activeCatId, selectedDate, schedule, categories]);
+    const base = allItems.filter((it) => it.category === activeCatId);
+    if (!scheduledSet) return base;
+    return base.filter((it) => scheduledSet.has(it.id));
+  }, [activeCatId, scheduledSet, allItems]);
 
   const searchGroups = useMemo<SearchGroup[]>(() => {
     if (!isSearching) return [];
     const q = search.trim().toLowerCase();
     return categories.map((cat) => {
-      let pool = cat.items;
-      if (selectedDate) {
-        const ids = schedule[selectedDate]?.[cat.id];
-        if (!ids) pool = [];
-        else {
-          const set = new Set(ids);
-          pool = pool.filter((it) => set.has(it.id));
-        }
-      }
+      let pool = allItems.filter((it) => it.category === cat.id);
+      if (scheduledSet) pool = pool.filter((it) => scheduledSet.has(it.id));
       return { category: cat, items: pool.filter((it) => it.name.toLowerCase().includes(q)) };
     });
-  }, [search, isSearching, selectedDate, schedule, categories]);
+  }, [search, isSearching, scheduledSet, allItems, categories]);
 
   const totalHits = searchGroups.reduce((n, g) => n + g.items.length, 0);
 
@@ -508,9 +505,9 @@ export default function MenuClient() {
   }
 
   function catCount(cat: MenuCategory) {
-    if (!selectedDate) return cat.items.length;
-    const ids = schedule[selectedDate]?.[cat.id];
-    return ids ? ids.length : 0;
+    const base = allItems.filter((it) => it.category === cat.id);
+    if (!scheduledSet) return base.length;
+    return base.filter((it) => scheduledSet.has(it.id)).length;
   }
 
   const activeCategory = categories.find((c) => c.id === activeCatId)!;
