@@ -3892,7 +3892,7 @@
       "diet": null,
       "hasPhoto": false,
       "blankType": "OBIAD",
-      "price": 34,
+      "price": 35,
       "new": false
     },
     {
@@ -3902,7 +3902,7 @@
       "diet": null,
       "hasPhoto": false,
       "blankType": "OBIAD",
-      "price": 34,
+      "price": 35,
       "new": false
     },
     {
@@ -3912,7 +3912,27 @@
       "diet": null,
       "hasPhoto": false,
       "blankType": "OBIAD",
-      "price": 34,
+      "price": 35,
+      "new": false
+    },
+    {
+      "id": "1916",
+      "category": "sushi",
+      "name": "Sushi zestaw California Gold",
+      "diet": null,
+      "hasPhoto": false,
+      "blankType": "OBIAD",
+      "price": 35,
+      "new": false
+    },
+    {
+      "id": "1917",
+      "category": "sushi",
+      "name": "Sushi zestaw Premium Mix",
+      "diet": null,
+      "hasPhoto": false,
+      "blankType": "OBIAD",
+      "price": 96,
       "new": false
     },
     {
@@ -3922,7 +3942,7 @@
       "diet": null,
       "hasPhoto": false,
       "blankType": "OBIAD",
-      "price": 36,
+      "price": 37,
       "new": false
     },
     {
@@ -3932,7 +3952,7 @@
       "diet": null,
       "hasPhoto": false,
       "blankType": "OBIAD",
-      "price": 36,
+      "price": 37,
       "new": false
     }
   ]
