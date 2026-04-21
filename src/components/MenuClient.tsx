@@ -335,7 +335,7 @@ function ItemCard({ item, onOpen }: { item: MenuItem; onOpen: (item: MenuItem) =
       onClick={() => onOpen(item)}
     >
       {/* Thumbnail */}
-      <div className="relative shrink-0 w-[68px] h-[68px] rounded-xl overflow-hidden bg-neutral-50">
+      <div className="relative shrink-0 w-17 h-17 rounded-xl overflow-hidden bg-neutral-50">
         <Image
           src={photoSrc}
           alt={item.name}
@@ -712,6 +712,14 @@ export default function MenuClient() {
           </>
         ) : (
           <>
+            <div className="flex items-center gap-3 rounded-2xl px-4 py-3 mb-6 border font-semibold border-green-600 text-green-600 bg-white">
+              <span className="text-base shrink-0" aria-hidden="true">
+                i
+              </span>
+              <p className="text-sm font-medium leading-snug">
+                Oferta dostępna stacjonarnie u handlowców.
+              </p>
+            </div>
             <div className="flex items-baseline justify-between mb-4">
               <h1
                 className="text-lg font-semibold"
