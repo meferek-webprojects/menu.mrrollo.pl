@@ -81,7 +81,10 @@ const PL_MONTHS_SHORT = [
 ];
 
 function toISODate(d: Date) {
-  return d.toISOString().slice(0, 10);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
 }
 
 function getWeekDays(ref = new Date()): Date[] {
@@ -459,7 +462,15 @@ export default function MenuClient() {
   const [activeCatId, setActiveCatId] = useState(categories[0].id);
   const [search, setSearch] = useState("");
   const [lightboxItem, setLightboxItem] = useState<MenuItem | null>(null);
-  const [selectedDate, setSelectedDate] = useState<string | null>(() => toISODate(new Date()));
+  const [selectedDate, setSelectedDate] = useState<string | null>(() => {
+    const now = new Date();
+    if (now.getDay() === 0) {
+      const mon = new Date(now);
+      mon.setDate(now.getDate() + 1);
+      return toISODate(mon);
+    }
+    return toISODate(now);
+  });
   const [weekPickerOpen, setWeekPickerOpen] = useState(false);
 
   const weekDays = useMemo(() => getWeekDays(), []);
