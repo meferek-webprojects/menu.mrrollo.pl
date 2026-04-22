@@ -113,9 +113,11 @@ function formatDateLong(d: Date) {
 // ── Lightbox ──────────────────────────────────────────────────────────────────
 
 function Lightbox({ item, onClose }: { item: MenuItem; onClose: () => void }) {
-  const photoSrc = item.hasPhoto
-    ? `/photos/${item.id}.png`
-    : (BLANK_URL[item.blankType] ?? "/blanks/DESER.png");
+  const [imgError, setImgError] = useState(false);
+  const photoSrc =
+    item.hasPhoto && !imgError
+      ? `/photos/${item.id}.png`
+      : (BLANK_URL[item.blankType] ?? "/blanks/DESER.png");
 
   useEffect(() => {
     const h = (e: KeyboardEvent) => {
@@ -144,12 +146,12 @@ function Lightbox({ item, onClose }: { item: MenuItem; onClose: () => void }) {
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-t-[28px] sm:rounded-[28px] w-full sm:max-w-sm overflow-hidden"
+        className="bg-white rounded-t-[28px] sm:rounded-[28px] w-full sm:max-w-sm overflow-hidden p-4"
         style={{ boxShadow: "0 28px 80px rgba(35,31,32,0.22)" }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Photo */}
-        <div className="relative w-full aspect-square bg-neutral-50">
+        <div className="relative w-full aspect-square bg-neutral-50 rounded-3xl">
           <Image
             src={photoSrc}
             alt={item.name}
@@ -157,6 +159,7 @@ function Lightbox({ item, onClose }: { item: MenuItem; onClose: () => void }) {
             sizes="(max-width:640px) 100vw,384px"
             className="object-cover"
             priority
+            onError={() => setImgError(true)}
           />
           {item.new && (
             <span
