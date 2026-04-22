@@ -134,7 +134,7 @@
       "category": "salatki",
       "name": "Misa VEGE z kaszą gryczaną, cieciorką i warzywami",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": 20,
       "new": false
@@ -174,7 +174,7 @@
       "category": "salatki",
       "name": "Misa Healthy z kuskusem, warzywami i sosem ogrodowym",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -184,7 +184,7 @@
       "category": "salatki",
       "name": "FIT Sałatka z kuskusem i orzechami",
       "diet": "FIT",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -214,7 +214,7 @@
       "category": "salatki",
       "name": "Sałatka z krewetkami i mango na makaronie razowym",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -234,7 +234,7 @@
       "category": "salatki",
       "name": "Sałatka z cieciorką i komosą ryżową",
       "diet": "WEGAN",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -244,7 +244,7 @@
       "category": "salatki",
       "name": "KETO Sałatka z tuńczykiem i czerwoną kapustą",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": 19,
       "new": false
@@ -254,7 +254,7 @@
       "category": "salatki",
       "name": "Sałatka z kurczakiem na kaszy kuskus z brzoskwinią",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -284,7 +284,7 @@
       "category": "salatki",
       "name": "Sałatka z kurczakiem, kaszą kuskus, melonem i brzoskwinią",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -334,7 +334,7 @@
       "category": "salatki",
       "name": "Sałatka letnia z pomarańczą, burakiem i mango",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": 20,
       "new": false
@@ -354,7 +354,7 @@
       "category": "salatki",
       "name": "Sałatka z kurczakiem na makaronie razowym",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -434,7 +434,7 @@
       "category": "salatki",
       "name": "Sałatka z tuńczykiem, kaszą pęczak, szpinakiem i soczewicą",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -494,7 +494,7 @@
       "category": "salatki",
       "name": "Sałatka z truskawką, serem pleśniowym i orzechami",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -524,7 +524,7 @@
       "category": "salatki",
       "name": "Sałatka tortellini z suszonymi pomidorami",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": 21,
       "new": false
@@ -544,7 +544,7 @@
       "category": "salatki",
       "name": "FIT Sałatka z kurczakiem, komosą ryżową i humusem",
       "diet": "FIT",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": 19,
       "new": false
@@ -574,7 +574,7 @@
       "category": "salatki",
       "name": "Sałatka z melonem i cukinią na makaronie razowym",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -604,7 +604,7 @@
       "category": "salatki",
       "name": "Jesienna sałatka z dynią i tuńczykiem na makaronie razowym",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -684,7 +684,7 @@
       "category": "salatki",
       "name": "Sałatka z tuńczykiem i mango na makaronie razowym",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SAŁATKA",
       "price": null,
       "new": false
@@ -715,7 +715,7 @@
       "category": "kanapki",
       "name": "Boczek grillowany z jajkiem PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 13,
       "new": false
@@ -725,7 +725,7 @@
       "category": "kanapki",
       "name": "Wieprzowina szarpana na ostro PÓŁBAGIETKA WIELOZIARNISTA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -735,7 +735,7 @@
       "category": "kanapki",
       "name": "Chorizo z jalapeno i rukolą SCHIACCIATA NERO",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 14,
       "new": false
@@ -745,7 +745,7 @@
       "category": "kanapki",
       "name": "Chorizo z rukolą i parmezanem SCHIACCIATA NERO",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 14,
       "new": false
@@ -755,7 +755,7 @@
       "category": "kanapki",
       "name": "Carpaccio z rucolą i parmezanem SCHIACCIATA NERO",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 14,
       "new": false
@@ -765,7 +765,7 @@
       "category": "kanapki",
       "name": "Kurczak w sosie miodowo-musztardowym PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -775,7 +775,7 @@
       "category": "kanapki",
       "name": "Kurczak w sosie salsa mango PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -785,7 +785,7 @@
       "category": "kanapki",
       "name": "Kurczak Missisipi BUŁKA PROTEINOWA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -795,7 +795,7 @@
       "category": "kanapki",
       "name": "Pasta z łososia z rukolą i pomidorem BAJGIEL",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 17,
       "new": false
@@ -805,7 +805,7 @@
       "category": "kanapki",
       "name": "Indyk z kwaszeniakiem PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -815,7 +815,7 @@
       "category": "kanapki",
       "name": "Pasta z łososia z rukolą i ogórkiem BAJGIEL",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 17,
       "new": false
@@ -825,7 +825,7 @@
       "category": "kanapki",
       "name": "Krakowska, żółty ser i jalapeno PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -835,7 +835,7 @@
       "category": "kanapki",
       "name": "Mozzarella z suszonym pomidorem BUŁKA Z OLIWKAMI",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -845,7 +845,7 @@
       "category": "kanapki",
       "name": "Kurczak Missisipi PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -855,7 +855,7 @@
       "category": "kanapki",
       "name": "Kurczak w sosie ziołowym PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -865,7 +865,7 @@
       "category": "kanapki",
       "name": "Kurczak z curry PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -875,7 +875,7 @@
       "category": "kanapki",
       "name": "Kanapka z wątróbką PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -885,7 +885,7 @@
       "category": "kanapki",
       "name": "Kurczak, suszony pomidor i rukola PÓŁBAGIETKA WIELOZIARNISTA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -895,7 +895,7 @@
       "category": "kanapki",
       "name": "Kanapka z brie, gruszką, żurawiną i rukolą BUŁKA SZNYTKA",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -905,7 +905,7 @@
       "category": "kanapki",
       "name": "Parmeńska, rukola i ementaler PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -915,7 +915,7 @@
       "category": "kanapki",
       "name": "Pasta z tuńczyka PÓŁBAGIETKA PSZENNA",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -925,7 +925,7 @@
       "category": "kanapki",
       "name": "Pasta jajeczna ze szczypiorem PÓŁBAGIETKA PSZENNA",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -935,7 +935,7 @@
       "category": "kanapki",
       "name": "Żółty ser z warzywami PÓŁBAGIETKA WIELOZIARNISTA",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -945,7 +945,7 @@
       "category": "kanapki",
       "name": "Kanapka Premium z filetem z kurczaka, pomidorem i ogórkiem BUŁKA CHIA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 18,
       "new": false
@@ -955,7 +955,7 @@
       "category": "kanapki",
       "name": "Kanapka z brie, suszonym pomidorem i rukolą CHLEB GRAHAM",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -965,7 +965,7 @@
       "category": "kanapki",
       "name": "Stripsy z kurczaka PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -975,7 +975,7 @@
       "category": "kanapki",
       "name": "Szynka, ser, jajko i kwaszeniak PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -985,7 +985,7 @@
       "category": "kanapki",
       "name": "WEGAN Pasztet z ogórkiem kwaszonym CHLEB GRAHAM",
       "diet": "WEGAN",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -995,7 +995,7 @@
       "category": "kanapki",
       "name": "Indyk z żurawiną i rukolą SCHIACCIATA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 14,
       "new": false
@@ -1005,7 +1005,7 @@
       "category": "kanapki",
       "name": "Mozzarella z suszonymi pomidorami i pesto CIABATTA",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -1015,7 +1015,7 @@
       "category": "kanapki",
       "name": "Pasta jajeczna z boczkiem PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -1025,7 +1025,7 @@
       "category": "kanapki",
       "name": "Kurczak w sosie ziołowym BUŁKA Z OLIWKAMI",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -1035,7 +1035,7 @@
       "category": "kanapki",
       "name": "Kurczak San Marino z pesto, mozzarellą i pomidorem SCHIACCIATA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 15,
       "new": false
@@ -1045,7 +1045,7 @@
       "category": "kanapki",
       "name": "Pasta jajeczna ze szczypiorkiem BUŁKA SZNYTKA",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -1055,7 +1055,7 @@
       "category": "kanapki",
       "name": "Salami Spianata z rukolą i żółtym serem SCHIACCIATA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 13,
       "new": false
@@ -1065,7 +1065,7 @@
       "category": "kanapki",
       "name": "Pasta z tuńczyka BUŁKA SZNYTKA",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -1075,7 +1075,7 @@
       "category": "kanapki",
       "name": "Schab w sosie żurawinowym CHLEB PYTLOWY",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -1085,7 +1085,7 @@
       "category": "kanapki",
       "name": "Wołowina w sosie ziołowym BUŁKA PROTEINOWA Z ZIARNAMI",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -1095,7 +1095,7 @@
       "category": "kanapki",
       "name": "Szynka staropolska, jajko i kwaszeniak BUŁKA PROTEINOWA Z ZIARNAMI",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -1105,7 +1105,7 @@
       "category": "kanapki",
       "name": "Szynka staropolska, jajko i kwaszeniak BUŁKA CHIA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 12,
       "new": false
@@ -1115,7 +1115,7 @@
       "category": "kanapki",
       "name": "Focaccia z pesto, mozzarellą i pomidorem FOCACCIA",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 14,
       "new": false
@@ -1125,7 +1125,7 @@
       "category": "kanapki",
       "name": "Kanapka włoska z kurczakiem i rukolą BUŁKA Z OLIWKAMI",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -1135,7 +1135,7 @@
       "category": "kanapki",
       "name": "Panini z brie, rukolą i pomarańczą PANINI",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 13,
       "new": false
@@ -1145,7 +1145,7 @@
       "category": "kanapki",
       "name": "Pieczony indyk z fetą i gotowanym burakiem BUŁKA PROTEINOWA Z ZIARNAMI",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -1155,7 +1155,7 @@
       "category": "kanapki",
       "name": "Pieczony indyk z fetą i gotowanym burakiem CIABATTA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -1165,7 +1165,7 @@
       "category": "kanapki",
       "name": "Ciabatta z pieczarkami CIABATTA",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -1175,7 +1175,7 @@
       "category": "kanapki",
       "name": "Pikantna pasta z tuńczyka BUŁKA PROTEINOWA Z ZIARNAMI",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 14,
       "new": false
@@ -1185,7 +1185,7 @@
       "category": "kanapki",
       "name": "Uczta twarogowa BUŁKA PROTEINOWA Z ZIARNAMI",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -1195,7 +1195,7 @@
       "category": "kanapki",
       "name": "Burger buraczany z sosem tatarskim CIABATTA",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -1205,7 +1205,7 @@
       "category": "kanapki",
       "name": "Kanapka z kurczakiem i grillowanymi warzywami CIABATTA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -1215,7 +1215,7 @@
       "category": "kanapki",
       "name": "Wołowina Jalapeno CIABATTA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 10,
       "new": false
@@ -1225,7 +1225,7 @@
       "category": "kanapki",
       "name": "Hot-Dog PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -1235,7 +1235,7 @@
       "category": "kanapki",
       "name": "Kurczak z cukinią SCHIACCIATA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 13,
       "new": false
@@ -1245,7 +1245,7 @@
       "category": "kanapki",
       "name": "Francuskie salami z orzechami i papryką SCHIACCIATA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 13,
       "new": false
@@ -1255,7 +1255,7 @@
       "category": "kanapki",
       "name": "Pikantna pasta z tuńczyka CHLEB TOSTOWY GRAHAM",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 13,
       "new": false
@@ -1265,7 +1265,7 @@
       "category": "kanapki",
       "name": "Pastrami wołowe z jalapeno BAJGIEL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 15,
       "new": false
@@ -1275,7 +1275,7 @@
       "category": "kanapki",
       "name": "Szynka, ser, ogórek i pomidor BAJGIEL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 15,
       "new": false
@@ -1285,7 +1285,7 @@
       "category": "kanapki",
       "name": "Burger z boczkiem, jajkiem i kwaszeniakiem HAMBURGER MAŚLANY",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 14,
       "new": false
@@ -1295,7 +1295,7 @@
       "category": "kanapki",
       "name": "Szynka, ser, ogórek i pomidor BUŁKA KUKURYDZIANA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 13,
       "new": false
@@ -1305,7 +1305,7 @@
       "category": "kanapki",
       "name": "Pastrami wołowe z jalapeno BUŁKA KUKURYDZIANA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 13,
       "new": false
@@ -1315,7 +1315,7 @@
       "category": "kanapki",
       "name": "Kanapka włoska z kurczakiem i rukolą PÓŁBAGIETKA PSZENNA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "KANAPKA",
       "price": 11,
       "new": false
@@ -1326,7 +1326,7 @@
       "category": "zupy",
       "name": "Barszcz Ukraiński",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "ZUPA",
       "price": 12,
       "new": false
@@ -1336,7 +1336,7 @@
       "category": "zupy",
       "name": "Zupa fasolowa",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "ZUPA",
       "price": 12,
       "new": false
@@ -1346,7 +1346,7 @@
       "category": "zupy",
       "name": "Krem z pomidorów z mozzarellą",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "ZUPA",
       "price": 12,
       "new": false
@@ -1356,7 +1356,7 @@
       "category": "zupy",
       "name": "Marokańska zupa harira",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "ZUPA",
       "price": 12,
       "new": false
@@ -1366,7 +1366,7 @@
       "category": "zupy",
       "name": "Pomidorowa z makaronem",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "ZUPA",
       "price": 12,
       "new": false
@@ -1376,7 +1376,7 @@
       "category": "zupy",
       "name": "Zupa Ogórkowa",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "ZUPA",
       "price": 12,
       "new": false
@@ -1386,7 +1386,7 @@
       "category": "zupy",
       "name": "Zupa pieczarkowa",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "ZUPA",
       "price": 12,
       "new": false
@@ -1396,7 +1396,7 @@
       "category": "zupy",
       "name": "Żurek",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "ZUPA",
       "price": 12,
       "new": false
@@ -1406,7 +1406,7 @@
       "category": "zupy",
       "name": "Krupnik",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "ZUPA",
       "price": 12,
       "new": false
@@ -1416,7 +1416,7 @@
       "category": "zupy",
       "name": "Zupa gulaszowa",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "ZUPA",
       "price": 15,
       "new": false
@@ -1427,7 +1427,7 @@
       "category": "obiady",
       "name": "Fish tikka masala z ryżem",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 23,
       "new": false
@@ -1437,7 +1437,7 @@
       "category": "obiady",
       "name": "Bitki wieprzowe z kopytkami i buraczkami XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 23,
       "new": false
@@ -1447,7 +1447,7 @@
       "category": "obiady",
       "name": "Pierś kurczaka w panco z ryżem, warzywami i surówką XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 24,
       "new": false
@@ -1457,7 +1457,7 @@
       "category": "obiady",
       "name": "Bułeczki bao z krewetkami w tempurze i kimchi",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 24,
       "new": false
@@ -1467,7 +1467,7 @@
       "category": "obiady",
       "name": "Kurczak w sosie dragon z puree i surówką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 24,
       "new": false
@@ -1477,7 +1477,7 @@
       "category": "obiady",
       "name": "Tortilla VEGE z burakiem, kozim serem i rukolą",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 17,
       "new": false
@@ -1487,7 +1487,7 @@
       "category": "obiady",
       "name": "Tortilla ze szpinakiem, suszonym pomidorem i mozarellą",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1497,7 +1497,7 @@
       "category": "obiady",
       "name": "Makaron Caprese z pesto i mozzarellą",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1507,7 +1507,7 @@
       "category": "obiady",
       "name": "Polędwiczka w sosie serowym ze szpeclami szpinakowymi i buraczkami zasmażanymi",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 24,
       "new": false
@@ -1517,7 +1517,7 @@
       "category": "obiady",
       "name": "Racuchy z dynią",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 15,
       "new": false
@@ -1527,7 +1527,7 @@
       "category": "obiady",
       "name": "KETO Kotlety drobiowe z kapustą kwaszoną i puree z kalafiora",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -1537,7 +1537,7 @@
       "category": "obiady",
       "name": "Łosoś ryflowany na tagliatelle z pomidorami",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -1547,7 +1547,7 @@
       "category": "obiady",
       "name": "Tagliatelle z kurczakiem, pieczarkami, pomidorami i mlekiem kokosowym",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1557,7 +1557,7 @@
       "category": "obiady",
       "name": "Kurczak w sosie pieczarkowo-kaparowym na razowym penne",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1567,7 +1567,7 @@
       "category": "obiady",
       "name": "Dyniowe curry z kurczakiem i razowym penne",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1577,7 +1577,7 @@
       "category": "obiady",
       "name": "Wątróbka z cebulką, puree i sałatką szwedzką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -1587,7 +1587,7 @@
       "category": "obiady",
       "name": "Kluski leniwe",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 15,
       "new": false
@@ -1597,7 +1597,7 @@
       "category": "obiady",
       "name": "Naleśniki azjatyckie z wieprzowiną",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1607,7 +1607,7 @@
       "category": "obiady",
       "name": "Kotlet de volaille z puree i surówką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -1617,7 +1617,7 @@
       "category": "obiady",
       "name": "Kotlet de volaille XXL z puree i surówką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -1627,7 +1627,7 @@
       "category": "obiady",
       "name": "Kotlet de volaille XXL z puree i marchewką z groszkiem",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -1637,7 +1637,7 @@
       "category": "obiady",
       "name": "Kotlet mielony z puree i buraczkami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1647,7 +1647,7 @@
       "category": "obiady",
       "name": "Kotlet mielony z puree i buraczkami XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -1657,7 +1657,7 @@
       "category": "obiady",
       "name": "Kotlet mielony z puree i marchewką z groszkiem XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -1667,7 +1667,7 @@
       "category": "obiady",
       "name": "Kotlet schabowy z ziemniakami i kapustą zasmażaną",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1677,7 +1677,7 @@
       "category": "obiady",
       "name": "Kotlet schabowy z ziemniakami i kapustą zasmażaną XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -1687,7 +1687,7 @@
       "category": "obiady",
       "name": "Kotlet schabowy z ziemniakami i surówką z kapusty XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -1697,7 +1697,7 @@
       "category": "obiady",
       "name": "VEGE kotlety sojowe w sosie kurkowym z kaszą bulgur i buraczkami",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 17,
       "new": false
@@ -1707,7 +1707,7 @@
       "category": "obiady",
       "name": "Kaszotto z kurczakiem, burakiem, szpinakiem i fetą",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1717,7 +1717,7 @@
       "category": "obiady",
       "name": "KETO Schabowy z kapustą kwaszoną i puree z kalafiora",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -1727,7 +1727,7 @@
       "category": "obiady",
       "name": "Krążki z kurczaka z serem, pieczonymi ziemniakami i surówką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -1737,7 +1737,7 @@
       "category": "obiady",
       "name": "KETO Polędwiczka z boczkiem, pieczarkami, brokułem i kalafiorem",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -1747,7 +1747,7 @@
       "category": "obiady",
       "name": "Kebab z pieczonymi ziemniakami, sosem czosnkowym i surówką z czerwonej kapusty",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -1757,7 +1757,7 @@
       "category": "obiady",
       "name": "Buddha Bowl z tofu",
       "diet": "WEGAN",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -1767,7 +1767,7 @@
       "category": "obiady",
       "name": "Kaszotto z białej kaszy gryczanej z kurczakiem, pestkami dyni, słonecznika oraz suszonym pomidorem",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1777,7 +1777,7 @@
       "category": "obiady",
       "name": "Filet z kurczaka zapiekany z pomidorami i mozzarellą z szpeclami szpinakowymi",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -1787,7 +1787,7 @@
       "category": "obiady",
       "name": "Spaghetti a`la Carbonara",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1797,7 +1797,7 @@
       "category": "obiady",
       "name": "Zielone naleśniki z serkiem i łososiem",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -1807,7 +1807,7 @@
       "category": "obiady",
       "name": "Penne z fasolką szparagową i szynką szwarcwaldzką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1817,7 +1817,7 @@
       "category": "obiady",
       "name": "VEGE Klopsiki w sosie żurawinowym z kopytkami",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -1827,7 +1827,7 @@
       "category": "obiady",
       "name": "Pierogi ruskie",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 16,
       "new": false
@@ -1837,7 +1837,7 @@
       "category": "obiady",
       "name": "Pad Thai z kurczakiem po tajsku na makaronie ryżowym",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1847,7 +1847,7 @@
       "category": "obiady",
       "name": "Naleśniki curry włoskie",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1857,7 +1857,7 @@
       "category": "obiady",
       "name": "Bitki wieprzowe z kaszą gryczaną i buraczkami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1867,7 +1867,7 @@
       "category": "obiady",
       "name": "Tagliatelle z kurczakiem i orzechami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1877,7 +1877,7 @@
       "category": "obiady",
       "name": "Lasagne VEGE",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -1887,7 +1887,7 @@
       "category": "obiady",
       "name": "Kotlety z indyka w sosie koperkowym z kaszą bulgur i surówką z czerwonej kapusty",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1897,7 +1897,7 @@
       "category": "obiady",
       "name": "Racuchy z jabłkami",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 15,
       "new": false
@@ -1907,7 +1907,7 @@
       "category": "obiady",
       "name": "Roladki z kurczaka ze szpinakiem i sosem z suszonych pomidorów z puree",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1917,7 +1917,7 @@
       "category": "obiady",
       "name": "Roladki z kurczaka ze szpinakiem na duszonej dyni i marchewce z kopytkami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -1927,7 +1927,7 @@
       "category": "obiady",
       "name": "Wątróbka z cebulką, kopytkami i buraczkami XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -1937,7 +1937,7 @@
       "category": "obiady",
       "name": "Tajskie curry z ciecierzycą i szpinakiem podane z ryżem",
       "diet": "WEGAN",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 17,
       "new": false
@@ -1947,7 +1947,7 @@
       "category": "obiady",
       "name": "Curry z kurczakiem, cieciorką i ryżem",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -1957,7 +1957,7 @@
       "category": "obiady",
       "name": "Kotlety warzywne w sosie z czerwonego curry z surówką z czerwonej kapusty",
       "diet": "WEGAN",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1967,7 +1967,7 @@
       "category": "obiady",
       "name": "Schab z sosem myśliwskim, kaszą bulgur i buraczkami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1977,7 +1977,7 @@
       "category": "obiady",
       "name": "Placek po zbójnicku",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -1987,7 +1987,7 @@
       "category": "obiady",
       "name": "Spaghetti bolognese",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -1997,7 +1997,7 @@
       "category": "obiady",
       "name": "Spaghetti po chińsku z wieprzowiną XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 23,
       "new": false
@@ -2007,7 +2007,7 @@
       "category": "obiady",
       "name": "Penne ze szpinakiem i pieczarkami",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 16,
       "new": false
@@ -2017,7 +2017,7 @@
       "category": "obiady",
       "name": "Tagliatelle z kurczakiem, szpinakiem, pieczarkami i parmezanem",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2027,7 +2027,7 @@
       "category": "obiady",
       "name": "Quiche ze szpinakiem i kozim serem na ziemniakach",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2037,7 +2037,7 @@
       "category": "obiady",
       "name": "Pierś z kurczaka w sosie serowym z gnocchi i fasolką szparagową",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 23,
       "new": false
@@ -2047,7 +2047,7 @@
       "category": "obiady",
       "name": "Pierś kurczaka w panco z ryżem, warzywami i surówką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2057,7 +2057,7 @@
       "category": "obiady",
       "name": "Ryż smażony z kurczakiem, warzywami i orzechami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 17,
       "new": false
@@ -2067,7 +2067,7 @@
       "category": "obiady",
       "name": "KETO Bitka w sosie węgierskim z ryżem z kalafiora i sałatką z pomidorka",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2077,7 +2077,7 @@
       "category": "obiady",
       "name": "Skrzydełka barbecue z pieczonymi batatami i surówką z czerwonej kapusty",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -2087,7 +2087,7 @@
       "category": "obiady",
       "name": "VEGE FALAFELKI w sosie sweet chilli z pieczonymi ziemniaczkami i surówką z kapusty",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2097,7 +2097,7 @@
       "category": "obiady",
       "name": "Spaghetti bolognese XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -2107,7 +2107,7 @@
       "category": "obiady",
       "name": "Kotlet drobiowo-warzywny z sosem koperkowym, pieczonymi ziemniakami i surówką colesław",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2117,7 +2117,7 @@
       "category": "obiady",
       "name": "Kurczak w sosie koperkowym z brązowym ryżem i warzywami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -2127,7 +2127,7 @@
       "category": "obiady",
       "name": "Tortellini z ananasami, rukolą i orzechami",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2137,7 +2137,7 @@
       "category": "obiady",
       "name": "Mintaj panierowany z puree i sałatką z białej kapusty XXL",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -2147,7 +2147,7 @@
       "category": "obiady",
       "name": "Lasagne z łososiem i szpinakiem",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 22,
       "new": false
@@ -2157,7 +2157,7 @@
       "category": "obiady",
       "name": "Kurczak balsamico z puree i marchewką mini",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -2167,7 +2167,7 @@
       "category": "obiady",
       "name": "Kurczak w ziołach z żółtym ryżem i warzywami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2177,7 +2177,7 @@
       "category": "obiady",
       "name": "Bitki wieprzowe z kopytkami i buraczkami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -2187,7 +2187,7 @@
       "category": "obiady",
       "name": "Szpinakowe naleśniki z pomidorem i mozzarellą",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2197,7 +2197,7 @@
       "category": "obiady",
       "name": "Kurczak po tajsku z makaronem ryżowym",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2207,7 +2207,7 @@
       "category": "obiady",
       "name": "Kurczak z pieczonymi warzywami, fetą, pesto bazyliowym i razowym penne",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2217,7 +2217,7 @@
       "category": "obiady",
       "name": "Chinkali z mięsem wieprzowo-wołowym",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2227,7 +2227,7 @@
       "category": "obiady",
       "name": "Bułeczki BAO z szarpaną wieprzowiną i surówką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 24,
       "new": false
@@ -2237,7 +2237,7 @@
       "category": "obiady",
       "name": "Wątróbka z jabłkiem, żurawiną, kopytkami i buraczkami XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 23,
       "new": false
@@ -2247,7 +2247,7 @@
       "category": "obiady",
       "name": "Pierogi Gyoza z warzywami i kurczakiem z sosem ponzu",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 25,
       "new": false
@@ -2257,7 +2257,7 @@
       "category": "obiady",
       "name": "Kotlety siekane z indyka w sosie szpinakowym z kopytkami i surówką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2267,7 +2267,7 @@
       "category": "obiady",
       "name": "Pierogi z jagodami",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 17,
       "new": false
@@ -2277,7 +2277,7 @@
       "category": "obiady",
       "name": "KETO Burger wołowy XXL z boczkiem, chedarem i brokułem",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 26,
       "new": false
@@ -2287,7 +2287,7 @@
       "category": "obiady",
       "name": "Wołowina po syczuańsku z makaronem udon",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 27,
       "new": false
@@ -2297,7 +2297,7 @@
       "category": "obiady",
       "name": "Kurczak po koreańsku z makaronem chow-mein z warzywami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2307,7 +2307,7 @@
       "category": "obiady",
       "name": "Chilli Chicken Udon",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 23,
       "new": false
@@ -2317,7 +2317,7 @@
       "category": "obiady",
       "name": "Filet z kurczaka po toskańsku z gnocchi i surówką ZEN-KA",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2327,7 +2327,7 @@
       "category": "obiady",
       "name": "POWER Tortilla z kurczakiem, cukinią i mozzarellą",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 16,
       "new": false
@@ -2337,7 +2337,7 @@
       "category": "obiady",
       "name": "Łosoś miodowo-imbirowy z ryżem i warzywami",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 24,
       "new": false
@@ -2347,7 +2347,7 @@
       "category": "obiady",
       "name": "VEGE klopsiki w sosie grzybowym na makaronie tagliatelle",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2357,7 +2357,7 @@
       "category": "obiady",
       "name": "FIT Kokosowe curry z kurczakiem, fasolką szparagową i kolorowym ryżem",
       "diet": "FIT",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -2367,7 +2367,7 @@
       "category": "obiady",
       "name": "FIT Kurczak w sosie kurkowym z ryżem brązowym i buraczkami",
       "diet": "FIT",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -2377,7 +2377,7 @@
       "category": "obiady",
       "name": "VEGE klopsiki w ciemnym sosie z pieczonymi ziemniakami i surówką z czerwonej kapusty",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2387,7 +2387,7 @@
       "category": "obiady",
       "name": "Boczniak po tajsku z ryżem",
       "diet": "WEGAN",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2397,7 +2397,7 @@
       "category": "obiady",
       "name": "Spaghetti a`la Carbonara XXL",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -2407,7 +2407,7 @@
       "category": "obiady",
       "name": "FIT Dyniowe curry z kurczakiem i ryżem basmati",
       "diet": "FIT",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2417,7 +2417,7 @@
       "category": "obiady",
       "name": "VEGE gołąbki z kaszą gryczaną i sosem pieczarkowym",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2427,7 +2427,7 @@
       "category": "obiady",
       "name": "Nuggetsy w sosie sweet chilli z pieczonymi ziemniaczkami i surówką z czerwonej kapusty",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -2437,7 +2437,7 @@
       "category": "obiady",
       "name": "KETO Łosoś pieczony z sosem chimichurri, ryżem z kalafiora i sałatką z pomidorów cherry",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 25,
       "new": false
@@ -2447,7 +2447,7 @@
       "category": "obiady",
       "name": "Pad Thai z tofu na makaronie ryżowym",
       "diet": "WEGAN",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 17,
       "new": false
@@ -2457,7 +2457,7 @@
       "category": "obiady",
       "name": "Filet z kurczaka w panco z puree i marchewką z groszkiem",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -2467,7 +2467,7 @@
       "category": "obiady",
       "name": "Penne z łososiem i suszonym pomidorem w sosie śmietanowym",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2477,7 +2477,7 @@
       "category": "obiady",
       "name": "Polędwiczki wieprzowe w sosie żurawinowym z kopytkami i buraczkami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2487,7 +2487,7 @@
       "category": "obiady",
       "name": "KETO Kurczak ze szpinakiem, jajkiem i sosem jogurtowym",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 23,
       "new": false
@@ -2497,7 +2497,7 @@
       "category": "obiady",
       "name": "KETO Podudzie z kurczaka",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 23,
       "new": false
@@ -2507,7 +2507,7 @@
       "category": "obiady",
       "name": "Stripsy w pomarańczach z pieczonymi ziemniaczkami i mini marchewką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2517,7 +2517,7 @@
       "category": "obiady",
       "name": "KETO de volaille z puree z kalafiora i brokułem",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -2527,7 +2527,7 @@
       "category": "obiady",
       "name": "Kurczak z makaronem chow mein i sosem chimichurri",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -2537,7 +2537,7 @@
       "category": "obiady",
       "name": "Makaron razowy z pesto, kurczakiem, suszonymi pomidorami i pestkami",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 18,
       "new": false
@@ -2547,7 +2547,7 @@
       "category": "obiady",
       "name": "Pieczony indyk z sosem z zielonego pieprzu ze szpeclami szpinakowymi i surówką z czerwonej kapusty",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -2557,7 +2557,7 @@
       "category": "obiady",
       "name": "Filet z indyka w sosie z suszonych pomidorów ze szpeclami szpinakowymi i surówką z czerwonej kapusty",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -2567,7 +2567,7 @@
       "category": "obiady",
       "name": "Kurczak w sosie musztardowo-miodowym z ryżem i surówką z czerwonej kapusty",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 19,
       "new": false
@@ -2577,7 +2577,7 @@
       "category": "obiady",
       "name": "Polędwiczka wieprzowa na tagliatelle z sosem grzybowym",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 21,
       "new": false
@@ -2587,7 +2587,7 @@
       "category": "obiady",
       "name": "Roladka z indyka faszerowana fetą i pieczarkami z puree i marchewką mini",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2597,7 +2597,7 @@
       "category": "obiady",
       "name": "KETO Pierś z kurczaka na szpinaku z ryżem kalafiora i sałatką z pomidorków koktajlowych",
       "diet": "KETO",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2607,7 +2607,7 @@
       "category": "obiady",
       "name": "VEGE Pęczotto grzybowo-cukiniowe z ciecierzycą",
       "diet": "VEGE",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 17,
       "new": false
@@ -2617,7 +2617,7 @@
       "category": "obiady",
       "name": "Szarpana wieprzowina z sosem mango-habanero i ryżem",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 17,
       "new": false
@@ -2627,7 +2627,7 @@
       "category": "obiady",
       "name": "Łosoś z pieczonymi ziemniaczkami i sosem habanero",
       "diet": "VEGE+",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 25,
       "new": false
@@ -2637,7 +2637,7 @@
       "category": "obiady",
       "name": "Polędwiczki z kurczaka w sosie mango z ryżem",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2647,7 +2647,7 @@
       "category": "obiady",
       "name": "Kurczak z tagliatelle, suszonym pomidorem i marchewką",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 17,
       "new": false
@@ -2657,7 +2657,7 @@
       "category": "obiady",
       "name": "Schab zapiekany z pieczarkami podany z kopytkami i marchewką z groszkiem",
       "diet": "MIĘSNA",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 20,
       "new": false
@@ -2718,7 +2718,7 @@
       "category": "desery",
       "name": "Mus brzoskwiniowo-bananowy",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -2728,7 +2728,7 @@
       "category": "desery",
       "name": "Deser czekoladowo-miętowy",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -2748,7 +2748,7 @@
       "category": "desery",
       "name": "Pomarańczowa chmurka",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": 14,
       "new": false
@@ -2768,7 +2768,7 @@
       "category": "desery",
       "name": "Deserek malinowy z galaretką",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": 14,
       "new": false
@@ -2798,7 +2798,7 @@
       "category": "desery",
       "name": "WEGAN Kokosowy pudding z nasionami chia na mleku sojowym",
       "diet": "WEGAN",
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -2878,7 +2878,7 @@
       "category": "desery",
       "name": "Koktail egzotyczny",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -2888,7 +2888,7 @@
       "category": "desery",
       "name": "Tapioka czekoladowa",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -2908,7 +2908,7 @@
       "category": "desery",
       "name": "Deser piernikowy",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -2918,7 +2918,7 @@
       "category": "desery",
       "name": "PREMIUM Pudding z tapioki z owocami",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -2958,7 +2958,7 @@
       "category": "desery",
       "name": "Pudding z tapioki z musem mango i marakują",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -2968,7 +2968,7 @@
       "category": "desery",
       "name": "Deser kakaowo-bananowy",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3118,7 +3118,7 @@
       "category": "desery",
       "name": "Pudding z zielonej tapioki z serkiem pomarańczowym",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3158,7 +3158,7 @@
       "category": "desery",
       "name": "Bananowiec",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": 14,
       "new": false
@@ -3188,7 +3188,7 @@
       "category": "desery",
       "name": "Kokosowy pudding z nasionami chia",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3198,7 +3198,7 @@
       "category": "desery",
       "name": "Naleśniki czekoladowe z twarożkiem",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3218,7 +3218,7 @@
       "category": "desery",
       "name": "Deser kokosowy z krakersami",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3298,7 +3298,7 @@
       "category": "desery",
       "name": "Owsianka dyniowa na mleku kokosowym z owocami",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3348,7 +3348,7 @@
       "category": "desery",
       "name": "Deser winogronowy",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3358,7 +3358,7 @@
       "category": "desery",
       "name": "Lemon velvet",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3388,7 +3388,7 @@
       "category": "desery",
       "name": "Deserek Kopiec Kreta",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3398,7 +3398,7 @@
       "category": "desery",
       "name": "Deserek Gruszka",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3408,7 +3408,7 @@
       "category": "desery",
       "name": "Deserek Truskawka z galaretką",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3538,7 +3538,7 @@
       "category": "desery",
       "name": "Deser Amore",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "DESER",
       "price": null,
       "new": false
@@ -3559,7 +3559,7 @@
       "category": "soki",
       "name": "Napój jabłko, mango, marakuja",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SOK",
       "price": null,
       "new": false
@@ -3569,7 +3569,7 @@
       "category": "soki",
       "name": "Lemoniada pomarańczowa",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SOK",
       "price": 9,
       "new": false
@@ -3599,7 +3599,7 @@
       "category": "soki",
       "name": "Smoothie ZIELONY detoks",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SOK",
       "price": 15,
       "new": false
@@ -3629,7 +3629,7 @@
       "category": "soki",
       "name": "Rajska energia",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SOK",
       "price": 13,
       "new": false
@@ -3659,7 +3659,7 @@
       "category": "soki",
       "name": "Zdrowa cera",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SOK",
       "price": 13,
       "new": false
@@ -3689,7 +3689,7 @@
       "category": "soki",
       "name": "Płaski brzuch",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SOK",
       "price": 13,
       "new": false
@@ -3719,7 +3719,7 @@
       "category": "soki",
       "name": "Lemoniada cytrynowa",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SOK",
       "price": null,
       "new": false
@@ -3739,7 +3739,7 @@
       "category": "soki",
       "name": "Bombilla czerwona",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SOK",
       "price": 7,
       "new": false
@@ -3779,7 +3779,7 @@
       "category": "soki",
       "name": "Zdrowa cera MAŁY",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SOK",
       "price": 9,
       "new": false
@@ -3809,7 +3809,7 @@
       "category": "soki",
       "name": "Płaski brzuch MAŁY",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "SOK",
       "price": 9,
       "new": false
@@ -3890,7 +3890,7 @@
       "category": "sushi",
       "name": "Sushi zestaw mix",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 35,
       "new": false
@@ -3900,7 +3900,7 @@
       "category": "sushi",
       "name": "Sushi zestaw pieczone maki",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 35,
       "new": false
@@ -3910,7 +3910,7 @@
       "category": "sushi",
       "name": "Sushi zestaw surowe maki",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 35,
       "new": false
@@ -3920,7 +3920,7 @@
       "category": "sushi",
       "name": "Sushi zestaw California Gold",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 35,
       "new": false
@@ -3930,7 +3930,7 @@
       "category": "sushi",
       "name": "Sushi zestaw Premium Mix",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 96,
       "new": false
@@ -3940,7 +3940,7 @@
       "category": "sushi",
       "name": "Sushi zestaw California Gold surowe",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 37,
       "new": false
@@ -3950,7 +3950,7 @@
       "category": "sushi",
       "name": "Sushi zestaw California Gold pieczone",
       "diet": null,
-      "hasPhoto": false,
+      "hasPhoto": true,
       "blankType": "OBIAD",
       "price": 37,
       "new": false
