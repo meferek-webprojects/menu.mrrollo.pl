@@ -87,17 +87,45 @@ function toISODate(d: Date) {
   return `${y}-${m}-${day}`;
 }
 
-function getWeekDays(ref = new Date()): Date[] {
-  const d = new Date(ref);
-  const dow = d.getDay();
-  // Sunday (0) → jump to next week's Monday (+1)
-  // Monday–Saturday → rewind to this week's Monday
-  d.setDate(d.getDate() + (dow === 0 ? 1 : 1 - dow));
-  return Array.from({ length: 5 }, (_, i) => {
-    const dd = new Date(d);
-    dd.setDate(d.getDate() + i);
-    return dd;
-  });
+// Returns unique Mon–Fri weeks that appear in the schedule, sorted ascending.
+function getScheduleWeeks(schedule: Schedule): Date[][] {
+  const mondayKeys = new Set<string>();
+  for (const iso of Object.keys(schedule)) {
+    const d = new Date(iso + "T00:00:00");
+    const dow = d.getDay();
+    // rewind to Monday of that week (treat Sunday as next Mon)
+    const offset = dow === 0 ? 1 : 1 - dow;
+    d.setDate(d.getDate() + offset);
+    mondayKeys.add(toISODate(d));
+  }
+  return Array.from(mondayKeys)
+    .sort()
+    .map((mondayIso) => {
+      const mon = new Date(mondayIso + "T00:00:00");
+      return Array.from({ length: 5 }, (_, i) => {
+        const dd = new Date(mon);
+        dd.setDate(mon.getDate() + i);
+        return dd;
+      });
+    });
+}
+
+// Returns index of the week that should be active by default.
+// On Fri/Sat/Sun: prefer the next week if it exists in schedule.
+function defaultWeekIndex(weeks: Date[][]): number {
+  const today = new Date();
+  const dow = today.getDay(); // 0=Sun,5=Fri,6=Sat
+  const todayIso = toISODate(today);
+
+  // Find which week contains today (or the closest future week)
+  const currentIdx = weeks.findIndex((w) => w.some((d) => toISODate(d) === todayIso));
+
+  if (dow === 6 || dow === 0) {
+    // Prefer the week after the one containing today
+    const nextIdx = currentIdx + 1;
+    if (nextIdx < weeks.length) return nextIdx;
+  }
+  return currentIdx >= 0 ? currentIdx : 0;
 }
 
 function formatDateShort(d: Date) {
@@ -251,20 +279,50 @@ function CategoryTab({
 // ── Week day picker ───────────────────────────────────────────────────────────
 
 function WeekPicker({
-  weekDays,
+  weeks,
+  activeWeekIdx,
+  onWeekChange,
   selectedDate,
   schedule,
   onSelect,
   onClear,
 }: {
-  weekDays: Date[];
+  weeks: Date[][];
+  activeWeekIdx: number;
+  onWeekChange: (idx: number) => void;
   selectedDate: string | null;
   schedule: Schedule;
   onSelect: (iso: string) => void;
   onClear: () => void;
 }) {
+  const weekDays = weeks[activeWeekIdx] ?? [];
+
   return (
     <div className="px-4 pb-3 border-t pt-3" style={{ borderColor: "rgba(255,255,255,0.08)" }}>
+      {/* Week switcher — only shown when there are multiple weeks */}
+      {weeks.length > 1 && (
+        <div className="flex gap-1.5 mb-2.5">
+          {weeks.map((w, idx) => {
+            const label = `${w[0].getDate()} ${PL_MONTHS_SHORT[w[0].getMonth()]} – ${w[4].getDate()} ${PL_MONTHS_SHORT[w[4].getMonth()]}`;
+            const isActive = idx === activeWeekIdx;
+            return (
+              <button
+                key={idx}
+                onClick={() => onWeekChange(idx)}
+                className="shrink-0 px-3 py-1 rounded-lg text-[11px] font-semibold transition-all"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  background: isActive ? "rgba(255,255,255,0.18)" : "rgba(255,255,255,0.07)",
+                  color: isActive ? "#fff" : "rgba(255,255,255,0.40)",
+                }}
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
       <div className="flex gap-2 overflow-x-auto scrollbar-hide flex-1">
         <button
           onClick={onClear}
@@ -476,7 +534,8 @@ export default function MenuClient() {
   });
   const [weekPickerOpen, setWeekPickerOpen] = useState(false);
 
-  const weekDays = useMemo(() => getWeekDays(), []);
+  const weeks = useMemo(() => getScheduleWeeks(schedule), [schedule]);
+  const [activeWeekIdx, setActiveWeekIdx] = useState(() => defaultWeekIndex(weeks));
   const isSearching = search.trim().length > 0;
 
   const scheduledSet = useMemo(
@@ -652,7 +711,9 @@ export default function MenuClient() {
         {/* Row 2: Week picker */}
         {weekPickerOpen && (
           <WeekPicker
-            weekDays={weekDays}
+            weeks={weeks}
+            activeWeekIdx={activeWeekIdx}
+            onWeekChange={setActiveWeekIdx}
             selectedDate={selectedDate}
             schedule={schedule}
             onSelect={selectDay}
