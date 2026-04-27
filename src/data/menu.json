@@ -1746,7 +1746,7 @@
       "name": "Bitki wieprzowe z kopytkami i buraczkami XXL",
       "diet": null,
       "hasPhoto": true,
-      "price": null,
+      "price": 23,
       "new": false
     },
     {
@@ -1836,7 +1836,7 @@
       "name": "Polędwiczka wieprzowa w sosie grzybowym z gnochi i buraczkami zasmażanymi",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 24,
       "new": false
     },
     {
@@ -2169,7 +2169,7 @@
       "name": "Kaszotto ze szparagami, suszonym pomidorem i serem typu feta",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 24,
       "new": false
     },
     {
@@ -2232,7 +2232,7 @@
       "name": "Kotlet de volaille z puree i surówką",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 20,
       "new": false
     },
     {
@@ -2250,7 +2250,7 @@
       "name": "Kotlet de volaille XXL z puree i surówką",
       "diet": null,
       "hasPhoto": true,
-      "price": null,
+      "price": 22,
       "new": false
     },
     {
@@ -2259,7 +2259,7 @@
       "name": "Kotlet de volaille XXL z puree i marchewką z groszkiem",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 22,
       "new": false
     },
     {
@@ -2457,7 +2457,7 @@
       "name": "KETO Schabowy z kapustą zasmażaną i puree z kalafiora",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 21,
       "new": false
     },
     {
@@ -2529,7 +2529,7 @@
       "name": "Lasagne",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 19,
       "new": false
     },
     {
@@ -2547,7 +2547,7 @@
       "name": "Kebab z pieczonymi ziemniakami, sosem czosnkowym i surówką",
       "diet": null,
       "hasPhoto": true,
-      "price": null,
+      "price": 20,
       "new": false
     },
     {
@@ -2664,7 +2664,7 @@
       "name": "Tortellini w sosie serowym",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 20,
       "new": false
     },
     {
@@ -2736,7 +2736,7 @@
       "name": "Vegańskie klopsy z sosem kurkowym, kopytkami i buraczkiami",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 18,
       "new": false
     },
     {
@@ -2790,7 +2790,7 @@
       "name": "Spaghetti a`la Carbonara",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 18,
       "new": false
     },
     {
@@ -2889,7 +2889,7 @@
       "name": "VEGE Tagiatelle z tofu i orzechami",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 17,
       "new": false
     },
     {
@@ -2961,7 +2961,7 @@
       "name": "Polędwiczka wieprzowa w sosie koperkowym z pieczonymi ziemniakami",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 20,
       "new": false
     },
     {
@@ -2997,7 +2997,7 @@
       "name": "Pierogi z mięsem (opak. 350g)",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 18,
       "new": false
     },
     {
@@ -3051,7 +3051,7 @@
       "name": "Bitki wieprzowe z kaszą gryczaną i buraczkami",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 18,
       "new": false
     },
     {
@@ -3456,7 +3456,7 @@
       "name": "Stir-Fry z kurczakiem i warzywami na makaronie ryżowym",
       "diet": null,
       "hasPhoto": true,
-      "price": null,
+      "price": 18,
       "new": false
     },
     {
@@ -4050,7 +4050,7 @@
       "name": "Bitki wieprzowe z kopytkami i buraczkami",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 19,
       "new": false
     },
     {
@@ -4131,7 +4131,7 @@
       "name": "Chinkali z mięsem wieprzowo-wołowym",
       "diet": null,
       "hasPhoto": true,
-      "price": null,
+      "price": 18,
       "new": false
     },
     {
@@ -4608,7 +4608,7 @@
       "name": "FIT Kokosowe curry z kurczakiem i fasolką szparagową z kolorowym ryżem",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 19,
       "new": true
     },
     {
@@ -4662,7 +4662,7 @@
       "name": "Vegańskie spaghetti z burgerem buraczanym",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 17,
       "new": true
     },
     {
@@ -4752,7 +4752,7 @@
       "name": "Spaghetti a`la Carbonara XXL",
       "diet": null,
       "hasPhoto": true,
-      "price": null,
+      "price": 21,
       "new": true
     },
     {
@@ -5175,7 +5175,7 @@
       "name": "Makaron UDON z wołowiną po syczuańsku",
       "diet": null,
       "hasPhoto": true,
-      "price": null,
+      "price": 26,
       "new": true
     },
     {
@@ -5247,7 +5247,7 @@
       "name": "Kurczak barbecue z kolorowym ryżem i surówką delikatesową",
       "diet": null,
       "hasPhoto": true,
-      "price": null,
+      "price": 19,
       "new": true
     },
     {
@@ -5310,7 +5310,7 @@
       "name": "KETO pierś z kurczaka na szpinaku z ryżem kalafiora i sałatką z pomidorków koktajlowych",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 20,
       "new": true
     },
     {
@@ -5346,7 +5346,7 @@
       "name": "Łosoś ze szpinakiem, kopytkami i marchewką mini",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 27,
       "new": true
     },
     {
@@ -5490,7 +5490,7 @@
       "name": "Naleśniki z kaszą gryczaną i pieczarkami w sosie serowym",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 18,
       "new": true
     },
     {
@@ -5589,7 +5589,7 @@
       "name": "Pierogi z mięsem XXL",
       "diet": null,
       "hasPhoto": false,
-      "price": null,
+      "price": 20,
       "new": true
     },
     {
