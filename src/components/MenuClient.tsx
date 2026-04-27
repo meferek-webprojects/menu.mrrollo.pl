@@ -28,13 +28,13 @@ type Schedule = Record<string, string[]>;
 // ── Blank image URLs ──────────────────────────────────────────────────────────
 
 const BLANK_URL: Record<string, string> = {
-  DESER: "/blanks/DESER.png",
-  KANAPKA: "/blanks/KANAPKA.png",
-  OBIAD: "/blanks/OBIAD.png",
-  SAŁATKA: "/blanks/SA%C5%81ATKA.png",
-  SOK: "/blanks/SOK.png",
-  ZUPA: "/blanks/ZUPA.png",
-  SUSHI: "/blanks/OBIAD.png",
+  desery: "/blanks/DESER.png",
+  kanapki: "/blanks/KANAPKA.png",
+  obiady: "/blanks/OBIAD.png",
+  salatki: "/blanks/SA%C5%81ATKA.png",
+  soki: "/blanks/SOK.png",
+  zupy: "/blanks/ZUPA.png",
+  sushi: "/blanks/OBIAD.png",
 };
 
 // ── Diet config — brandbook 2026 ──────────────────────────────────────────────
@@ -386,7 +386,7 @@ function ItemCard({ item, onOpen }: { item: MenuItem; onOpen: (item: MenuItem) =
   const photoSrc =
     item.hasPhoto && !imgError
       ? `/photos/${item.id}.png`
-      : (BLANK_URL[item.blankType] ?? "/blanks/DESER.png");
+      : (BLANK_URL[item.category] ?? "/blanks/DESER.png");
   const priceText =
     item.price !== null
       ? item.price.toLocaleString("pl-PL", { minimumFractionDigits: 2 }) + "\u00a0zł"

@@ -2,31 +2,38 @@
   "categories": [
     {
       "id": "salatki",
-      "name": "Sałatki"
+      "name": "Sałatki",
+      "blankType": "SAŁATKA"
     },
     {
       "id": "desery",
-      "name": "Desery"
+      "name": "Desery",
+      "blankType": "DESER"
     },
     {
       "id": "soki",
-      "name": "Soki"
+      "name": "Soki",
+      "blankType": "SOK"
     },
     {
       "id": "obiady",
-      "name": "Obiady"
+      "name": "Obiady",
+      "blankType": "OBIAD"
     },
     {
       "id": "zupy",
-      "name": "Zupy"
+      "name": "Zupy",
+      "blankType": "ZUPA"
     },
     {
       "id": "kanapki",
-      "name": "Kanapki"
+      "name": "Kanapki",
+      "blankType": "KANAPKA"
     },
     {
       "id": "sushi",
-      "name": "Sushi"
+      "name": "Sushi",
+      "blankType": "OBIAD"
     }
   ],
   "items": [
