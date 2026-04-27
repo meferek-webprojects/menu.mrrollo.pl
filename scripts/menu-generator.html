@@ -6,18 +6,20 @@
 <title>Menu Generator · Mr. Rollo</title>
 <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --green:  #C6D359;
-    --orange: #EF522D;
-    --black:  #231F20;
-    --bg:     #141412;
+    --green:   #C6D359;
+    --orange:  #EF522D;
+    --black:   #231F20;
+    --bg:      #141412;
     --surface: #1d1d1a;
     --border:  #2a2a26;
     --text:    #e8e8e2;
     --muted:   #666660;
     --dimmed:  #3a3a34;
+    --blue:    #89C2F5;
   }
 
   body {
@@ -29,35 +31,24 @@
     flex-direction: column;
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
-
-  /* ── HEADER ── */
   header {
     padding: 18px 28px;
     border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-shrink: 0;
   }
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .logo-dot {
-    width: 10px; height: 10px;
-    background: var(--green);
-    border-radius: 50%;
-  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-dot { width: 10px; height: 10px; background: var(--green); border-radius: 50%; }
   header h1 { font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
   header span { font-size: 12px; color: var(--muted); letter-spacing: 0.02em; }
 
-  /* ── LAYOUT ── */
   .workspace {
     flex: 1;
     display: grid;
-    grid-template-columns: 360px 1fr;
-    gap: 0;
+    grid-template-columns: 380px 1fr;
+    min-height: 0;
   }
 
   /* ── LEFT ── */
@@ -65,7 +56,7 @@
     border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-y: auto;
   }
 
   .section-label {
@@ -76,162 +67,176 @@
     text-transform: uppercase;
     color: var(--muted);
     border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
   }
 
-  /* ── DROP ZONE ── */
+  .upload-block {
+    padding: 16px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .upload-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+    display: block;
+  }
+
   .drop-zone {
-    margin: 16px;
     border: 1.5px dashed var(--border);
-    border-radius: 12px;
-    padding: 28px 16px;
+    border-radius: 10px;
+    padding: 20px 16px;
     text-align: center;
     cursor: pointer;
     transition: border-color 0.15s, background 0.15s;
     position: relative;
-    flex-shrink: 0;
   }
   .drop-zone:hover, .drop-zone.drag-over {
     border-color: var(--green);
-    background: rgba(198, 211, 89, 0.04);
+    background: rgba(198,211,89,0.04);
+  }
+  .drop-zone.loaded {
+    border-color: var(--green);
+    border-style: solid;
+    background: rgba(198,211,89,0.04);
+  }
+  .drop-zone.optional {
+    border-color: var(--dimmed);
+  }
+  .drop-zone.optional:hover, .drop-zone.optional.drag-over {
+    border-color: var(--blue);
+    background: rgba(137,194,245,0.04);
+  }
+  .drop-zone.optional.loaded {
+    border-color: var(--blue);
+    border-style: solid;
+    background: rgba(137,194,245,0.04);
   }
   .drop-zone input[type="file"] {
     position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%;
   }
-  .drop-zone .dz-icon { font-size: 28px; margin-bottom: 8px; }
-  .drop-zone p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+  .drop-zone .dz-icon { font-size: 22px; margin-bottom: 6px; }
+  .drop-zone p { font-size: 12px; color: var(--muted); line-height: 1.5; }
   .drop-zone p strong { color: var(--green); }
+  .drop-zone.optional p strong { color: var(--blue); }
+  .file-loaded {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text);
+  }
+  .file-loaded .tick { color: var(--green); font-size: 14px; flex-shrink: 0; }
+  .file-loaded .fname { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .file-loaded .clear-btn {
+    background: none; border: none; color: var(--muted); cursor: pointer;
+    font-size: 14px; padding: 0; line-height: 1; flex-shrink: 0;
+    transition: color 0.1s;
+  }
+  .file-loaded .clear-btn:hover { color: var(--orange); }
 
-  /* ── SHEETS LIST ── */
+  /* ── FORMAT BADGE ── */
+  .format-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 20px;
+    margin-top: 8px;
+  }
+  .format-badge.new-fmt { background: rgba(198,211,89,0.12); color: var(--green); border: 1px solid rgba(198,211,89,0.3); }
+  .format-badge.old-fmt { background: rgba(239,82,45,0.12); color: var(--orange); border: 1px solid rgba(239,82,45,0.3); }
+
+  /* ── SHEETS (old format) ── */
   .sheets-container {
-    flex: 1;
-    overflow-y: auto;
-    padding: 0 16px 16px;
+    padding: 0 16px 8px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
   }
-
   .sheet-card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
   }
-
   .sheet-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 14px;
-    cursor: pointer;
-    user-select: none;
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 12px; cursor: pointer; user-select: none;
   }
   .sheet-header:hover { background: rgba(255,255,255,0.02); }
-
-  .sheet-status {
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-  .sheet-status.ok   { background: var(--green); }
+  .sheet-status { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .sheet-status.ok { background: var(--green); }
   .sheet-status.warn { background: var(--orange); }
-  .sheet-status.none { background: var(--dimmed); }
-
-  .sheet-name {
-    flex: 1;
-    font-size: 13px;
-    font-weight: 500;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .sheet-count {
-    font-size: 11px;
-    color: var(--muted);
-    flex-shrink: 0;
-  }
-  .sheet-chevron {
-    font-size: 10px;
-    color: var(--muted);
-    transition: transform 0.15s;
-    flex-shrink: 0;
-  }
+  .sheet-name { flex: 1; font-size: 12px; font-weight: 500; }
+  .sheet-count { font-size: 11px; color: var(--muted); flex-shrink: 0; }
+  .sheet-chevron { font-size: 10px; color: var(--muted); transition: transform 0.15s; flex-shrink: 0; }
   .sheet-card.open .sheet-chevron { transform: rotate(90deg); }
-
   .sheet-body {
-    display: none;
-    border-top: 1px solid var(--border);
-    padding: 12px 14px;
-    flex-direction: column;
-    gap: 10px;
+    display: none; border-top: 1px solid var(--border);
+    padding: 10px 12px; flex-direction: column; gap: 8px;
   }
   .sheet-card.open .sheet-body { display: flex; }
-
-  .field-row {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-  .field-row label {
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--muted);
-  }
+  .fields-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .field-row { display: flex; flex-direction: column; gap: 3px; }
+  .field-row label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
   .field-row select, .field-row input {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    color: var(--text);
-    font-size: 12px;
-    padding: 6px 10px;
-    width: 100%;
-    font-family: inherit;
-    outline: none;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 5px;
+    color: var(--text); font-size: 12px; padding: 5px 8px; width: 100%;
+    font-family: inherit; outline: none;
   }
-  .field-row select:focus, .field-row input:focus {
-    border-color: var(--green);
-  }
-
-  .fields-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-  }
-
+  .field-row select:focus, .field-row input:focus { border-color: var(--green); }
   .sheet-remove {
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 11px;
-    padding: 5px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    align-self: flex-start;
-    transition: border-color 0.1s, color 0.1s;
-    font-family: inherit;
+    background: none; border: 1px solid var(--border); color: var(--muted);
+    font-size: 11px; padding: 4px 8px; border-radius: 5px; cursor: pointer;
+    align-self: flex-start; transition: border-color 0.1s, color 0.1s; font-family: inherit;
   }
   .sheet-remove:hover { border-color: var(--orange); color: var(--orange); }
 
-  /* ── BOTTOM BAR (left) ── */
+  /* ── STATS BOX ── */
+  .stats-box {
+    margin: 12px 16px 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .stats-box-title {
+    font-size: 10px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--muted); margin-bottom: 2px;
+  }
+  .stat-line {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; color: var(--text);
+  }
+  .stat-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .stat-num { font-weight: 600; min-width: 28px; }
+
+  /* ── FOOTER ── */
   .left-footer {
     border-top: 1px solid var(--border);
     padding: 12px 16px;
     display: flex;
     gap: 8px;
     flex-shrink: 0;
+    margin-top: auto;
   }
   .btn-clear {
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 12px;
-    padding: 7px 14px;
-    border-radius: 7px;
-    cursor: pointer;
-    font-family: inherit;
-    transition: border-color 0.1s, color 0.1s;
+    background: none; border: 1px solid var(--border); color: var(--muted);
+    font-size: 12px; padding: 7px 14px; border-radius: 7px; cursor: pointer;
+    font-family: inherit; transition: border-color 0.1s, color 0.1s;
   }
   .btn-clear:hover { border-color: var(--orange); color: var(--orange); }
 
@@ -241,110 +246,60 @@
     flex-direction: column;
     overflow: hidden;
   }
-
   .right-top {
     padding: 14px 24px;
     border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
     gap: 12px;
-  }
-  .right-top h2 {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--muted);
-    letter-spacing: 0.04em;
-    flex: 1;
-  }
-
-  .stats-row {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    font-size: 11px;
-    color: var(--muted);
-  }
-  .stat { display: flex; align-items: center; gap: 5px; }
-  .stat-dot { width: 6px; height: 6px; border-radius: 50%; }
-
-  .btn-copy, .btn-download {
-    border: none;
-    padding: 8px 18px;
-    border-radius: 8px;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.15s;
-    font-family: inherit;
-    letter-spacing: 0.02em;
     flex-shrink: 0;
   }
-  .btn-download {
-    background: var(--green);
-    color: var(--black);
+  .right-top h2 { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: 0.04em; flex: 1; }
+  .right-stats {
+    display: flex; gap: 14px; align-items: center; font-size: 11px; color: var(--muted);
   }
+  .r-stat { display: flex; align-items: center; gap: 5px; }
+  .r-stat-dot { width: 6px; height: 6px; border-radius: 50%; }
+
+  .btn-copy, .btn-download {
+    border: none; padding: 8px 18px; border-radius: 8px;
+    font-size: 12px; font-weight: 600; cursor: pointer;
+    transition: background 0.15s; font-family: inherit; letter-spacing: 0.02em; flex-shrink: 0;
+  }
+  .btn-download { background: var(--green); color: var(--black); }
   .btn-download:hover { background: #d4e06a; }
   .btn-download:disabled { background: var(--dimmed); color: var(--muted); cursor: default; }
-  .btn-download.copied { background: #5caf70; color: #fff; }
-
-  .btn-copy {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    color: var(--text);
-  }
+  .btn-copy { background: var(--surface); border: 1px solid var(--border); color: var(--text); }
   .btn-copy:hover { border-color: var(--green); }
   .btn-copy:disabled { color: var(--muted); cursor: default; }
 
-  .output-wrap {
-    flex: 1;
-    overflow: auto;
-    padding: 20px 24px;
-  }
-
+  .output-wrap { flex: 1; overflow: auto; padding: 20px 24px; }
   .output {
     font-family: 'Menlo', 'Consolas', monospace;
-    font-size: 11.5px;
-    line-height: 1.75;
-    color: #b0b09a;
-    white-space: pre;
-    min-height: 100%;
+    font-size: 11.5px; line-height: 1.75; color: #b0b09a;
+    white-space: pre; min-height: 100%;
   }
   .output.empty {
-    font-family: inherit;
-    font-size: 13px;
-    color: var(--muted);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 300px;
-    text-align: center;
+    font-family: inherit; font-size: 13px; color: var(--muted);
+    display: flex; align-items: center; justify-content: center;
+    min-height: 300px; text-align: center; flex-direction: column; gap: 8px;
   }
 
-  /* JSON syntax highlight */
-  .j-key    { color: #8ec07c; }
-  .j-str    { color: #b8bb26; }
-  .j-num    { color: #d3869b; }
-  .j-bool   { color: #fabd2f; }
-  .j-null   { color: #fb4934; }
+  .j-key  { color: #8ec07c; }
+  .j-str  { color: #b8bb26; }
+  .j-num  { color: #d3869b; }
+  .j-bool { color: #fabd2f; }
+  .j-null { color: #fb4934; }
 
-  /* ── TOAST ── */
   .toast {
-    position: fixed;
-    bottom: 24px; right: 24px;
-    background: var(--green);
-    color: var(--black);
-    font-size: 13px;
-    font-weight: 600;
-    padding: 10px 18px;
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateY(8px);
-    transition: opacity 0.2s, transform 0.2s;
-    pointer-events: none;
+    position: fixed; bottom: 24px; right: 24px;
+    background: var(--green); color: var(--black);
+    font-size: 13px; font-weight: 600; padding: 10px 18px; border-radius: 8px;
+    opacity: 0; transform: translateY(8px);
+    transition: opacity 0.2s, transform 0.2s; pointer-events: none;
   }
   .toast.show { opacity: 1; transform: translateY(0); }
 
-  /* scrollbar */
   ::-webkit-scrollbar { width: 5px; height: 5px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--dimmed); border-radius: 3px; }
@@ -357,29 +312,71 @@
     <div class="logo-dot"></div>
     <h1>Menu Generator · Mr. Rollo</h1>
   </div>
-  <span>Wrzuć .xlsm / .xlsx → pobierz menu.json</span>
+  <span>Wrzuć XLSX → (opcjonalnie) menu.json → pobierz zaktualizowany JSON</span>
 </header>
 
 <div class="workspace">
 
   <!-- ── LEFT ── -->
   <div class="left">
-    <div class="section-label">Plik źródłowy</div>
 
-    <div class="drop-zone" id="dropZone"
-         ondragover="onDragOver(event)"
-         ondragleave="onDragLeave(event)"
-         ondrop="onDrop(event)">
-      <input type="file" id="fileInput" accept=".xlsx,.xlsm" onchange="onFileInput(event)" />
-      <div class="dz-icon">📂</div>
-      <p>Wrzuć <strong>KATALOG_PRODUKTÓW.xlsm</strong><br/>lub kliknij, żeby wybrać</p>
+    <!-- XLSX upload -->
+    <div class="section-label">1. Plik źródłowy XLSX</div>
+    <div class="upload-block">
+      <div class="drop-zone" id="xlsxDrop"
+           ondragover="onDragOver(event,'xlsxDrop')"
+           ondragleave="onDragLeave('xlsxDrop')"
+           ondrop="onDrop(event,'xlsx')">
+        <input type="file" id="xlsxInput" accept=".xlsx,.xlsm" onchange="onFileInput(event,'xlsx')" />
+        <div class="dz-icon">📂</div>
+        <p>Wrzuć <strong>MENU - pełna wersja.xlsx</strong><br/>lub kliknij, żeby wybrać</p>
+      </div>
+      <div id="xlsxLoaded" style="display:none; margin-top:10px;">
+        <div class="file-loaded">
+          <span class="tick">✓</span>
+          <span class="fname" id="xlsxFname"></span>
+          <button class="clear-btn" onclick="clearXlsx()" title="Usuń">✕</button>
+        </div>
+        <div id="formatBadge"></div>
+        <div id="sheetsSectionLabel" style="display:none; margin-top:10px;">
+          <div style="font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Arkusze (stary format)</div>
+          <div class="sheets-container" id="sheetsList"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="section-label" id="sheetsLabel" style="display:none">Arkusze</div>
-    <div class="sheets-container" id="sheetsList"></div>
+    <!-- menu.json upload (optional) -->
+    <div class="section-label">2. Istniejący menu.json <span style="font-weight:400;text-transform:none;letter-spacing:0">(opcjonalnie – do scalenia)</span></div>
+    <div class="upload-block">
+      <div class="drop-zone optional" id="jsonDrop"
+           ondragover="onDragOver(event,'jsonDrop')"
+           ondragleave="onDragLeave('jsonDrop')"
+           ondrop="onDrop(event,'json')">
+        <input type="file" id="jsonInput" accept=".json" onchange="onFileInput(event,'json')" />
+        <div class="dz-icon">🔗</div>
+        <p>Wrzuć <strong>menu.json</strong><br/>aby scalić z istniejącymi danymi</p>
+      </div>
+      <div id="jsonLoaded" style="display:none; margin-top:10px;">
+        <div class="file-loaded">
+          <span class="tick" style="color:var(--blue)">✓</span>
+          <span class="fname" id="jsonFname"></span>
+          <button class="clear-btn" onclick="clearJson()" title="Usuń">✕</button>
+        </div>
+        <div id="jsonStats" style="margin-top:8px; font-size:11px; color:var(--muted);"></div>
+      </div>
+    </div>
+
+    <!-- Merge stats -->
+    <div class="stats-box" id="mergeStats" style="display:none">
+      <div class="stats-box-title">Wynik scalenia</div>
+      <div class="stat-line"><div class="stat-dot" style="background:var(--green)"></div><span class="stat-num" id="stAdded">0</span><span>nowych pozycji dodano</span></div>
+      <div class="stat-line"><div class="stat-dot" style="background:var(--orange)"></div><span class="stat-num" id="stUpdated">0</span><span>pozycji zaktualizowano</span></div>
+      <div class="stat-line"><div class="stat-dot" style="background:var(--dimmed)"></div><span class="stat-num" id="stUnchanged">0</span><span>bez zmian</span></div>
+      <div class="stat-line"><div class="stat-dot" style="background:var(--muted)"></div><span class="stat-num" id="stKept">0</span><span>tylko w menu.json (zachowane)</span></div>
+    </div>
 
     <div class="left-footer" id="leftFooter" style="display:none">
-      <button class="btn-clear" onclick="clearAll()">✕ Wyczyść</button>
+      <button class="btn-clear" onclick="clearAll()">✕ Wyczyść wszystko</button>
     </div>
   </div>
 
@@ -387,10 +384,10 @@
   <div class="right">
     <div class="right-top">
       <h2>menu.json</h2>
-      <div class="stats-row" id="statsRow" style="display:none">
-        <div class="stat"><div class="stat-dot" style="background:var(--green)"></div><span id="statItems">0 pozycji</span></div>
-        <div class="stat"><div class="stat-dot" style="background:var(--orange)"></div><span id="statCats">0 kategorii</span></div>
-        <div class="stat"><div class="stat-dot" style="background:#89C2F5"></div><span id="statPhotos">0 ze zdjęciem</span></div>
+      <div class="right-stats" id="rightStats" style="display:none">
+        <div class="r-stat"><div class="r-stat-dot" style="background:var(--green)"></div><span id="rStatItems">0 pozycji</span></div>
+        <div class="r-stat"><div class="r-stat-dot" style="background:var(--orange)"></div><span id="rStatCats">0 kategorii</span></div>
+        <div class="r-stat"><div class="r-stat-dot" style="background:var(--blue)"></div><span id="rStatPhotos">0 ze zdjęciem</span></div>
       </div>
       <button class="btn-copy" id="btnCopy" onclick="copyJSON()" disabled>Kopiuj</button>
       <button class="btn-download" id="btnDownload" onclick="downloadJSON()" disabled>Pobierz JSON</button>
@@ -408,13 +405,26 @@
 // State
 // ─────────────────────────────────────────────
 let state = {
-  workbook: null,
-  filename: '',
-  sheets: []  // { sheetName, categoryId, categoryName, dietCol, photoCol, priceCol, items[] }
+  xlsxItems: null,       // parsed from XLSX (flat array)
+  xlsxFormat: null,      // 'new' | 'old'
+  sheets: [],            // only for old format
+  existingMenu: null,    // parsed menu.json
+  result: null,          // final built JSON
 };
 
-// Default category mapping by sheet name
-const DEFAULT_CATS = {
+// Category mapping: XLSX Kategoria → { id, name }
+const CAT_MAP = {
+  'Soki':     { id: 'soki',    name: 'Soki'    },
+  'Kanapki':  { id: 'kanapki', name: 'Kanapki' },
+  'Desery':   { id: 'desery',  name: 'Desery'  },
+  'Obiady':   { id: 'obiady',  name: 'Obiady'  },
+  'Sałatki':  { id: 'salatki', name: 'Sałatki' },
+  'Zupy':     { id: 'zupy',    name: 'Zupy'    },
+  'Sushi':    { id: 'sushi',   name: 'Sushi'   },
+};
+
+// Old format fallback
+const OLD_CAT_MAP = {
   'Sałatki':       { id: 'salatki',  name: 'Sałatki'  },
   'Kanapki':       { id: 'kanapki',  name: 'Kanapki'  },
   'Zupy':          { id: 'zupy',     name: 'Zupy'     },
@@ -425,51 +435,149 @@ const DEFAULT_CATS = {
 };
 
 // ─────────────────────────────────────────────
-// File input
+// Drag & drop helpers
 // ─────────────────────────────────────────────
-function onDragOver(e) { e.preventDefault(); document.getElementById('dropZone').classList.add('drag-over'); }
-function onDragLeave() { document.getElementById('dropZone').classList.remove('drag-over'); }
-function onDrop(e) {
+function onDragOver(e, id) { e.preventDefault(); document.getElementById(id).classList.add('drag-over'); }
+function onDragLeave(id) { document.getElementById(id).classList.remove('drag-over'); }
+function onDrop(e, type) {
   e.preventDefault();
-  document.getElementById('dropZone').classList.remove('drag-over');
-  const file = [...e.dataTransfer.files].find(f => f.name.endsWith('.xlsx') || f.name.endsWith('.xlsm'));
-  if (file) processFile(file);
+  const dropId = type === 'xlsx' ? 'xlsxDrop' : 'jsonDrop';
+  document.getElementById(dropId).classList.remove('drag-over');
+  const ext = type === 'xlsx' ? ['.xlsx', '.xlsm'] : ['.json'];
+  const file = [...e.dataTransfer.files].find(f => ext.some(x => f.name.endsWith(x)));
+  if (file) type === 'xlsx' ? processXlsx(file) : processJson(file);
 }
-function onFileInput(e) { if (e.target.files[0]) processFile(e.target.files[0]); }
+function onFileInput(e, type) {
+  if (e.target.files[0]) {
+    if (type === 'xlsx') processXlsx(e.target.files[0]);
+    else processJson(e.target.files[0]);
+  }
+}
 
-async function processFile(file) {
+// ─────────────────────────────────────────────
+// XLSX processing
+// ─────────────────────────────────────────────
+async function processXlsx(file) {
   const buf = await file.arrayBuffer();
   const wb = XLSX.read(buf, { type: 'array' });
-  state.workbook = wb;
-  state.filename = file.name;
 
-  state.sheets = wb.SheetNames
+  const fmt = detectFormat(wb);
+  state.xlsxFormat = fmt;
+
+  if (fmt === 'new') {
+    state.xlsxItems = parseNewFormat(wb);
+    state.sheets = [];
+  } else {
+    state.sheets = parseOldFormat(wb);
+    state.xlsxItems = null; // built on demand from sheets
+  }
+
+  // Show loaded state
+  document.getElementById('xlsxDrop').style.display = 'none';
+  document.getElementById('xlsxLoaded').style.display = '';
+  document.getElementById('xlsxFname').textContent = file.name;
+
+  const badge = document.getElementById('formatBadge');
+  if (fmt === 'new') {
+    badge.innerHTML = `<span class="format-badge new-fmt">✓ Nowy format – jedna tabela</span>`;
+    document.getElementById('sheetsSectionLabel').style.display = 'none';
+  } else {
+    badge.innerHTML = `<span class="format-badge old-fmt">⚠ Stary format – wiele arkuszy</span>`;
+    document.getElementById('sheetsSectionLabel').style.display = '';
+    renderSheets();
+  }
+
+  document.getElementById('leftFooter').style.display = '';
+  rebuild();
+}
+
+// ─────────────────────────────────────────────
+// Format detection
+// ─────────────────────────────────────────────
+function detectFormat(wb) {
+  const firstSheet = wb.Sheets[wb.SheetNames[0]];
+  const rows = XLSX.utils.sheet_to_json(firstSheet, { header: 1, defval: '' });
+  for (let i = 0; i < Math.min(rows.length, 5); i++) {
+    const vals = rows[i].map(v => String(v).trim());
+    if (vals.includes('Kategoria') && vals.includes('Symbol') && vals.includes('Nazwa')) {
+      return 'new';
+    }
+  }
+  return 'old';
+}
+
+// ─────────────────────────────────────────────
+// New format: single sheet with Kategoria column
+// ─────────────────────────────────────────────
+function parseNewFormat(wb) {
+  // Use 'Menu' sheet if available, else first non-Helpers sheet
+  const sheetName = wb.SheetNames.find(n => n === 'Menu')
+    || wb.SheetNames.find(n => n !== 'Helpers')
+    || wb.SheetNames[0];
+  const sheet = wb.Sheets[sheetName];
+  const rows = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: '' });
+
+  let headerRow = -1;
+  let cols = {};
+  for (let i = 0; i < Math.min(rows.length, 5); i++) {
+    const vals = rows[i].map(v => String(v).trim());
+    if (vals.includes('Kategoria') && vals.includes('Symbol')) {
+      headerRow = i;
+      vals.forEach((v, idx) => { cols[v] = idx; });
+      break;
+    }
+  }
+  if (headerRow === -1) return [];
+
+  const items = [];
+  for (let i = headerRow + 1; i < rows.length; i++) {
+    const row = rows[i];
+    const cat  = String(row[cols['Kategoria']] ?? '').trim();
+    const sym  = String(row[cols['Symbol']]    ?? '').trim();
+    const name = String(row[cols['Nazwa']]     ?? '').trim();
+    if (!sym || !name || !cat || sym === 'nan' || name === 'nan') continue;
+
+    const rawId = sym.endsWith('.0') ? sym.slice(0, -2) : sym;
+    const catInfo = CAT_MAP[cat] || { id: slugify(cat), name: cat };
+
+    // Zdjęcie is a boolean in new format (TRUE/FALSE from Excel)
+    const photoRaw = row[cols['Zdjęcie']];
+    const hasPhoto = photoRaw === true || String(photoRaw).toLowerCase() === 'true';
+
+    const dietRaw = String(row[cols['Dieta']] ?? '').trim();
+    const diet = (dietRaw && dietRaw !== 'nan' && dietRaw !== 'N/D') ? dietRaw : null;
+
+    const priceRaw = row[cols['Cena']];
+    let price = null;
+    if (priceRaw !== '' && priceRaw !== null && priceRaw !== undefined && !isNaN(Number(priceRaw))) {
+      price = parseInt(priceRaw, 10);
+    }
+
+    let isNew = false;
+    try { isNew = parseFloat(rawId.replace(/[A-Za-z]/g, '')) >= 1900; } catch {}
+
+    items.push({ id: rawId, category: catInfo.id, name, diet, hasPhoto, price, new: isNew, _catName: catInfo.name });
+  }
+  return items;
+}
+
+// ─────────────────────────────────────────────
+// Old format: multi-sheet
+// ─────────────────────────────────────────────
+function parseOldFormat(wb) {
+  return wb.SheetNames
     .filter(n => n !== 'Katalog')
     .map(sheetName => {
       const sheet = wb.Sheets[sheetName];
-      const rows  = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: '' });
-      const { headerRow, headerIdx, cols } = findHeader(rows);
-      const items = headerRow !== -1 ? parseItems(rows, headerRow, cols, sheetName) : [];
-      const def   = DEFAULT_CATS[sheetName] || { id: slugify(sheetName), name: sheetName };
-      return {
-        sheetName,
-        categoryId:   def.id,
-        categoryName: def.name,
-        cols,          // column index map
-        items,
-        enabled: true,
-        open: false,
-      };
+      const rows = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: '' });
+      const { headerRow, cols } = findOldHeader(rows);
+      const items = headerRow !== -1 ? parseOldItems(rows, headerRow, cols) : [];
+      const def = OLD_CAT_MAP[sheetName] || { id: slugify(sheetName), name: sheetName };
+      return { sheetName, categoryId: def.id, categoryName: def.name, cols, items, enabled: true, open: false };
     });
-
-  renderSheets();
-  renderJSON();
 }
 
-// ─────────────────────────────────────────────
-// Header detection
-// ─────────────────────────────────────────────
-function findHeader(rows) {
+function findOldHeader(rows) {
   for (let i = 0; i < Math.min(rows.length, 10); i++) {
     const vals = rows[i].map(v => String(v).trim());
     if (vals.includes('Symbol') && vals.includes('Nazwa')) {
@@ -481,10 +589,7 @@ function findHeader(rows) {
   return { headerRow: -1, cols: {} };
 }
 
-// ─────────────────────────────────────────────
-// Parse rows
-// ─────────────────────────────────────────────
-function parseItems(rows, headerRow, cols, sheetName) {
+function parseOldItems(rows, headerRow, cols) {
   const symIdx   = findColIdx(cols, ['Symbol']);
   const nameIdx  = findColIdx(cols, ['Nazwa']);
   const photoIdx = findColIdx(cols, ['ZDJĘCIA', 'Zdjęcie', 'Zdjecia']);
@@ -499,27 +604,21 @@ function parseItems(rows, headerRow, cols, sheetName) {
     const name = String(row[nameIdx] ?? '').trim();
     if (!name || name === 'nan') continue;
 
-    // Skip archiwum
     const allVals = row.map(v => String(v).toUpperCase());
     if (allVals.some(v => v === 'ARCHIWUM')) continue;
 
     const rawId = sym.endsWith('.0') ? sym.slice(0, -2) : sym;
-
     const photoRaw = String(row[photoIdx] ?? '').trim();
-    const hasPhoto = photoRaw.includes('✅');
-
+    const hasPhoto = photoRaw.includes('✅') || photoRaw === 'true' || photoRaw === 'TRUE';
     const dietRaw  = dietIdx !== -1 ? String(row[dietIdx] ?? '').trim() : '';
-    const diet     = (dietRaw && dietRaw !== 'nan') ? dietRaw : null;
-
+    const diet     = (dietRaw && dietRaw !== 'nan' && dietRaw !== 'N/D') ? dietRaw : null;
     const priceRaw = row[priceIdx];
     let price = null;
     if (priceRaw !== '' && priceRaw !== null && !isNaN(Number(priceRaw))) {
       price = parseInt(priceRaw, 10);
     }
-
     let isNew = false;
     try { isNew = parseFloat(rawId.replace(/[A-Za-z]/g, '')) >= 1900; } catch {}
-
     items.push({ id: rawId, name, diet, hasPhoto, price, new: isNew });
   }
   return items;
@@ -528,7 +627,6 @@ function parseItems(rows, headerRow, cols, sheetName) {
 function findColIdx(cols, keys) {
   for (const k of keys) {
     if (k in cols) return cols[k];
-    // fuzzy
     const match = Object.keys(cols).find(c => c.toUpperCase().includes(k.toUpperCase()));
     if (match) return cols[match];
   }
@@ -536,17 +634,191 @@ function findColIdx(cols, keys) {
 }
 
 // ─────────────────────────────────────────────
-// Render sheet cards
+// menu.json processing
+// ─────────────────────────────────────────────
+async function processJson(file) {
+  try {
+    const text = await file.text();
+    const parsed = JSON.parse(text);
+    if (!parsed.items || !parsed.categories) throw new Error('Nieprawidłowa struktura');
+    state.existingMenu = parsed;
+
+    document.getElementById('jsonDrop').style.display = 'none';
+    document.getElementById('jsonLoaded').style.display = '';
+    document.getElementById('jsonFname').textContent = file.name;
+    document.getElementById('jsonStats').textContent =
+      `${parsed.items.length} pozycji · ${parsed.categories.length} kategorii`;
+
+    document.getElementById('leftFooter').style.display = '';
+    rebuild();
+  } catch (err) {
+    showToast('Błąd: nieprawidłowy plik JSON');
+  }
+}
+
+// ─────────────────────────────────────────────
+// Build result JSON (merge or fresh)
+// ─────────────────────────────────────────────
+function rebuild() {
+  const xlsxItems = getXlsxItems();
+  if (!xlsxItems || xlsxItems.length === 0) {
+    state.result = null;
+    renderJSON();
+    return;
+  }
+
+  if (state.existingMenu) {
+    const { result, stats } = mergeWithExisting(xlsxItems, state.existingMenu);
+    state.result = result;
+    showMergeStats(stats);
+  } else {
+    state.result = buildFresh(xlsxItems);
+    document.getElementById('mergeStats').style.display = 'none';
+  }
+
+  renderJSON();
+}
+
+function getXlsxItems() {
+  if (state.xlsxFormat === 'new') return state.xlsxItems;
+  if (state.xlsxFormat === 'old') {
+    return state.sheets
+      .filter(s => s.enabled && s.items.length > 0)
+      .flatMap(s => s.items.map(item => ({
+        ...item,
+        category: s.categoryId,
+        _catName: s.categoryName,
+      })));
+  }
+  return null;
+}
+
+function buildFresh(xlsxItems) {
+  // Preserve category order from CAT_MAP, add any extras
+  const knownOrder = Object.values(CAT_MAP).map(c => c.id);
+  const seenIds = new Set();
+  const cats = [];
+
+  // Add known categories in order (only if present in data)
+  for (const catId of knownOrder) {
+    const item = xlsxItems.find(i => i.category === catId);
+    if (item) {
+      cats.push({ id: catId, name: item._catName });
+      seenIds.add(catId);
+    }
+  }
+  // Add any extra categories
+  for (const item of xlsxItems) {
+    if (!seenIds.has(item.category)) {
+      cats.push({ id: item.category, name: item._catName });
+      seenIds.add(item.category);
+    }
+  }
+
+  const items = xlsxItems.map(({ _catName, ...item }) => item);
+  return { categories: cats, items };
+}
+
+function mergeWithExisting(xlsxItems, existing) {
+  const existingById = new Map(existing.items.map(item => [item.id, item]));
+  const xlsxIds = new Set(xlsxItems.map(i => i.id));
+
+  const stats = { added: 0, updated: 0, unchanged: 0, kept: 0 };
+
+  // Start with existing items, updating where XLSX has data
+  const mergedItems = existing.items.map(item => {
+    const xlsxItem = xlsxItems.find(x => x.id === item.id);
+    if (!xlsxItem) {
+      stats.kept++;
+      return item; // only in menu.json, keep as-is
+    }
+    // Merge: XLSX overwrites name, diet, hasPhoto, price, category; keep existing extra fields
+    const { _catName, ...xlsxData } = xlsxItem;
+    const updated = { ...item, ...xlsxData };
+    if (JSON.stringify(item) !== JSON.stringify(updated)) {
+      stats.updated++;
+    } else {
+      stats.unchanged++;
+    }
+    return updated;
+  });
+
+  // Add items from XLSX not in existing
+  for (const xlsxItem of xlsxItems) {
+    if (!existingById.has(xlsxItem.id)) {
+      const { _catName, ...newItem } = xlsxItem;
+      mergedItems.push(newItem);
+      stats.added++;
+    }
+  }
+
+  // Merge categories: keep existing (with blankType etc), add new ones
+  const existingCatIds = new Set(existing.categories.map(c => c.id));
+  const categories = [...existing.categories];
+  for (const xlsxItem of xlsxItems) {
+    if (!existingCatIds.has(xlsxItem.category)) {
+      categories.push({ id: xlsxItem.category, name: xlsxItem._catName });
+      existingCatIds.add(xlsxItem.category);
+    }
+  }
+
+  return { result: { categories, items: mergedItems }, stats };
+}
+
+function showMergeStats(stats) {
+  document.getElementById('mergeStats').style.display = '';
+  document.getElementById('stAdded').textContent = stats.added;
+  document.getElementById('stUpdated').textContent = stats.updated;
+  document.getElementById('stUnchanged').textContent = stats.unchanged;
+  document.getElementById('stKept').textContent = stats.kept;
+}
+
+// ─────────────────────────────────────────────
+// Render JSON output
+// ─────────────────────────────────────────────
+function renderJSON() {
+  const out  = document.getElementById('output');
+  const btnC = document.getElementById('btnCopy');
+  const btnD = document.getElementById('btnDownload');
+  const rs   = document.getElementById('rightStats');
+
+  if (!state.result) {
+    out.className = 'output empty';
+    out.innerHTML = '<span>Tu pojawi się wygenerowany menu.json</span>';
+    btnC.disabled = btnD.disabled = true;
+    rs.style.display = 'none';
+    return;
+  }
+
+  const raw = JSON.stringify(state.result, null, 2);
+  out.className = 'output';
+  out.innerHTML = syntaxHL(raw);
+  btnC.disabled = btnD.disabled = false;
+
+  rs.style.display = '';
+  document.getElementById('rStatItems').textContent  = state.result.items.length + ' pozycji';
+  document.getElementById('rStatCats').textContent   = state.result.categories.length + ' kategorii';
+  const withPhoto = state.result.items.filter(i => i.hasPhoto).length;
+  document.getElementById('rStatPhotos').textContent = withPhoto + ' ze zdjęciem';
+}
+
+function syntaxHL(json) {
+  return json
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, m => {
+      if (/^"/.test(m)) return /:$/.test(m) ? `<span class="j-key">${m}</span>` : `<span class="j-str">${m}</span>`;
+      if (/true|false/.test(m)) return `<span class="j-bool">${m}</span>`;
+      if (/null/.test(m)) return `<span class="j-null">${m}</span>`;
+      return `<span class="j-num">${m}</span>`;
+    });
+}
+
+// ─────────────────────────────────────────────
+// Old format: sheet cards UI
 // ─────────────────────────────────────────────
 function renderSheets() {
-  const list  = document.getElementById('sheetsList');
-  const label = document.getElementById('sheetsLabel');
-  const footer = document.getElementById('leftFooter');
-
+  const list = document.getElementById('sheetsList');
   list.innerHTML = '';
-  label.style.display  = state.sheets.length ? '' : 'none';
-  footer.style.display = state.sheets.length ? '' : 'none';
-
   state.sheets.forEach((s, i) => {
     const card = document.createElement('div');
     card.className = 'sheet-card' + (s.open ? ' open' : '');
@@ -559,20 +831,14 @@ function renderSheets() {
       </div>
       <div class="sheet-body">
         <div class="fields-grid">
-          <div class="field-row">
-            <label>ID kategorii</label>
-            <input type="text" value="${s.categoryId}" oninput="updateField(${i},'categoryId',this.value); renderJSON()" />
-          </div>
-          <div class="field-row">
-            <label>Nazwa kategorii</label>
-            <input type="text" value="${s.categoryName}" oninput="updateField(${i},'categoryName',this.value); renderJSON()" />
-          </div>
+          <div class="field-row"><label>ID kategorii</label><input type="text" value="${s.categoryId}" oninput="updateField(${i},'categoryId',this.value);rebuild()" /></div>
+          <div class="field-row"><label>Nazwa</label><input type="text" value="${s.categoryName}" oninput="updateField(${i},'categoryName',this.value);rebuild()" /></div>
         </div>
         <div class="field-row">
-          <label>Uwzględnij w JSON</label>
-          <select onchange="updateField(${i},'enabled',this.value==='true'); renderJSON()">
-            <option value="true" ${s.enabled ? 'selected' : ''}>✅ Tak</option>
-            <option value="false" ${!s.enabled ? 'selected' : ''}>— Pomiń</option>
+          <label>Uwzględnij</label>
+          <select onchange="updateField(${i},'enabled',this.value==='true');rebuild()">
+            <option value="true" ${s.enabled?'selected':''}>✅ Tak</option>
+            <option value="false" ${!s.enabled?'selected':''}>— Pomiń</option>
           </select>
         </div>
         <button class="sheet-remove" onclick="removeSheet(${i})">Usuń arkusz</button>
@@ -580,100 +846,20 @@ function renderSheets() {
     list.appendChild(card);
   });
 }
-
-function toggleCard(i) {
-  state.sheets[i].open = !state.sheets[i].open;
-  renderSheets();
-}
-function updateField(i, key, val) {
-  state.sheets[i][key] = val;
-}
-function removeSheet(i) {
-  state.sheets.splice(i, 1);
-  renderSheets();
-  renderJSON();
-}
-
-// ─────────────────────────────────────────────
-// Build & render JSON
-// ─────────────────────────────────────────────
-function buildJSON() {
-  const enabled = state.sheets.filter(s => s.enabled && s.items.length > 0);
-  if (!enabled.length) return null;
-
-  const categories = enabled.map(s => ({ id: s.categoryId, name: s.categoryName }));
-  const items = enabled.flatMap(s =>
-    s.items.map(item => ({
-      id:       item.id,
-      category: s.categoryId,
-      name:     item.name,
-      diet:     item.diet,
-      hasPhoto: item.hasPhoto,
-      price:    item.price,
-      new:      item.new,
-    }))
-  );
-  return { categories, items };
-}
-
-function renderJSON() {
-  const obj = buildJSON();
-  const out = document.getElementById('output');
-  const btnC = document.getElementById('btnCopy');
-  const btnD = document.getElementById('btnDownload');
-  const statsRow = document.getElementById('statsRow');
-
-  if (!obj) {
-    out.className = 'output empty';
-    out.innerHTML = state.sheets.length
-      ? 'Żaden arkusz nie ma pozycji lub wszystkie są wyłączone'
-      : 'Tu pojawi się wygenerowany menu.json';
-    btnC.disabled = btnD.disabled = true;
-    statsRow.style.display = 'none';
-    return;
-  }
-
-  const raw = JSON.stringify(obj, null, 2);
-  out.className = 'output';
-  out.innerHTML = syntaxHL(raw);
-  btnC.disabled = btnD.disabled = false;
-
-  // stats
-  statsRow.style.display = '';
-  document.getElementById('statItems').textContent  = obj.items.length + ' pozycji';
-  document.getElementById('statCats').textContent   = obj.categories.length + ' kategorii';
-  const withPhoto = obj.items.filter(i => i.hasPhoto).length;
-  document.getElementById('statPhotos').textContent = withPhoto + ' ze zdjęciem';
-}
-
-function syntaxHL(json) {
-  return json
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, m => {
-      if (/^"/.test(m)) {
-        return /:$/.test(m)
-          ? `<span class="j-key">${m}</span>`
-          : `<span class="j-str">${m}</span>`;
-      }
-      if (/true|false/.test(m)) return `<span class="j-bool">${m}</span>`;
-      if (/null/.test(m))       return `<span class="j-null">${m}</span>`;
-      return `<span class="j-num">${m}</span>`;
-    });
-}
+function toggleCard(i) { state.sheets[i].open = !state.sheets[i].open; renderSheets(); }
+function updateField(i, key, val) { state.sheets[i][key] = val; }
+function removeSheet(i) { state.sheets.splice(i, 1); renderSheets(); rebuild(); }
 
 // ─────────────────────────────────────────────
 // Actions
 // ─────────────────────────────────────────────
 function copyJSON() {
-  const obj = buildJSON();
-  if (!obj) return;
-  navigator.clipboard.writeText(JSON.stringify(obj, null, 2)).then(() => showToast('Skopiowano!'));
+  if (!state.result) return;
+  navigator.clipboard.writeText(JSON.stringify(state.result, null, 2)).then(() => showToast('Skopiowano!'));
 }
-
 function downloadJSON() {
-  const obj = buildJSON();
-  if (!obj) return;
-  const blob = new Blob([JSON.stringify(obj, null, 2)], { type: 'application/json' });
+  if (!state.result) return;
+  const blob = new Blob([JSON.stringify(state.result, null, 2)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
   a.download = 'menu.json';
@@ -681,13 +867,31 @@ function downloadJSON() {
   showToast('Pobrano menu.json');
 }
 
+function clearXlsx() {
+  state.xlsxItems = null; state.xlsxFormat = null; state.sheets = [];
+  document.getElementById('xlsxInput').value = '';
+  document.getElementById('xlsxDrop').style.display = '';
+  document.getElementById('xlsxLoaded').style.display = 'none';
+  document.getElementById('mergeStats').style.display = 'none';
+  rebuild();
+  checkFooter();
+}
+function clearJson() {
+  state.existingMenu = null;
+  document.getElementById('jsonInput').value = '';
+  document.getElementById('jsonDrop').style.display = '';
+  document.getElementById('jsonLoaded').style.display = 'none';
+  document.getElementById('mergeStats').style.display = 'none';
+  rebuild();
+  checkFooter();
+}
 function clearAll() {
-  state = { workbook: null, filename: '', sheets: [] };
-  document.getElementById('fileInput').value = '';
-  document.getElementById('dropZone').querySelector('p').innerHTML =
-    'Wrzuć <strong>KATALOG_PRODUKTÓW.xlsm</strong><br/>lub kliknij, żeby wybrać';
-  renderSheets();
-  renderJSON();
+  clearXlsx();
+  clearJson();
+}
+function checkFooter() {
+  const hasAny = state.xlsxFormat || state.existingMenu;
+  document.getElementById('leftFooter').style.display = hasAny ? '' : 'none';
 }
 
 function showToast(msg) {
@@ -696,9 +900,8 @@ function showToast(msg) {
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2200);
 }
-
 function slugify(str) {
-  return str.toLowerCase().replace(/[^a-z0-9]/g, '_').replace(/_+/g, '_').replace(/^_|_$/g,'');
+  return str.toLowerCase().replace(/[^a-z0-9]/g,'_').replace(/_+/g,'_').replace(/^_|_$/g,'');
 }
 </script>
 
